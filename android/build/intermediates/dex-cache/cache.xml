@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9bc5c658348a96fc5110ac2a8785920bb9417c07">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.54.0_378d77e9321affb7ea000291847c1421023df9ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_8240d0ee59cda93315f273bdf025a2b63387f3b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_592b6ef8c35963b3de03578f0599f7478ed3f776.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_3fad64f4198643e857cc14a4e9d1ce90bd6c296a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_e6f2519d47750fd92e3e7e0bd9f8b38ca93ff837.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_8240d0ee59cda93315f273bdf025a2b63387f3b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.3.1_e9d06d34aeebdca8e694b1ecf637a5f7d183a65a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/seker/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/seker-react-native-vector-icons-unspecified_60f7a0d8c058b12aee5693424b0537339c51ef56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_2cb3c7a4d62c6b81b149928eaaff50065bb2b461.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_e6f2519d47750fd92e3e7e0bd9f8b38ca93ff837.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_1bc18412a7038f9bf270bad19fe2b4e7f5aa7330.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/seker/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/seker-react-native-vector-icons-unspecified_60f7a0d8c058b12aee5693424b0537339c51ef56.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9bc5c658348a96fc5110ac2a8785920bb9417c07">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.54.0_378d77e9321affb7ea000291847c1421023df9ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_9fa6f5913bc1c9a47ffcfaa72574c42aee4cc858.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_d5f19420c887e50a89c101fdbafcfe1461f09f4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_99064840bdc06f93c0393e5f78134315e21fc1c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_d2c2ec0092e45762fa2423fea1808b16f192a3a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_9fa6f5913bc1c9a47ffcfaa72574c42aee4cc858.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_60277efb42abd628c446a2b0fa0115d0b565e31e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_d5f19420c887e50a89c101fdbafcfe1461f09f4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_89f4d1f2a1bc0200a6c0cfc5fd493e9441593f94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_89f4d1f2a1bc0200a6c0cfc5fd493e9441593f94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_d2c2ec0092e45762fa2423fea1808b16f192a3a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.aurelhubert-ahbottomnavigation-2.0.6_fe4d0cbbdf7e407154388584f7d1b4f8308c15b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f16fa42595c8287e4290ea61eee2fd3b90f4676b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_3b3eb16aae1409f79b24985d07cd62049a2e7523.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_9503e6612a6ca8ab4a8624d41890abde9b5c4668.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/seker/react-native-navigation/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a0b13305cd74367425f75dbd7d152d1b9bdb03e8">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/seker-react-native-navigation-unspecified_733d885cfd5a7d0136d6374f0645d017c8d10e07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.54.0/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_592b6ef8c35963b3de03578f0599f7478ed3f776.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_b419a4db68b75d42be628fb58c84942e226ed0d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_ae6da7d93d66eb109af21c96d59c9aef44e86adc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_eacb273d8ff07fefb4cb3fcd58353f57c05d9836.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_e7f4c813ab91b437f2c890fc2de9d1df0ac525d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_ae6da7d93d66eb109af21c96d59c9aef44e86adc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_4290a074ff1b0c2e0ad5d7a0114641d4fb84c323.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_b06291274eee8859bf5b523c7a37bbf3e9fab714.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_97a3059512ff4411606b104a1f3f26f2c1de3516.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_5f01bbc9efcab9057f96fe1d1e2d7a995f1a51db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6a5d9b310ca4e609d3267b33a2f18c85bc99dd40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_b1471a32ccdc8a9b1dd2e69703d2249be3dfedf3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_97a3059512ff4411606b104a1f3f26f2c1de3516.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu/1.5.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.balysv.materialmenu-material-menu-1.5.4_0abd40c7888e936df7a0d65dbc1bd55a00625140.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_4290a074ff1b0c2e0ad5d7a0114641d4fb84c323.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu-toolbar/1.5.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.balysv.materialmenu-material-menu-toolbar-1.5.4_070bc10b68e3b68a042ae7c77ff00f3360987ab0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_9503e6612a6ca8ab4a8624d41890abde9b5c4668.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f16fa42595c8287e4290ea61eee2fd3b90f4676b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_60277efb42abd628c446a2b0fa0115d0b565e31e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_ea9e6c38693293b3109ce3af2083d95c5d84a842.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/library-2.4.0_90a459f74567154198fc230b70c1aeff53af8521.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_ea9e6c38693293b3109ce3af2083d95c5d84a842.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_6da5c0069d79cdfbe211460c373433d73f34c054.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_e5d74db248e91b0a8d9a42218774753ca6740a87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_6da5c0069d79cdfbe211460c373433d73f34c054.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/conorburke/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/conorburke/workspace/native/seker/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6a5d9b310ca4e609d3267b33a2f18c85bc99dd40.jar" />
+    </item>
+
+</items>
