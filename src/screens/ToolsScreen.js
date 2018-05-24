@@ -50,7 +50,11 @@ class ToolsScreen extends Component {
   }
 
   handleSubmit() {
-    AsyncStorage.removeItem('auth_token');
+    AsyncStorage.removeItem('auth_token')
+      .then(() =>     
+        this.props.navigator.handleDeepLink({
+          link: 'WelcomeScreen'
+      }));
   }
 
   render() {
