@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Button, View, Text} from 'react-native';
+import { AsyncStorage, Button, View, Text} from 'react-native';
 import { connect } from 'react-redux';
 import firebase from 'firebase';
 
 import * as actions from '../actions';
 import firebaseApi from './keys';
 import SignIn from '../components/SignIn';
-import SignUp from '../components/SignUp';
 import startMainTabs from './startMainTabs';
 
 class WelcomeScreen extends Component {
@@ -19,29 +18,20 @@ class WelcomeScreen extends Component {
       storageBucket: "seker-auth.appspot.com",
       messagingSenderId: "99352786132"
     };
-    firebase.initializeApp(config);
+    if (!firebase.apps.length) {
+      firebase.initializeApp(config);
+    }
     this.props.authUser();
     console.log('auth state', this.props.auth);
+
+    AsyncStorage.getItem('auth_token')
+    .then((res) => {
+        if (res) {
+          startMainTabs();
+        }
+    });
+
   }
-
-  // constructor(props) {
-  //   super(props);
-  //   this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
-  // }
-
-  // onNavigatorEvent(event) {
-  //   console.log('event', event);
-  //   console.log('parts', event.link);
-  //   if (event.type === 'DeepLink') {
-  //     const parts = event.link;
-  //     if (parts === 'seker.WelcomeScreen') {
-  //       this.props.navigator.push({
-  //         title: 'Welcome',
-  //         screen: 'seker.WelcomeScreen'
-  //       })
-  //     }
-  //   }
-  // }
 
   loginHandler = () => {
     startMainTabs();
@@ -53,8 +43,7 @@ class WelcomeScreen extends Component {
         <Text>Welcome to Seker</Text>
         <Text>The best place to rent and loan tools!</Text>
         <Button title='Find Tools' onPress={this.loginHandler} />
-        <SignUp />
-        <SignIn />
+        <SignIn navigator={this.props.navigator}/>
       </View>
     )
   }
@@ -63,9 +52,7 @@ class WelcomeScreen extends Component {
 }
 
 function mapStateToProps(state) {
-  return({
-    auth: state.auth
-  }) 
+  return {auth: state.auth}
 }
 
-export default connect(null, actions)(WelcomeScreen);
+export default connect(mapStateToProps, actions)(WelcomeScreen);

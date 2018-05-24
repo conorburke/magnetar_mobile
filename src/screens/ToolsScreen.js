@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { AsyncStorage, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Button } from 'react-native-elements';
 import { Navigation } from 'react-native-navigation';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -48,6 +49,14 @@ class ToolsScreen extends Component {
     }
   }
 
+  handleSubmit() {
+    AsyncStorage.removeItem('auth_token')
+      .then(() =>     
+        this.props.navigator.handleDeepLink({
+          link: 'WelcomeScreen'
+      }));
+  }
+
   render() {
     console.log('tool screen props', this.props);
     return (
@@ -70,6 +79,12 @@ class ToolsScreen extends Component {
             }
           }
         />
+        <TouchableOpacity>
+          <Button 
+            title='Log Out'
+            onPress={this.handleSubmit.bind(this)}
+          />
+        </TouchableOpacity>
       </View>
     );
   }
