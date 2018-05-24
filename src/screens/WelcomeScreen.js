@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, View, Text} from 'react-native';
+import { AsyncStorage, Button, View, Text} from 'react-native';
 import { connect } from 'react-redux';
 import firebase from 'firebase';
 
@@ -19,9 +19,19 @@ class WelcomeScreen extends Component {
       storageBucket: "seker-auth.appspot.com",
       messagingSenderId: "99352786132"
     };
-    firebase.initializeApp(config);
+    if (!firebase.apps.length) {
+      firebase.initializeApp(config);
+    }
     this.props.authUser();
     console.log('auth state', this.props.auth);
+
+    AsyncStorage.getItem('auth_token')
+    .then((res) => {
+        if (res) {
+          startMainTabs();
+        }
+    });
+
   }
 
   // constructor(props) {
@@ -63,9 +73,7 @@ class WelcomeScreen extends Component {
 }
 
 function mapStateToProps(state) {
-  return({
-    auth: state.auth
-  }) 
+  return {auth: state.auth}
 }
 
-export default connect(null, actions)(WelcomeScreen);
+export default connect(mapStateToProps, actions)(WelcomeScreen);

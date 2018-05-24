@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
+import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
+
+import * as actions from '../actions';
 
 class Tool extends Component {
   openToolDetail() {
@@ -14,16 +17,24 @@ class Tool extends Component {
     // Alert.alert('Tapped Text!');
   }
 
+  handleDelete(id) {
+    alert(`id to delete is ${id}`);
+    this.props.deleteTool(id);
+  }
+
   render() {
     console.log('propssss', this.props);
     console.log('navigator', this.props.navigator);
     return (
-      <TouchableOpacity>
-        <View style={styles.containerStyle}>
+      <View style={styles.containerStyle}>
+        <TouchableOpacity>
           <Text onPress={this.openToolDetail.bind(this)}>{this.props.tool.Title}</Text>
-          <Icon size={30} name='ios-trash' color='red'/>
-        </View>
-      </TouchableOpacity>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Icon onPress={() => this.handleDelete(this.props.tool.ID)} size={30} name='ios-trash' color='red'/>
+        </TouchableOpacity>
+      </View>
+      
     )
   }
 }
@@ -41,4 +52,4 @@ const styles = {
   }
 };
 
-export default Tool;
+export default connect(null, actions)(Tool);
