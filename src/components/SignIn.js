@@ -6,6 +6,7 @@ import axios from 'axios';
 import firebase from 'firebase';
 
 import * as actions from '../actions';
+import startMainTabs from '../screens/startMainTabs';
 
 const rootUrl = 'https://us-central1-seker-auth.cloudfunctions.net';
 
@@ -18,12 +19,19 @@ class SignIn extends Component {
 
   state = {phone: '', code: ''};
 
+  handleRequestPIN() {
+    axios.post(`${rootUrl}/createUser`, {phone: this.state.phone})
+      .then(() => {axios.post(`${rootUrl}/requestOneTimePassword`, {phone: this.state.phone})})
+      .catch(err => console.log(err));
+  }
+
   handleSubmit() {
     axios.post(`${rootUrl}/verifyOneTimePassword`, {phone: this.state.phone, code: this.state.code})
       .then(({data}) => {
         console.log(data);
         firebase.auth().signInWithCustomToken(data.token);
         this.props.authUser(data.token);
+        startMainTabs();
       })
       .catch(err => console.log(err));
   }
@@ -38,6 +46,10 @@ class SignIn extends Component {
             onChangeText={phone => this.setState({phone})}
           />
         </View>
+        <Button 
+            title='Request PIN'
+            onPress={this.handleRequestPIN.bind(this)}
+          />
         <View>
           <FormLabel>Enter Code</FormLabel>
           <FormInput 

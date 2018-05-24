@@ -6,7 +6,6 @@ import firebase from 'firebase';
 import * as actions from '../actions';
 import firebaseApi from './keys';
 import SignIn from '../components/SignIn';
-import SignUp from '../components/SignUp';
 import startMainTabs from './startMainTabs';
 
 class WelcomeScreen extends Component {
@@ -34,25 +33,6 @@ class WelcomeScreen extends Component {
 
   }
 
-  // constructor(props) {
-  //   super(props);
-  //   this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
-  // }
-
-  // onNavigatorEvent(event) {
-  //   console.log('event', event);
-  //   console.log('parts', event.link);
-  //   if (event.type === 'DeepLink') {
-  //     const parts = event.link;
-  //     if (parts === 'seker.WelcomeScreen') {
-  //       this.props.navigator.push({
-  //         title: 'Welcome',
-  //         screen: 'seker.WelcomeScreen'
-  //       })
-  //     }
-  //   }
-  // }
-
   loginHandler = () => {
     startMainTabs();
   }
@@ -63,8 +43,7 @@ class WelcomeScreen extends Component {
         <Text>Welcome to Seker</Text>
         <Text>The best place to rent and loan tools!</Text>
         <Button title='Find Tools' onPress={this.loginHandler} />
-        <SignUp />
-        <SignIn />
+        <SignIn navigator={this.props.navigator}/>
       </View>
     )
   }
