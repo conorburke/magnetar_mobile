@@ -10,6 +10,8 @@ import ToolDetailScreen from './screens/ToolDetailScreen';
 import ToolsScreen from './screens/ToolsScreen';
 import UserDetailScreen from './screens/UserDetailScreen';
 import UsersScreen from './screens/UsersScreen';
+import CreateProfileScreen from './screens/CreateProfileScreen';
+import ProfileScreen from './screens/ProfileScreen';
 
 const composeEnhancers = compose;
 
@@ -51,11 +53,22 @@ Navigation.registerComponent(
   store,
   Provider
 );
-
 Navigation.registerComponent(
   'seker.SideDrawerScreen',
   () => SideDrawerScreen
 );
+Navigation.registerComponent(
+  'seker.CreateProfileScreen',
+  () => CreateProfileScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  'seker.ProfileScreen',
+  () => ProfileScreen,
+  store,
+  Provider
+)
 
 //start navigation in app
 Navigation.startSingleScreenApp({

@@ -31,7 +31,12 @@ class SignIn extends Component {
         console.log(data);
         firebase.auth().signInWithCustomToken(data.token);
         this.props.authUser(data.token);
-        startMainTabs();
+        // startMainTabs();
+        this.props.navigator.push({
+          screen: 'seker.CreateProfileScreen',
+          title: 'Create Profile',
+          backButtonTitle: 'Back to Home'
+        });
       })
       .catch(err => console.log(err));
   }

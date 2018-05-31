@@ -15,8 +15,6 @@ class ToolsScreen extends Component {
   }
 
   componentDidMount() {
-    console.log('auth', this.props.auth);
-    console.log('component mounted');
     this.props.fetchTools();
   }
 
@@ -30,22 +28,12 @@ class ToolsScreen extends Component {
     }
     if (event.type === 'DeepLink') {
       const parts = event.link;
-      // if (parts === 'WelcomeScreen') {
-      //   this.props.navigator.push({
-      //     screen: 'seker.WelcomeScreen',
-      //     title: 'Seker'
-      //   })
-      // }
-      this.props.navigator.resetTo({
-        screen: 'seker.WelcomeScreen',
-        title: 'Seker'
-      })
-      // Navigation.startSingleScreenApp({
-      //   screen: {
-      //     screen: 'seker.WelcomeScreen',
-      //     title: 'Seker'
-      //   }
-      // });
+      if (parts === 'WelcomeScreen') {
+        this.props.navigator.resetTo({
+          screen: 'seker.WelcomeScreen',
+          title: 'Seker'
+        })
+      }
     }
   }
 
@@ -103,7 +91,8 @@ const styles = StyleSheet.create({
 function mapStateToProps(state) {
   return { 
     tools: state.tools,
-    auth: state.auth
+    auth: state.auth,
+    profile: state.profile
   
   };
 }

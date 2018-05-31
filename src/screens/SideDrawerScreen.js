@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Dimensions, StyleSheet, Text, View } from 'react-native';
+import { AsyncStorage, Button, Dimensions, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 class SideDrawerScreen extends Component {
   // constructor(props) {
@@ -18,11 +18,41 @@ class SideDrawerScreen extends Component {
     });
   }
 
+  goToProfile() {
+    this.props.navigator.handleDeepLink({
+      link: 'ProfileScreen'
+    });
+    this.props.navigator.toggleDrawer({
+      to: 'closed',
+      side: 'left',
+      animated: 'true'
+    });
+  }
+
+  handleSubmit() {
+    AsyncStorage.removeItem('auth_token')
+      .then(() => {    
+        this.props.navigator.handleDeepLink({
+          link: 'WelcomeScreen'
+        });
+        this.props.navigator.toggleDrawer({
+          to: 'closed',
+          side: 'left',
+          animated: 'true'
+        });
+      });
+  }
+
   render() {
     return (
       <View style={[styles.container, {width: Dimensions.get('window').width * 0.9}]}>
         <Text>Side Drawer</Text>
-        <Button title='Home' onPress={this.goToHome.bind(this)} />
+        <TouchableOpacity>
+          <Button title='Home' onPress={this.goToHome.bind(this)} />
+          <Button title='Log Out' onPress={this.handleSubmit.bind(this)} />
+          {/* <Button title='Profile' onPress={this.goToProfile.bind(this)} /> */}
+        </TouchableOpacity>
+
       </View>
     );
   }
