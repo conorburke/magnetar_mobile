@@ -26,9 +26,13 @@ class WelcomeScreen extends Component {
 
     AsyncStorage.getItem('auth_token')
     .then((res) => {
-        if (res) {
-          startMainTabs();
-        }
+      AsyncStorage.getItem('profile_id')
+        .then(res => {
+          this.props.fetchProfile(res);
+        })
+      if(res) {
+        startMainTabs();
+      }
     });
 
   }

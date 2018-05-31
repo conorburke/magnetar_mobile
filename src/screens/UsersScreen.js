@@ -13,7 +13,6 @@ class UsersScreen extends Component {
   }
 
   componentDidMount() {
-    console.log('component mounted');
     this.props.fetchUsers();
   }
 
@@ -27,16 +26,12 @@ class UsersScreen extends Component {
     }
     if (event.type === 'DeepLink') {
       const parts = event.link;
-      // if (parts === 'WelcomeScreen') {
-      //   this.props.navigator.push({
-      //     screen: 'seker.WelcomeScreen',
-      //     title: 'Seker'
-      //   })
-      // }
-      this.props.navigator.resetTo({
-        screen: 'seker.WelcomeScreen',
-        title: 'Seker'
-      })
+      if (parts === 'WelcomeScreen') {
+        this.props.navigator.resetTo({
+          screen: 'seker.WelcomeScreen',
+          title: 'Seker'
+        })
+      }
     }
   }
 
