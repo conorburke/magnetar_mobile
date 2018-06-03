@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AsyncStorage, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Button } from 'react-native-elements';
 import { Navigation } from 'react-native-navigation';
 import { connect } from 'react-redux';
@@ -8,18 +8,14 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import * as actions from '../actions';
 import Tool from '../components/Tool';
 
-class ToolsScreen extends Component {
+class UserToolsScreen extends Component {
   constructor(props) {
     super(props);
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
   }
 
   componentDidMount() {
-    this.props.fetchTools();
-  }
-
-  componentDidUpdate() {
-    this.props.fetchTools();
+    this.props.fetchUserTools(this.props.profile.ID);
   }
 
   onNavigatorEvent(event) {
@@ -50,12 +46,12 @@ class ToolsScreen extends Component {
   }
 
   render() {
-    console.log('tool screen props', this.props);
+    console.log('user tool screen props', this.props);
     return (
       <View style={styles.container}>
         <Text>Tools for you!</Text>
         <FlatList
-          data={this.props.tools}
+          data={this.props.userTools}
           // data={this.props.tools.length > 0 ? this.props.tools : [{ToolType: 'loading'}]}
           renderItem={({item}) => {
               // console.log('item', item);
@@ -88,11 +84,9 @@ const styles = StyleSheet.create({
 
 function mapStateToProps(state) {
   return { 
-    tools: state.tools,
-    auth: state.auth,
-    profile: state.profile
-  
+    profile: state.profile,
+    userTools: state.userTools
   };
 }
 
-export default connect(mapStateToProps, actions)(ToolsScreen);
+export default connect(mapStateToProps, actions)(UserToolsScreen);
