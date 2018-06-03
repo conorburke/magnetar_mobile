@@ -18,6 +18,10 @@ class ToolsScreen extends Component {
     this.props.fetchTools();
   }
 
+  componentDidUpdate() {
+    this.props.fetchTools();
+  }
+
   onNavigatorEvent(event) {
     if (event.type === 'NavBarButtonPress') {
       if (event.id === 'SideDrawerScreenToggle') {
@@ -67,12 +71,6 @@ class ToolsScreen extends Component {
             }
           }
         />
-        <TouchableOpacity>
-          <Button 
-            title='Log Out'
-            onPress={this.handleSubmit.bind(this)}
-          />
-        </TouchableOpacity>
       </View>
     );
   }

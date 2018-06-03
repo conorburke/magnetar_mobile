@@ -1,7 +1,7 @@
 import { AsyncStorage } from 'react-native';
 import axios from 'axios';
 
-import { AUTH_USER, CREATE_PROFILE, DELETE_TOOL, FETCH_TOOLS, FETCH_USERS } from './types';
+import { AUTH_USER, CREATE_PROFILE, DELETE_TOOL, FETCH_TOOL, FETCH_TOOLS, FETCH_USER_TOOLS, FETCH_USERS } from './types';
 import url from '../utils';
 
 export const authUser = (token) => {
@@ -71,3 +71,17 @@ export const fetchUsers = () => {
             .then(res => dispatch({type: FETCH_USERS, payload: res.data}));
     }
 };
+
+export const fetchTool = (id) => {
+    return function (dispatch) {
+        axios.get(`${url.api}/tools/${id}`)
+            .then(res => dispatch({type: FETCH_TOOL, payload: res.data}))
+    }
+}
+
+export const fetchUserTools = (id) => {
+    return function(dispatch) {
+        axios.get(`${url.api}/users/${id}/tools`)
+            .then(res => dispatch({type: FETCH_USER_TOOLS, payload: res.data}))
+    }
+}

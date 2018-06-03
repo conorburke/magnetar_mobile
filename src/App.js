@@ -12,6 +12,8 @@ import UserDetailScreen from './screens/UserDetailScreen';
 import UsersScreen from './screens/UsersScreen';
 import CreateProfileScreen from './screens/CreateProfileScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import CreateToolScreen from './screens/CreateToolScreen';
+import UserToolsScreen from './screens/UserToolsScreen';
 
 const composeEnhancers = compose;
 
@@ -66,6 +68,18 @@ Navigation.registerComponent(
 Navigation.registerComponent(
   'seker.ProfileScreen',
   () => ProfileScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  'seker.CreateToolScreen',
+  () => CreateToolScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  'seker.UserToolsScreen',
+  () => UserToolsScreen,
   store,
   Provider
 )

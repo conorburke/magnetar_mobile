@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Text } from 'react-native';
-import { Card } from 'react-native-elements';
+import { Button, Card } from 'react-native-elements';
 import { connect } from 'react-redux';
 
 class ProfileScreen extends Component {
@@ -33,6 +33,22 @@ class ProfileScreen extends Component {
     }
   }
 
+  openAddToolsScreen() {
+    this.props.navigator.push({
+      screen: 'seker.CreateToolScreen',
+      title: 'Add Tool',
+      backButtonTitle: 'Back to Profile'
+    });
+  }
+
+  openMyToolsScreen() {
+    this.props.navigator.push({
+      screen: 'seker.UserToolsScreen',
+      title: 'My Tools',
+      backButtonTitle: 'Back to Profile'
+    });
+  }
+
   render() {
     console.log('on profile screen');
     return (
@@ -41,6 +57,8 @@ class ProfileScreen extends Component {
         <Text>{this.props.profile.LastName}</Text>
         <Text>{this.props.profile.Email}</Text>
         <Text>{this.props.profile.PhoneNumber}</Text>
+        <Button title='Add Tools' onPress={this.openAddToolsScreen.bind(this)}></Button>
+        <Button title='My Tools' onPress={this.openMyToolsScreen.bind(this)}></Button>
       </Card>
     )
   }
