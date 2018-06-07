@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
+import { ListItem } from 'react-native-elements';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -30,9 +31,14 @@ class Tool extends Component {
         <TouchableOpacity>
           <Text onPress={this.openToolDetail.bind(this)}>{this.props.tool.Title}</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Icon onPress={() => this.handleDelete(this.props.tool.ID)} size={30} name='ios-trash' color='red'/>
-        </TouchableOpacity>
+        {this.props.profile.ID == this.props.tool.ToolOwner ?
+          <TouchableOpacity>
+            <Icon onPress={() => this.handleDelete(this.props.tool.ID)} size={30} name='ios-trash' color='red'/>
+          </TouchableOpacity>
+        : null }
+        }
+
+        
       </View>
       
     )
@@ -43,6 +49,7 @@ const styles = {
   containerStyle: {
     borderBottomWidth: 1,
     padding: 5,
+    margin: 5,
     backgroundColor: '#FFF',
     justifyContent: 'space-between',
     flexDirection: 'row',
@@ -52,4 +59,8 @@ const styles = {
   }
 };
 
-export default connect(null, actions)(Tool);
+function mapStateToProps(state) {
+  return {profile: state.profile}
+}
+
+export default connect(mapStateToProps, actions)(Tool);

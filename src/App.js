@@ -1,3 +1,4 @@
+import { AsyncStorage } from 'react-native';
 import { Navigation } from 'react-native-navigation';
 import { Provider } from 'react-redux';
 import { compose, createStore, applyMiddleware } from 'redux';
@@ -14,6 +15,7 @@ import CreateProfileScreen from './screens/CreateProfileScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import CreateToolScreen from './screens/CreateToolScreen';
 import UserToolsScreen from './screens/UserToolsScreen';
+import startMainTabs from './screens/startMainTabs';
 
 const composeEnhancers = compose;
 
@@ -84,10 +86,18 @@ Navigation.registerComponent(
   Provider
 )
 
-//start navigation in app
-Navigation.startSingleScreenApp({
-  screen: {
-    screen: 'seker.WelcomeScreen',
-    title: 'Seker'
-  }
-});
+AsyncStorage.getItem('auth_token')
+    .then((res) => {
+      if(res) {
+        startMainTabs();
+      } else {
+        //start navigation in app
+        Navigation.startSingleScreenApp({
+          screen: {
+            screen: 'seker.WelcomeScreen',
+            title: 'Seker'
+          }
+        });
+      }
+    });
+

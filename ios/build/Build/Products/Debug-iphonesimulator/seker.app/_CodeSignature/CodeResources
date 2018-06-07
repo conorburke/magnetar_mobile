@@ -6,52 +6,11 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		WTpCqPQSEbnGpvhqK3ebTddaLCg=
-		</data>
-		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
-		<data>
-		ooz0sIAaLKBGoFU5iKq8DR11NmY=
-		</data>
-		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
-		<data>
-		R/knOPjsjrJNiVtUa2S4kYE749M=
-		</data>
-		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
-		<data>
-		qcVgsOCxIzxwcNXLWXgRrNjnuT8=
-		</data>
-		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
-		<data>
-		K7jOt4uC+lqy/StneXlQVk21axY=
-		</data>
-		<key>Frameworks/XCTest.framework/Info.plist</key>
-		<data>
-		CYfyvPIGUR84QvCD7SuNDvG6Bxc=
-		</data>
-		<key>Frameworks/XCTest.framework/XCTest</key>
-		<data>
-		M3EBma1BpAxt7iGIjYcrm9BnNOc=
-		</data>
-		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
-		<data>
-		5EUn1qFgVTwSkfSLCubcLwgrx0c=
-		</data>
-		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TuBj57ZP6zBqcL9HttO2Rucaw9E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/XCTest.framework/version.plist</key>
-		<data>
-		Etc/8BPenX54rv1uBx24u4bnqTg=
+		f5qfHlpzpZ/lNZYrcESA2Ye4SXw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xZOxYfvLnL2t13So2cqwVd7RtJ0=
+		4aLyeLVrbjDeYnFf/QvtBejdo/A=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -61,26 +20,6 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-		<key>PlugIns/sekerTests.xctest.dSYM/Contents/Info.plist</key>
-		<data>
-		hFuHOxRCaD6AeDCEoyM93ExU9P4=
-		</data>
-		<key>PlugIns/sekerTests.xctest.dSYM/Contents/Resources/DWARF/sekerTests</key>
-		<data>
-		GdvKDpCyCv9HcjI3ztVLjdlCmsQ=
-		</data>
-		<key>PlugIns/sekerTests.xctest/Info.plist</key>
-		<data>
-		cvLQFzhuSloORlx5SdjIoB27GBE=
-		</data>
-		<key>PlugIns/sekerTests.xctest/_CodeSignature/CodeResources</key>
-		<data>
-		Wr9V5CIzMExG0TmphSw7JuRnw+0=
-		</data>
-		<key>PlugIns/sekerTests.xctest/sekerTests</key>
-		<data>
-		nRueQ7JPqHOFM5JWPYp9jRv77Jw=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -88,112 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WTpCqPQSEbnGpvhqK3ebTddaLCg=
+			f5qfHlpzpZ/lNZYrcESA2Ye4SXw=
 			</data>
 			<key>hash2</key>
 			<data>
-			9iyCPrKL6JY8eFMKPzrAZItUNy7AQMeGoZPEeZm32Ls=
-			</data>
-		</dict>
-		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ooz0sIAaLKBGoFU5iKq8DR11NmY=
-			</data>
-			<key>hash2</key>
-			<data>
-			QTZkTlnemyTcrFMb3v3GdQcfmpRodaOjtevd5TjxiiY=
-			</data>
-		</dict>
-		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			R/knOPjsjrJNiVtUa2S4kYE749M=
-			</data>
-			<key>hash2</key>
-			<data>
-			wLDjbULmM78l0rN5jh2/yPax234qVZL29OQBQmdYmOU=
-			</data>
-		</dict>
-		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qcVgsOCxIzxwcNXLWXgRrNjnuT8=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZARlo4LD/z4nYhaCEocjb6nPjuZDCrLsQzn0n4GVr3s=
-			</data>
-		</dict>
-		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			K7jOt4uC+lqy/StneXlQVk21axY=
-			</data>
-			<key>hash2</key>
-			<data>
-			VzM0aDQjkmLy+IyPasdn9DeGkOOTuNMbKUMz+3efAaU=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CYfyvPIGUR84QvCD7SuNDvG6Bxc=
-			</data>
-			<key>hash2</key>
-			<data>
-			Xsgm2dBly62EneiB04ryti89smi53XIXAOtYLFyW4ZE=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/XCTest</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			M3EBma1BpAxt7iGIjYcrm9BnNOc=
-			</data>
-			<key>hash2</key>
-			<data>
-			qAlGOWS6ltLA/WrYd4Rz6EHPivttCiNu41NTW7ulBAI=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5EUn1qFgVTwSkfSLCubcLwgrx0c=
-			</data>
-			<key>hash2</key>
-			<data>
-			55ZdMLgNGz7Q67XNAv/M4f4uXy0R2d5+tlHRhlkL8t4=
-			</data>
-		</dict>
-		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TuBj57ZP6zBqcL9HttO2Rucaw9E=
-			</data>
-			<key>hash2</key>
-			<data>
-			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/XCTest.framework/version.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Etc/8BPenX54rv1uBx24u4bnqTg=
-			</data>
-			<key>hash2</key>
-			<data>
-			Jh5i9giCFfo5GhN25CjMKdDJ6Kdlz/p4L95RITR+WeA=
+			QvRXptZfnZ09AInIOwpLu+z1/HnQrBjJq9BeZr/66VM=
 			</data>
 		</dict>
 		<key>Ionicons.ttf</key>
@@ -205,61 +43,6 @@
 			<key>hash2</key>
 			<data>
 			u0dnmwuuuEgbf1HGitM65aUmc2y1CxcXzGD/a2X5CKM=
-			</data>
-		</dict>
-		<key>PlugIns/sekerTests.xctest.dSYM/Contents/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hFuHOxRCaD6AeDCEoyM93ExU9P4=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ba4FRmbTrVY+ZuH+0Qnz9gyzZqYxSnLDMN2ca6Z0Ziw=
-			</data>
-		</dict>
-		<key>PlugIns/sekerTests.xctest.dSYM/Contents/Resources/DWARF/sekerTests</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GdvKDpCyCv9HcjI3ztVLjdlCmsQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			PlLW8g4L8xh626ije74bkuBYZBo2eBCthbm9Ijohoqk=
-			</data>
-		</dict>
-		<key>PlugIns/sekerTests.xctest/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cvLQFzhuSloORlx5SdjIoB27GBE=
-			</data>
-			<key>hash2</key>
-			<data>
-			z4aTlS56Y69vsubnsC/3xX1n1/+t0zkrnmm8JGKj9j8=
-			</data>
-		</dict>
-		<key>PlugIns/sekerTests.xctest/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Wr9V5CIzMExG0TmphSw7JuRnw+0=
-			</data>
-			<key>hash2</key>
-			<data>
-			FW+a17MbHeba4G5B4/4O+kq6bCw8u8crA9Z2ms335fg=
-			</data>
-		</dict>
-		<key>PlugIns/sekerTests.xctest/sekerTests</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nRueQ7JPqHOFM5JWPYp9jRv77Jw=
-			</data>
-			<key>hash2</key>
-			<data>
-			IYDdkyRg82BZzPisLQhfrNd5LNXjElFSGod1pkmXhxw=
 			</data>
 		</dict>
 	</dict>
