@@ -17,7 +17,6 @@ class User extends Component {
       <TouchableOpacity>
         <View style={styles.containerStyle}>
           <Text onPress={this.openUserDetail.bind(this)}>{this.props.user.FirstName}</Text>
-          <Icon size={30} name='ios-trash' color='red' onPress={() => Alert.alert('Delete pushed!')}/>
         </View>
       </TouchableOpacity>
     )
@@ -28,6 +27,7 @@ const styles = {
   containerStyle: {
     borderBottomWidth: 1,
     padding: 5,
+    margin: 5,
     backgroundColor: '#FFF',
     justifyContent: 'space-between',
     flexDirection: 'row',

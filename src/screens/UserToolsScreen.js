@@ -49,7 +49,6 @@ class UserToolsScreen extends Component {
     console.log('user tool screen props', this.props);
     return (
       <View style={styles.container}>
-        <Text>Tools for you!</Text>
         <FlatList
           data={this.props.userTools}
           // data={this.props.tools.length > 0 ? this.props.tools : [{ToolType: 'loading'}]}
@@ -74,9 +73,8 @@ class UserToolsScreen extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 15,
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#C15000',
     alignItems: 'center',
     justifyContent: 'center',
   },

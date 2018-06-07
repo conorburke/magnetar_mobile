@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { Button, FormInput, FormLabel } from 'react-native-elements';
 import { connect } from 'react-redux';
 import axios from 'axios';
@@ -26,7 +26,7 @@ class CreateProfileScreen extends Component {
 
   render() {
     return (
-      <View>
+      <View style={style.container}>
         <View>
           <FormLabel>Enter First Name</FormLabel>
           <FormInput 
@@ -64,5 +64,17 @@ class CreateProfileScreen extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  button: {
+    margin: 5
+  },
+  container: {
+    flex: 1,
+    backgroundColor: '#C15000',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  }
+});
 
 export default connect(null, actions)(CreateProfileScreen);

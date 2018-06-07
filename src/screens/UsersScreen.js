@@ -38,11 +38,9 @@ class UsersScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Users</Text>
         <FlatList
           data={this.props.users}
           renderItem={({item}) => {
-              // console.log('item', item);
               return <User user={item} navigator={this.props.navigator} /> // <TouchableOpacity><Icon size={30} name='ios-trash' color='red'/><View><Text>{item.FirstName}</Text></View></TouchableOpacity>;
             }
           }  
@@ -60,9 +58,8 @@ class UsersScreen extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 15,
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#C15000',
     alignItems: 'center',
     justifyContent: 'center',
   },

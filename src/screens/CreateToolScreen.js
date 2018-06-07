@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { Button, FormInput, FormLabel } from 'react-native-elements';
 import { connect } from 'react-redux';
 import axios from 'axios';
@@ -23,7 +23,7 @@ class CreateToolScreen extends Component {
 
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <View>
           <FormLabel>Enter Tool Name</FormLabel>
           <FormInput 
@@ -57,5 +57,17 @@ class CreateToolScreen extends Component {
 function mapStateToProps(state) {
   return { profile: state.profile  };
 }
+
+const styles = StyleSheet.create({
+  button: {
+    margin: 5
+  },
+  container: {
+    flex: 1,
+    backgroundColor: '#C15000',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+  }
+});
 
 export default connect(mapStateToProps)(CreateToolScreen);

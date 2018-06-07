@@ -3,7 +3,8 @@ import { AsyncStorage, FlatList, StyleSheet, Text, TouchableOpacity, View } from
 import { Button } from 'react-native-elements';
 import { Navigation } from 'react-native-navigation';
 import { connect } from 'react-redux';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { ListItem } from 'react-native-elements';
+// import Icon from 'react-native-vector-icons/Ionicons';
 
 import * as actions from '../actions';
 import Tool from '../components/Tool';
@@ -16,6 +17,10 @@ class ToolsScreen extends Component {
 
   componentDidMount() {
     this.props.fetchTools();
+    AsyncStorage.getItem('profile_id')
+        .then(res => {
+          this.props.fetchProfile(res);
+        })
   }
 
   componentDidUpdate() {
@@ -53,14 +58,10 @@ class ToolsScreen extends Component {
     console.log('tool screen props', this.props);
     return (
       <View style={styles.container}>
-        <Text>Tools for you!</Text>
         <FlatList
           data={this.props.tools}
-          // data={this.props.tools.length > 0 ? this.props.tools : [{ToolType: 'loading'}]}
           renderItem={({item}) => {
-              // console.log('item', item);
               return <Tool tool={item} navigator={this.props.navigator}/>
-              // return <TouchableOpacity><Icon size={30} name='ios-trash' color='red'/><View><Text>{item.ToolType}</Text></View></TouchableOpacity>;
             }
           }  
           keyExtractor={item => {
@@ -78,9 +79,8 @@ class ToolsScreen extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 15,
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#C15000',
     alignItems: 'center',
     justifyContent: 'center',
   },
