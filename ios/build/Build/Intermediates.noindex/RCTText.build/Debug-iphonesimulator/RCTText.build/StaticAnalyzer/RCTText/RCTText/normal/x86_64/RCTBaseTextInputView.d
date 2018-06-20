@@ -29,5 +29,7 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryView.h \
+  /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryViewContent.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/TextInput/RCTTextSelection.h

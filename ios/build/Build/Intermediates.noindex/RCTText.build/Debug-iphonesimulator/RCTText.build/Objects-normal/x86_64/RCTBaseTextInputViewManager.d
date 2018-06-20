@@ -28,8 +28,10 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFont.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView+Layout.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManager.h \
+  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManagerUtils.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManagerObserverCoordinator.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputShadowView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/BaseText/RCTBaseTextShadowView.h \

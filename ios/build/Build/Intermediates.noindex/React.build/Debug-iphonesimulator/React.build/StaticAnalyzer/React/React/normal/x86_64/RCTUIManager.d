@@ -38,6 +38,7 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTRootShadowView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTLayout.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Base/RCTRootViewInternal.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/ScrollView/RCTScrollableProtocol.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTShadowView+Internal.h \

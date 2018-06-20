@@ -29,5 +29,6 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestDelegate.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Image/RCTImageShadowView.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Image/RCTImageView.h

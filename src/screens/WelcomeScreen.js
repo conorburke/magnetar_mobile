@@ -22,7 +22,6 @@ class WelcomeScreen extends Component {
       firebase.initializeApp(config);
     }
     this.props.authUser();
-    console.log('auth state', this.props.auth);
 
     AsyncStorage.getItem('auth_token')
     .then((res) => {

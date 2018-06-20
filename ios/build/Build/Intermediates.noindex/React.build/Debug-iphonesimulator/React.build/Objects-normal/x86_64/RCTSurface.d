@@ -16,10 +16,11 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTShadowView+Layout.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTShadowView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTComponent.h \
-  /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Base/RCTRootView.h \
+  /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTLayout.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Base/RCTRootView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Base/Surface/RCTSurfaceDelegate.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Base/Surface/RCTSurfaceRootShadowView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Base/Surface/RCTSurfaceRootShadowViewDelegate.h \
@@ -37,4 +38,5 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Base/RCTEventDispatcher.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Modules/RCTUIManagerObserverCoordinator.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Modules/RCTUIManagerUtils.h
