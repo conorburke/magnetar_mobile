@@ -26,7 +26,7 @@ class CreateProfileScreen extends Component {
 
   render() {
     return (
-      <View style={style.container}>
+      <View style={styles.container}>
         <View>
           <FormLabel>Enter First Name</FormLabel>
           <FormInput 

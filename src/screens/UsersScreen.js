@@ -59,7 +59,7 @@ class UsersScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#C15000',
+    backgroundColor: '#003B59',
     alignItems: 'center',
     justifyContent: 'center',
   },

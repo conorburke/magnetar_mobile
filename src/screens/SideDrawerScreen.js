@@ -5,10 +5,6 @@ import { Button } from 'react-native-elements';
 import startMainTabs from './startMainTabs';
 
 class SideDrawerScreen extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-
   goToHome() {
     AsyncStorage.getItem('auth_token')
     .then((res) => {

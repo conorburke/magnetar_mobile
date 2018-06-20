@@ -10,6 +10,8 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/Text/RCTTextShadowView.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
+  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
@@ -17,7 +19,6 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
-  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/BaseText/RCTBaseTextShadowView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h

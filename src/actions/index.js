@@ -1,7 +1,7 @@
 import { AsyncStorage } from 'react-native';
 import axios from 'axios';
 
-import { AUTH_USER, CREATE_PROFILE, DELETE_TOOL, FETCH_TOOL, FETCH_TOOLS, FETCH_USER_TOOLS, FETCH_USERS } from './types';
+import { AUTH_USER, CREATE_PROFILE, DELETE_TOOL, FETCH_TOOL, FETCH_TOOLS, FETCH_USER_TOOLS, FETCH_USERS, FILTER_TOOLS } from './types';
 import url from '../utils';
 
 export const authUser = (token) => {
@@ -14,17 +14,17 @@ export const authUser = (token) => {
             .then((res) => {
                 if (res) {
                 dispatch({type: AUTH_USER, payload: res})
-                console.log('dispatched');
-                console.log('dis res', res);
-                console.log('after');
                 } else {
-                    console.log('not logged in');
                 }
             }
             )
         } 
     }
 };
+
+export const filterTools = (text) => {
+    return {type: FILTER_TOOLS, payload: text}
+}
 
 export const deleteTool = (id) => {
     return function(dispatch) {
@@ -37,10 +37,7 @@ export const deleteTool = (id) => {
 
 export const createProfile = (profile) => {
     return function(dispatch) {
-        console.log('create profile action', profile);
-        console.log('profile.id', profile.ID);
         AsyncStorage.setItem('profile_id', profile.ID.toString());
-        console.log('saving profile', profile);
         dispatch({type: CREATE_PROFILE, payload: profile});
     }
 }
@@ -68,8 +65,11 @@ export const fetchTools = () => {
 export const fetchUsers = () => {
     return function(dispatch) {
         axios.get(`${url.api}/users`)
-            .then(res => dispatch({type: FETCH_USERS, payload: res.data}));
-    }
+            .then(res => {
+                window.console.log('lasjflajsfjsaf', res)
+                dispatch({type: FETCH_USERS, payload: res.data})
+            });
+        }
 };
 
 export const fetchTool = (id) => {

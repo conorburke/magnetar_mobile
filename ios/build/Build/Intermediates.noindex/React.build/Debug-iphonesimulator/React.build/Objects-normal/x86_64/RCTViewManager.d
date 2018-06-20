@@ -23,6 +23,7 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/UIView+React.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTComponent.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTLayout.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Base/RCTRootView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Modules/RCTUIManager.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Modules/RCTUIManagerUtils.h \

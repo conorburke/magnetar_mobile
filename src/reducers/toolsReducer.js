@@ -1,13 +1,16 @@
-import { FETCH_TOOLS } from '../actions/types';
+import { FETCH_TOOLS, FILTER_TOOLS } from '../actions/types';
 
-export default function(state = [], action) {
-    // console.log(action);
+const initialState = {
+    toolsList: [],
+    toolsSearch: ''
+}
+
+export default function(state = initialState, action) {
     switch (action.type) {
         case FETCH_TOOLS:
-            // console.log('action.payload', action.payload);
-            // console.log('state', state);
-            return action.payload || state;
-            // return action.payload || false;
+            return {...state, ...{toolsList: action.payload}}//Object.assign(initialState, {}, {toolsList: action.payload});
+        case FILTER_TOOLS:
+            return {...state, ...{toolsSearch: action.payload}};
         default:
             return state
     }

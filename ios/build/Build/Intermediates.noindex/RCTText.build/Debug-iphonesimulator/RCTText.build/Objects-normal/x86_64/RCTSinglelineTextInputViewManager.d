@@ -28,6 +28,7 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputShadowView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/BaseText/RCTBaseTextShadowView.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/Libraries/Text/TextInput/Singleline/RCTSinglelineTextInputView.h \

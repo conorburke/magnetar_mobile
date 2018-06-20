@@ -5,3 +5,4 @@ export const FETCH_TOOL = 'fetch_tool';
 export const FETCH_TOOLS = 'fetch_tools';
 export const FETCH_USER_TOOLS = 'fetch_user_tools';
 export const FETCH_USERS = 'fetch_users';
+export const FILTER_TOOLS = 'filter_tools';

@@ -24,21 +24,32 @@ class Tool extends Component {
   }
 
   render() {
-    console.log('propssss', this.props);
-    console.log('navigator', this.props.navigator);
     return (
-      <View style={styles.containerStyle}>
-        <TouchableOpacity>
-          <Text onPress={this.openToolDetail.bind(this)}>{this.props.tool.Title}</Text>
+      <View style={styles.container}>
+        <TouchableOpacity onPress={this.openToolDetail.bind(this)}>
+          <Text 
+            style={styles.titleFont}
+          >
+            {this.props.tool.Title}
+          </Text>
+          <View style={styles.detailContainer}>
+            <Text style={styles.detailFont}>
+              {this.props.tool.Price}
+            </Text>
+            <Text style={styles.detailFont}>
+              {this.props.tool.ToolType}
+            </Text>
+            <Text style={styles.detailFont}>
+              {this.props.tool.ToolOwner}
+            </Text>
+          </View>
         </TouchableOpacity>
-        {this.props.profile.ID == this.props.tool.ToolOwner ?
+        {/* {this.props.profile.ID == this.props.tool.ToolOwner ?
           <TouchableOpacity>
             <Icon onPress={() => this.handleDelete(this.props.tool.ID)} size={30} name='ios-trash' color='red'/>
           </TouchableOpacity>
         : null }
-        }
-
-        
+        }  */}
       </View>
       
     )
@@ -46,16 +57,30 @@ class Tool extends Component {
 }
 
 const styles = {
-  containerStyle: {
+  container: {
     borderBottomWidth: 1,
     padding: 5,
     margin: 5,
-    backgroundColor: '#FFF',
-    justifyContent: 'space-between',
+    backgroundColor: '#666666',
+    // justifyContent: 'space-between',
     flexDirection: 'row',
     borderColor: '#DDD',
     position: 'relative',
-    width: '75%'
+    // width: '90%',
+    borderRadius: 10
+  },
+  titleFont: {
+    color: '#F5F5F5',
+    fontSize: 25
+  },
+  detailFont: {
+    color: '#F5F5F5',
+    fontSize: 15
+  },
+  detailContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   }
 };
 

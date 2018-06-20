@@ -29,4 +29,5 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTModalManager.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Modules/RCTEventEmitter.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Views/RCTLayout.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Base/RCTRootView.h

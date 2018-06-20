@@ -46,21 +46,16 @@ class UserToolsScreen extends Component {
   }
 
   render() {
-    console.log('user tool screen props', this.props);
     return (
       <View style={styles.container}>
         <FlatList
           data={this.props.userTools}
-          // data={this.props.tools.length > 0 ? this.props.tools : [{ToolType: 'loading'}]}
           renderItem={({item}) => {
-              // console.log('item', item);
               return <Tool tool={item} navigator={this.props.navigator}/>
-              // return <TouchableOpacity><Icon size={30} name='ios-trash' color='red'/><View><Text>{item.ToolType}</Text></View></TouchableOpacity>;
             }
           }  
           keyExtractor={item => {
               let key;
-              // console.log(item);
               item.ID ? key = item.ID.toString() : key = Math.random().toString();
               return key;
             }
@@ -74,7 +69,7 @@ class UserToolsScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#C15000',
+    backgroundColor: '#003B59',
     alignItems: 'center',
     justifyContent: 'center',
   },

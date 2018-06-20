@@ -396,4 +396,6 @@ dependencies: \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/conorburke/workspace/native/seker/node_modules/react-native/React/Profiler/RCTProfile.h \
   /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSBigString.h \
-  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/MessageQueueThread.h
+  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/MessageQueueThread.h \
+  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/RAMBundleRegistry.h \
+  /Users/conorburke/workspace/native/seker/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSModulesUnbundle.h

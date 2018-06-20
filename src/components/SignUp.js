@@ -6,12 +6,6 @@ import axios from 'axios';
 const rootUrl = 'https://us-central1-seker-auth.cloudfunctions.net';
 
 class SignUp extends Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = {phone: ''};
-  // }
-
   state = {phone: ''};
 
   handleSubmit() {
