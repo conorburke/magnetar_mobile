@@ -15,7 +15,10 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "globals": {
+      "window": {}
+    }
   },
   "dependencies": {
     "axios": "^0.18.0",

@@ -25,10 +25,6 @@ class ToolsScreen extends Component {
         })
   }
 
-  componentDidUpdate() {
-    this.props.fetchTools();
-  }
-
   onNavigatorEvent(event) {
     if (event.type === 'NavBarButtonPress') {
       if (event.id === 'SideDrawerScreenToggle') {
@@ -57,7 +53,6 @@ class ToolsScreen extends Component {
   }
 
   render() {
-    console.log('tool screen props', this.props);
     return (
       <View style={styles.container}>
         <View>
@@ -72,7 +67,7 @@ class ToolsScreen extends Component {
           />
         </View>
         <FlatList
-          data={this.props.tools.filter(t => t.Title.toLowerCase().includes(this.props.toolFilter.toLowerCase()))}
+          data={this.props.tools.filter(t => t.Title.toLowerCase().includes(this.props.toolFilter.toLowerCase().trim()) && t.Available === true)}
           renderItem={({item}) => {
               return <Tool tool={item} navigator={this.props.navigator}/>
             }
