@@ -32,6 +32,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - run: echo $(ls)   
       - run: cp config/keys.js src/screens/keys.js    
       # run tests!
       - run: yarn test
