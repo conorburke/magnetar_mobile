@@ -17,8 +17,7 @@ jobs:
     working_directory: ~/seker
 
     steps:
-      - checkout:
-        path: ~/seker
+      - checkout
 
       # Download and cache dependencies
       - restore_cache:
