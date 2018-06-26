@@ -17,7 +17,8 @@ jobs:
     working_directory: ~/seker
 
     steps:
-      - checkout
+      - checkout:
+        path: ~/seker
 
       # Download and cache dependencies
       - restore_cache:
@@ -32,7 +33,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: cp seker/config/keys.js seker/src/screens/keys.js    
+      - run: cp config/keys.js src/screens/keys.js    
       # run tests!
       - run: yarn test
 
