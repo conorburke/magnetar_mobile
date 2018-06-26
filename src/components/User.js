@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Alert, Text, TouchableOpacity, View } from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 class User extends Component {
@@ -14,27 +14,36 @@ class User extends Component {
 
   render() {
     return (
-      <TouchableOpacity>
-        <View style={styles.containerStyle}>
-          <Text onPress={this.openUserDetail.bind(this)}>{this.props.user.FirstName}</Text>
-        </View>
-      </TouchableOpacity>
+      <View style={styles.container}>
+        <TouchableOpacity onPress={this.openUserDetail.bind(this)}>
+          <Text 
+            style={styles.titleFont}
+          >
+            {this.props.user.FirstName + ' ' + this.props.user.LastName}
+          </Text>
+        </TouchableOpacity>
+      </View>
     )
   }  
 }
 
-const styles = {
-  containerStyle: {
+const styles = StyleSheet.create({
+  container: {
     borderBottomWidth: 1,
     padding: 5,
     margin: 5,
-    backgroundColor: '#FFF',
-    justifyContent: 'space-between',
+    backgroundColor: '#666666',
+    // justifyContent: 'space-between',
     flexDirection: 'row',
     borderColor: '#DDD',
     position: 'relative',
-    width: '75%'
+    // width: '90%',
+    borderRadius: 10
+  },
+  titleFont: {
+    color: '#F5F5F5',
+    fontSize: 25
   }
-};
+});
 
 export default User;

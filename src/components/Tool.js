@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -8,14 +8,12 @@ import * as actions from '../actions';
 
 class Tool extends Component {
   openToolDetail() {
-    console.log('tools details props', this.props.tool);
     this.props.navigator.push({
       screen: 'seker.ToolDetailScreen',
       title: 'Tool Detail',
       backButtonTitle: 'Back to Tools',
       passProps: this.props.tool
     });
-    // Alert.alert('Tapped Text!');
   }
 
   handleDelete(id) {
@@ -34,13 +32,13 @@ class Tool extends Component {
           </Text>
           <View style={styles.detailContainer}>
             <Text style={styles.detailFont}>
-              {this.props.tool.Price}
+              {`Cost: $ ${this.props.tool.Price}`}
             </Text>
             <Text style={styles.detailFont}>
-              {this.props.tool.ToolType}
+              {`Type: ${this.props.tool.ToolType}`}
             </Text>
             <Text style={styles.detailFont}>
-              {this.props.tool.ToolOwner}
+              {`Owner: ${this.props.tool.FirstName} ${this.props.tool.LastName}`}
             </Text>
           </View>
         </TouchableOpacity>
@@ -56,7 +54,7 @@ class Tool extends Component {
   }
 }
 
-const styles = {
+const styles = StyleSheet.create({
   container: {
     borderBottomWidth: 1,
     padding: 5,
@@ -82,7 +80,7 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between'
   }
-};
+});
 
 function mapStateToProps(state) {
   return {profile: state.profile}

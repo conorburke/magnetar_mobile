@@ -4,21 +4,29 @@ import { Button, FormInput, FormLabel } from 'react-native-elements';
 import { connect } from 'react-redux';
 import axios from 'axios';
 
+import * as actions from '../actions';
+
 import startMainTabs from '../screens/startMainTabs';
 import url from '../utils';
 
 class CreateToolScreen extends Component {
-
   state = {Title: '', ToolType: '', Price: '', PhoneNumber: ''};
 
   handleSubmit() {
     window.console.log('this.props.profile', this.props.profile);
     axios.post(`${url.api}/tools`, {Title: this.state.Title, ToolType: this.state.ToolType, Price: Number(this.state.Price), ToolOwner: this.props.profile.ID})
-      .then(() => console.log('created tool'))
+      .then(() => {
+        console.log('created tool');
+        this.props.fetchTools();
+      })
       .catch(err => {
         console.log('current state', this.state);
         console.log(err)
       });
+      this.props.navigator.pop({
+        animated: true, 
+        animationType: 'fade'
+      });  
   }
 
   render() {
@@ -70,4 +78,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default connect(mapStateToProps)(CreateToolScreen);
+export default connect(mapStateToProps, actions)(CreateToolScreen);

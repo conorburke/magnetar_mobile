@@ -1,7 +1,16 @@
 import { AsyncStorage } from 'react-native';
 import axios from 'axios';
 
-import { AUTH_USER, CREATE_PROFILE, DELETE_TOOL, FETCH_TOOL, FETCH_TOOLS, FETCH_USER_TOOLS, FETCH_USERS, FILTER_TOOLS } from './types';
+import { 
+    AUTH_USER, 
+    CREATE_PROFILE, 
+    DELETE_TOOL, 
+    FETCH_TOOL, 
+    FETCH_TOOLS, 
+    FETCH_USER_TOOLS, 
+    FETCH_USERS, 
+    FILTER_TOOLS, 
+    FILTER_USERS } from './types';
 import url from '../utils';
 
 export const authUser = (token) => {
@@ -23,7 +32,11 @@ export const authUser = (token) => {
 };
 
 export const filterTools = (text) => {
-    return {type: FILTER_TOOLS, payload: text}
+    return {type: FILTER_TOOLS, payload: text};
+}
+
+export const filterUsers = (text) => {
+    return {type: FILTER_USERS, payload: text};
 }
 
 export const deleteTool = (id) => {
