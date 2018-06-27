@@ -4,11 +4,14 @@
   "private": true,
   "devDependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "jest-react-native": "^18.0.0",
     "prettier": "1.13.6",
     "pretty-quick": "^1.6.0",
+    "react-dom": "^16.4.1",
     "react-test-renderer": "16.3.0-alpha.1"
   },
   "scripts": {
@@ -22,7 +25,8 @@
     "preset": "react-native",
     "globals": {
       "window": {}
-    }
+    },
+    "setupTestFrameworkScriptFile": "./src/setupTests.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
