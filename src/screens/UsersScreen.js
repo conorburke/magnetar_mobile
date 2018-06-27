@@ -13,7 +13,7 @@ class UsersScreen extends Component {
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
   }
 
-  state = {UserName: ''};
+  state = { UserName: '' };
 
   componentDidMount() {
     this.props.fetchUsers();
@@ -24,7 +24,7 @@ class UsersScreen extends Component {
       if (event.id === 'SideDrawerScreenToggle') {
         this.props.navigator.toggleDrawer({
           side: 'left'
-        })
+        });
       }
     }
     if (event.type === 'DeepLink') {
@@ -33,7 +33,7 @@ class UsersScreen extends Component {
         this.props.navigator.resetTo({
           screen: 'seker.WelcomeScreen',
           title: 'Seker'
-        })
+        });
       }
     }
   }
@@ -41,28 +41,36 @@ class UsersScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <View>
+        <View>
           <FormLabel style={styles.font}>Find User</FormLabel>
           <FormInput
             containerStyle={styles.font}
             value={this.state.UserName}
-            onChangeText={(text) => {
-              this.props.filterUsers(text)
+            onChangeText={text => {
+              this.props.filterUsers(text);
             }}
           />
         </View>
         <FlatList
-          data={this.props.users.filter(u => u.FirstName.toLowerCase().includes(this.props.userFilter.toLowerCase().trim()) || u.LastName.toLowerCase().includes(this.props.userFilter.toLowerCase().trim()))}
-          renderItem={({item}) => {
-              return <User user={item} navigator={this.props.navigator} /> 
-            }
-          }  
+          data={this.props.users.filter(
+            u =>
+              u.FirstName.toLowerCase().includes(
+                this.props.userFilter.toLowerCase().trim()
+              ) ||
+              u.LastName.toLowerCase().includes(
+                this.props.userFilter.toLowerCase().trim()
+              )
+          )}
+          renderItem={({ item }) => {
+            return <User user={item} navigator={this.props.navigator} />;
+          }}
           keyExtractor={item => {
-              let key;
-              item.ID ? key = item.ID.toString() : key = Math.random().toString();
-              return key;
-            }
-          }
+            let key;
+            item.ID
+              ? (key = item.ID.toString())
+              : (key = Math.random().toString());
+            return key;
+          }}
         />
       </View>
     );
@@ -74,15 +82,18 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#003B59',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
 });
 
 function mapStateToProps(state) {
-  return { 
+  return {
     userFilter: state.users.usersSearch,
     users: state.users.usersList
   };
 }
 
-export default connect(mapStateToProps, actions)(UsersScreen);
+export default connect(
+  mapStateToProps,
+  actions
+)(UsersScreen);

@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import { AsyncStorage, FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  AsyncStorage,
+  FlatList,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from 'react-native';
 import { Button, FormInput, FormLabel } from 'react-native-elements';
 import { Navigation } from 'react-native-navigation';
 import { connect } from 'react-redux';
@@ -15,14 +22,13 @@ class ToolsScreen extends Component {
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
   }
 
-  state = {ToolName: ''};
+  state = { ToolName: '' };
 
   componentDidMount() {
     this.props.fetchTools();
-    AsyncStorage.getItem('profile_id')
-        .then(res => {
-          this.props.fetchProfile(res);
-        })
+    AsyncStorage.getItem('profile_id').then(res => {
+      this.props.fetchProfile(res);
+    });
   }
 
   onNavigatorEvent(event) {
@@ -30,7 +36,7 @@ class ToolsScreen extends Component {
       if (event.id === 'SideDrawerScreenToggle') {
         this.props.navigator.toggleDrawer({
           side: 'left'
-        })
+        });
       }
     }
     if (event.type === 'DeepLink') {
@@ -39,17 +45,17 @@ class ToolsScreen extends Component {
         this.props.navigator.resetTo({
           screen: 'seker.WelcomeScreen',
           title: 'Seker'
-        })
+        });
       }
     }
   }
 
   handleSubmit() {
-    AsyncStorage.removeItem('auth_token')
-      .then(() =>     
-        this.props.navigator.handleDeepLink({
-          link: 'WelcomeScreen'
-      }));
+    AsyncStorage.removeItem('auth_token').then(() =>
+      this.props.navigator.handleDeepLink({
+        link: 'WelcomeScreen'
+      })
+    );
   }
 
   render() {
@@ -60,25 +66,30 @@ class ToolsScreen extends Component {
           <FormInput
             containerStyle={styles.font}
             value={this.state.ToolName}
-            onChangeText={(text) => {
+            onChangeText={text => {
               window.console.log('text', text);
-              this.props.filterTools(text)
+              this.props.filterTools(text);
             }}
           />
         </View>
         <FlatList
-          data={this.props.tools.filter(t => t.Title.toLowerCase().includes(this.props.toolFilter.toLowerCase().trim()) && t.Available === true)}
-          renderItem={({item}) => {
-              return <Tool tool={item} navigator={this.props.navigator}/>
-            }
-          }  
+          data={this.props.tools.filter(
+            t =>
+              t.Title.toLowerCase().includes(
+                this.props.toolFilter.toLowerCase().trim()
+              ) && t.Available === true
+          )}
+          renderItem={({ item }) => {
+            return <Tool tool={item} navigator={this.props.navigator} />;
+          }}
           keyExtractor={item => {
-              let key;
-              // console.log(item);
-              item.ID ? key = item.ID.toString() : key = Math.random().toString();
-              return key;
-            }
-          }
+            let key;
+            // console.log(item);
+            item.ID
+              ? (key = item.ID.toString())
+              : (key = Math.random().toString());
+            return key;
+          }}
         />
       </View>
     );
@@ -90,18 +101,20 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#003B59',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   }
 });
 
 function mapStateToProps(state) {
-  return { 
+  return {
     toolFilter: state.tools.toolsSearch,
     tools: state.tools.toolsList,
     auth: state.auth,
     profile: state.profile
-  
   };
 }
 
-export default connect(mapStateToProps, actions)(ToolsScreen);
+export default connect(
+  mapStateToProps,
+  actions
+)(ToolsScreen);

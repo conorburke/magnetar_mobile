@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 class User extends Component {
@@ -16,15 +16,13 @@ class User extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity onPress={this.openUserDetail.bind(this)}>
-          <Text 
-            style={styles.titleFont}
-          >
+          <Text style={styles.titleFont}>
             {this.props.user.FirstName + ' ' + this.props.user.LastName}
           </Text>
         </TouchableOpacity>
       </View>
-    )
-  }  
+    );
+  }
 }
 
 const styles = StyleSheet.create({

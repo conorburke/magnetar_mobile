@@ -25,11 +25,7 @@ class Tool extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity onPress={this.openToolDetail.bind(this)}>
-          <Text 
-            style={styles.titleFont}
-          >
-            {this.props.tool.Title}
-          </Text>
+          <Text style={styles.titleFont}>{this.props.tool.Title}</Text>
           <View style={styles.detailContainer}>
             <Text style={styles.detailFont}>
               {`Cost: $ ${this.props.tool.Price}`}
@@ -38,7 +34,9 @@ class Tool extends Component {
               {`Type: ${this.props.tool.ToolType}`}
             </Text>
             <Text style={styles.detailFont}>
-              {`Owner: ${this.props.tool.FirstName} ${this.props.tool.LastName}`}
+              {`Owner: ${this.props.tool.FirstName} ${
+                this.props.tool.LastName
+              }`}
             </Text>
           </View>
         </TouchableOpacity>
@@ -49,8 +47,7 @@ class Tool extends Component {
         : null }
         }  */}
       </View>
-      
-    )
+    );
   }
 }
 
@@ -83,7 +80,10 @@ const styles = StyleSheet.create({
 });
 
 function mapStateToProps(state) {
-  return {profile: state.profile}
+  return { profile: state.profile };
 }
 
-export default connect(mapStateToProps, actions)(Tool);
+export default connect(
+  mapStateToProps,
+  actions
+)(Tool);

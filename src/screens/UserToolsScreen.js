@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  FlatList,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from 'react-native';
 import { Button } from 'react-native-elements';
 import { Navigation } from 'react-native-navigation';
 import { connect } from 'react-redux';
@@ -23,7 +29,7 @@ class UserToolsScreen extends Component {
       if (event.id === 'SideDrawerScreenToggle') {
         this.props.navigator.toggleDrawer({
           side: 'left'
-        })
+        });
       }
     }
     if (event.type === 'DeepLink') {
@@ -32,17 +38,17 @@ class UserToolsScreen extends Component {
         this.props.navigator.resetTo({
           screen: 'seker.WelcomeScreen',
           title: 'Seker'
-        })
+        });
       }
     }
   }
 
   handleSubmit() {
-    AsyncStorage.removeItem('auth_token')
-      .then(() =>     
-        this.props.navigator.handleDeepLink({
-          link: 'WelcomeScreen'
-      }));
+    AsyncStorage.removeItem('auth_token').then(() =>
+      this.props.navigator.handleDeepLink({
+        link: 'WelcomeScreen'
+      })
+    );
   }
 
   render() {
@@ -50,16 +56,16 @@ class UserToolsScreen extends Component {
       <View style={styles.container}>
         <FlatList
           data={this.props.userTools}
-          renderItem={({item}) => {
-              return <Tool tool={item} navigator={this.props.navigator}/>
-            }
-          }  
+          renderItem={({ item }) => {
+            return <Tool tool={item} navigator={this.props.navigator} />;
+          }}
           keyExtractor={item => {
-              let key;
-              item.ID ? key = item.ID.toString() : key = Math.random().toString();
-              return key;
-            }
-          }
+            let key;
+            item.ID
+              ? (key = item.ID.toString())
+              : (key = Math.random().toString());
+            return key;
+          }}
         />
       </View>
     );
@@ -71,15 +77,18 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#003B59',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
 });
 
 function mapStateToProps(state) {
-  return { 
+  return {
     profile: state.profile,
     userTools: state.userTools
   };
 }
 
-export default connect(mapStateToProps, actions)(UserToolsScreen);
+export default connect(
+  mapStateToProps,
+  actions
+)(UserToolsScreen);

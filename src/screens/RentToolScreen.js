@@ -8,17 +8,21 @@ import * as actions from '../actions';
 import url from '../utils';
 
 class RentToolScreen extends Component {
-
-  state = {StartDate: '', EndDate: ''};
+  state = { StartDate: '', EndDate: '' };
 
   handleSubmit() {
-    axios.post(`${url.api}/rent/${this.props.ID}`, {ID: this.props.ID, StartDate: Date.parse(this.state.StartDate), EndDate: Date.parse(this.state.EndDate)})
-      .then(({data}) => {
+    axios
+      .post(`${url.api}/rent/${this.props.ID}`, {
+        ID: this.props.ID,
+        StartDate: Date.parse(this.state.StartDate),
+        EndDate: Date.parse(this.state.EndDate)
+      })
+      .then(({ data }) => {
         console.log('data from rented tool', data);
       })
       .catch(err => {
         console.log('current state', this.state);
-        console.log(err)
+        console.log(err);
       });
   }
 
@@ -30,22 +34,19 @@ class RentToolScreen extends Component {
         </View>
         <View>
           <FormLabel>Enter Start Date</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.StartDate}
-            onChangeText={StartDate => this.setState({StartDate})}
+            onChangeText={StartDate => this.setState({ StartDate })}
           />
         </View>
         <View>
           <FormLabel>Enter End Date</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.EndDate}
-            onChangeText={EndDate => this.setState({EndDate})}
+            onChangeText={EndDate => this.setState({ EndDate })}
           />
-        </View>     
-        <Button 
-            title='Rent!'
-            onPress={this.handleSubmit.bind(this)}
-          />
+        </View>
+        <Button title="Rent!" onPress={this.handleSubmit.bind(this)} />
       </View>
     );
   }
@@ -59,7 +60,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#003B59',
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: 'flex-start'
   },
   header: {
     color: 'silver',
@@ -67,4 +68,7 @@ const styles = StyleSheet.create({
   }
 });
 
-export default connect(null, actions)(RentToolScreen);
+export default connect(
+  null,
+  actions
+)(RentToolScreen);

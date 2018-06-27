@@ -10,23 +10,29 @@ import startMainTabs from '../screens/startMainTabs';
 import url from '../utils';
 
 class CreateToolScreen extends Component {
-  state = {Title: '', ToolType: '', Price: '', PhoneNumber: ''};
+  state = { Title: '', ToolType: '', Price: '', PhoneNumber: '' };
 
   handleSubmit() {
     window.console.log('this.props.profile', this.props.profile);
-    axios.post(`${url.api}/tools`, {Title: this.state.Title, ToolType: this.state.ToolType, Price: Number(this.state.Price), ToolOwner: this.props.profile.ID})
+    axios
+      .post(`${url.api}/tools`, {
+        Title: this.state.Title,
+        ToolType: this.state.ToolType,
+        Price: Number(this.state.Price),
+        ToolOwner: this.props.profile.ID
+      })
       .then(() => {
         console.log('created tool');
         this.props.fetchTools();
       })
       .catch(err => {
         console.log('current state', this.state);
-        console.log(err)
+        console.log(err);
       });
-      this.props.navigator.pop({
-        animated: true, 
-        animationType: 'fade'
-      });  
+    this.props.navigator.pop({
+      animated: true,
+      animationType: 'fade'
+    });
   }
 
   render() {
@@ -34,36 +40,33 @@ class CreateToolScreen extends Component {
       <View style={styles.container}>
         <View>
           <FormLabel>Enter Tool Name</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.Title}
-            onChangeText={Title => this.setState({Title})}
+            onChangeText={Title => this.setState({ Title })}
           />
         </View>
         <View>
           <FormLabel>Enter Tool Type</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.ToolType}
-            onChangeText={ToolType => this.setState({ToolType})}
+            onChangeText={ToolType => this.setState({ ToolType })}
           />
         </View>
         <View>
           <FormLabel>Enter Price</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.Price}
-            onChangeText={Price => this.setState({Price})}
+            onChangeText={Price => this.setState({ Price })}
           />
         </View>
-        <Button 
-            title='Submit'
-            onPress={this.handleSubmit.bind(this)}
-          />
+        <Button title="Submit" onPress={this.handleSubmit.bind(this)} />
       </View>
     );
   }
 }
 
 function mapStateToProps(state) {
-  return { profile: state.profile  };
+  return { profile: state.profile };
 }
 
 const styles = StyleSheet.create({
@@ -74,8 +77,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#003B59',
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: 'flex-start'
   }
 });
 
-export default connect(mapStateToProps, actions)(CreateToolScreen);
+export default connect(
+  mapStateToProps,
+  actions
+)(CreateToolScreen);

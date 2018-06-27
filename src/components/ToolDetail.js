@@ -10,12 +10,18 @@ class ToolDetail extends Component {
         </View>
         <View>
           <Text style={styles.detailFont}>{this.props.toolDetails.Title}</Text>
-          <Text style={styles.detailFont}>{this.props.toolDetails.ToolType}</Text>
-          <Text style={styles.detailFont}>{'$' + this.props.toolDetails.Price}</Text>
-          <Text style={styles.detailFont}>{this.props.toolDetails.FirstName}</Text>
-        </View>     
+          <Text style={styles.detailFont}>
+            {this.props.toolDetails.ToolType}
+          </Text>
+          <Text style={styles.detailFont}>
+            {'$' + this.props.toolDetails.Price}
+          </Text>
+          <Text style={styles.detailFont}>
+            {this.props.toolDetails.FirstName}
+          </Text>
+        </View>
       </View>
-    )
+    );
   }
 }
 

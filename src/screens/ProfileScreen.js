@@ -14,7 +14,7 @@ class ProfileScreen extends Component {
       if (event.id === 'SideDrawerScreenToggle') {
         this.props.navigator.toggleDrawer({
           side: 'left'
-        })
+        });
       }
     }
     if (event.type === 'DeepLink') {
@@ -23,12 +23,12 @@ class ProfileScreen extends Component {
         this.props.navigator.resetTo({
           screen: 'seker.WelcomeScreen',
           title: 'Seker'
-        })
+        });
       } else if (parts === 'ProfileScreen') {
         this.props.navigator.resetTo({
           screen: 'seker.ProfileScreen',
           title: 'Profile'
-        })
+        });
       }
     }
   }
@@ -59,22 +59,22 @@ class ProfileScreen extends Component {
           <Text>{this.props.profile.Email}</Text>
           <Text>{this.props.profile.PhoneNumber}</Text>
           <View style={styles.button}>
-            <Button 
-              title='Add Tools' 
-              backgroundColor='#3F3F3F' 
-              onPress={this.openAddToolsScreen.bind(this)}>
-            </Button>
+            <Button
+              title="Add Tools"
+              backgroundColor="#3F3F3F"
+              onPress={this.openAddToolsScreen.bind(this)}
+            />
           </View>
           <View style={styles.button}>
-            <Button 
-              title='My Tools'
-              backgroundColor='#3F3F3F' 
-              onPress={this.openMyToolsScreen.bind(this)}>
-            </Button>
+            <Button
+              title="My Tools"
+              backgroundColor="#3F3F3F"
+              onPress={this.openMyToolsScreen.bind(this)}
+            />
           </View>
         </Card>
       </View>
-    )
+    );
   }
 }
 
@@ -86,12 +86,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#003B59',
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: 'flex-start'
   }
 });
 
 function mapStateToProps(state) {
-  return {profile: state.profile}
+  return { profile: state.profile };
 }
 
 export default connect(mapStateToProps)(ProfileScreen);

@@ -8,10 +8,10 @@ import userToolsReducer from './userToolsReducer';
 import usersReducer from './usersReducer';
 
 export default combineReducers({
-    auth: authReducer,
-    profile: profileReducer,
-    tool: toolReducer,
-    tools: toolsReducer,
-    userTools: userToolsReducer,
-    users: usersReducer
+  auth: authReducer,
+  profile: profileReducer,
+  tool: toolReducer,
+  tools: toolsReducer,
+  userTools: userToolsReducer,
+  users: usersReducer
 });
