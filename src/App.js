@@ -24,24 +24,27 @@ if (__DEV__) {
   composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 }
 
-const store = createStore(reducers, composeEnhancers(), applyMiddleware(reduxThunk));
-
+const store = createStore(
+  reducers,
+  composeEnhancers(),
+  applyMiddleware(reduxThunk)
+);
 
 //register screens
 Navigation.registerComponent(
-  'seker.WelcomeScreen', 
+  'seker.WelcomeScreen',
   () => WelcomeScreen,
   store,
   Provider
 );
 Navigation.registerComponent(
-  'seker.ToolsScreen', 
+  'seker.ToolsScreen',
   () => ToolsScreen,
   store,
   Provider
 );
 Navigation.registerComponent(
-  'seker.UsersScreen', 
+  'seker.UsersScreen',
   () => UsersScreen,
   store,
   Provider
@@ -58,10 +61,7 @@ Navigation.registerComponent(
   store,
   Provider
 );
-Navigation.registerComponent(
-  'seker.SideDrawerScreen',
-  () => SideDrawerScreen
-);
+Navigation.registerComponent('seker.SideDrawerScreen', () => SideDrawerScreen);
 Navigation.registerComponent(
   'seker.CreateProfileScreen',
   () => CreateProfileScreen,
@@ -91,20 +91,18 @@ Navigation.registerComponent(
   () => RentToolScreen,
   store,
   Provider
-)
+);
 
-AsyncStorage.getItem('auth_token')
-    .then((res) => {
-      if(res) {
-        startMainTabs();
-      } else {
-        //start navigation in app
-        Navigation.startSingleScreenApp({
-          screen: {
-            screen: 'seker.WelcomeScreen',
-            title: 'Seker'
-          }
-        });
+AsyncStorage.getItem('auth_token').then(res => {
+  if (res) {
+    startMainTabs();
+  } else {
+    //start navigation in app
+    Navigation.startSingleScreenApp({
+      screen: {
+        screen: 'seker.WelcomeScreen',
+        title: 'Seker'
       }
     });
-
+  }
+});

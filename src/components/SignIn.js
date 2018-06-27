@@ -17,17 +17,26 @@ class SignIn extends Component {
   //   this.state = {phone: ''};
   // }
 
-  state = {phone: '', code: ''};
+  state = { phone: '', code: '' };
 
   handleRequestPIN() {
-    axios.post(`${rootUrl}/createUser`, {phone: this.state.phone})
-      .then(() => {axios.post(`${rootUrl}/requestOneTimePassword`, {phone: this.state.phone})})
+    axios
+      .post(`${rootUrl}/createUser`, { phone: this.state.phone })
+      .then(() => {
+        axios.post(`${rootUrl}/requestOneTimePassword`, {
+          phone: this.state.phone
+        });
+      })
       .catch(err => console.log(err));
   }
 
   handleSubmit() {
-    axios.post(`${rootUrl}/verifyOneTimePassword`, {phone: this.state.phone, code: this.state.code})
-      .then(({data}) => {
+    axios
+      .post(`${rootUrl}/verifyOneTimePassword`, {
+        phone: this.state.phone,
+        code: this.state.code
+      })
+      .then(({ data }) => {
         console.log(data);
         firebase.auth().signInWithCustomToken(data.token);
         this.props.authUser(data.token);
@@ -46,29 +55,29 @@ class SignIn extends Component {
       <View>
         <View>
           <FormLabel>Enter Phone Number</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.phone}
-            onChangeText={phone => this.setState({phone})}
+            onChangeText={phone => this.setState({ phone })}
           />
         </View>
-        <Button 
-            title='Request PIN'
-            onPress={this.handleRequestPIN.bind(this)}
-          />
+        <Button
+          title="Request PIN"
+          onPress={this.handleRequestPIN.bind(this)}
+        />
         <View>
           <FormLabel>Enter Code</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.code}
-            onChangeText={code => this.setState({code})}
+            onChangeText={code => this.setState({ code })}
           />
         </View>
-        <Button 
-            title='Submit'
-            onPress={this.handleSubmit.bind(this)}
-          />
+        <Button title="Submit" onPress={this.handleSubmit.bind(this)} />
       </View>
     );
   }
 }
 
-export default connect(null, actions)(SignIn);
+export default connect(
+  null,
+  actions
+)(SignIn);

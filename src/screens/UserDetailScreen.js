@@ -10,10 +10,10 @@ class UserDetailScreen extends Component {
           <Text>{this.props.FirstName + ' ' + this.props.LastName}</Text>
           <Text>{this.props.Email}</Text>
           <Text>{this.props.PhoneNumber}</Text>
-          <Icon size={30} name='ios-trash' color='red'/>
+          <Icon size={30} name="ios-trash" color="red" />
         </View>
       </TouchableOpacity>
-    )
+    );
   }
 }
 

@@ -9,18 +9,23 @@ import startMainTabs from '../screens/startMainTabs';
 import url from '../utils';
 
 class CreateProfileScreen extends Component {
-
-  state = {FirstName: '', LastName: '', Email: '', PhoneNumber: ''};
+  state = { FirstName: '', LastName: '', Email: '', PhoneNumber: '' };
 
   handleSubmit() {
-    axios.post(`${url.api}/users`, {FirstName: this.state.FirstName, LastName: this.state.LastName, Email: this.state.Email,  PhoneNumber: this.state.PhoneNumber})
-      .then(({data}) => {
+    axios
+      .post(`${url.api}/users`, {
+        FirstName: this.state.FirstName,
+        LastName: this.state.LastName,
+        Email: this.state.Email,
+        PhoneNumber: this.state.PhoneNumber
+      })
+      .then(({ data }) => {
         this.props.createProfile(data);
         startMainTabs();
       })
       .catch(err => {
         console.log('current state', this.state);
-        console.log(err)
+        console.log(err);
       });
   }
 
@@ -29,37 +34,34 @@ class CreateProfileScreen extends Component {
       <View style={styles.container}>
         <View>
           <FormLabel>Enter First Name</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.FirstName}
-            onChangeText={FirstName => this.setState({FirstName})}
+            onChangeText={FirstName => this.setState({ FirstName })}
           />
         </View>
         <View>
           <FormLabel>Enter Last Name</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.LastName}
-            onChangeText={LastName => this.setState({LastName})}
+            onChangeText={LastName => this.setState({ LastName })}
           />
         </View>
         <View>
           <FormLabel>Enter Email</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.Email}
-            onChangeText={Email => this.setState({Email})}
+            onChangeText={Email => this.setState({ Email })}
           />
         </View>
         <View>
           <FormLabel>Enter Phone Number</FormLabel>
-          <FormInput 
+          <FormInput
             value={this.state.PhoneNumber}
-            onChangeText={PhoneNumber => this.setState({PhoneNumber})}
+            onChangeText={PhoneNumber => this.setState({ PhoneNumber })}
           />
         </View>
-      
-        <Button 
-            title='Submit'
-            onPress={this.handleSubmit.bind(this)}
-          />
+
+        <Button title="Submit" onPress={this.handleSubmit.bind(this)} />
       </View>
     );
   }
@@ -73,8 +75,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#003B59',
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: 'flex-start'
   }
 });
 
-export default connect(null, actions)(CreateProfileScreen);
+export default connect(
+  null,
+  actions
+)(CreateProfileScreen);

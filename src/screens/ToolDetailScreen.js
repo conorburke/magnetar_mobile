@@ -26,14 +26,14 @@ class ToolDetailScreen extends Component {
       <View style={styles.container}>
         <ToolDetail toolDetails={this.props} />
         <View style={styles.button}>
-            <Button 
-              title='Rent Tool'
-              backgroundColor='#3F3F3F' 
-              onPress={this.openRentToolScreen.bind(this)}>
-            </Button>
+          <Button
+            title="Rent Tool"
+            backgroundColor="#3F3F3F"
+            onPress={this.openRentToolScreen.bind(this)}
+          />
         </View>
       </View>
-    )
+    );
   }
 }
 
@@ -51,4 +51,7 @@ function mapStateToProps(state) {
   return { tool: state.tool };
 }
 
-export default connect(mapStateToProps, actions)(ToolDetailScreen);
+export default connect(
+  mapStateToProps,
+  actions
+)(ToolDetailScreen);
