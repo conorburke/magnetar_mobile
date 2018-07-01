@@ -16,6 +16,7 @@ ShallowWrapper {
     filterTools={[Function]}
     filterUsers={[Function]}
     profile={Object {}}
+    setPhoneNumber={[Function]}
     store={
       Object {
         "@@observable": [Function],
