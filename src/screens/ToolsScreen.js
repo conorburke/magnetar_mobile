@@ -67,9 +67,13 @@ class ToolsScreen extends Component {
         <FlatList
           data={this.props.tools.filter(
             t =>
-              t.Title.toLowerCase().includes(
+              (t.Title.toLowerCase().includes(
                 this.props.toolFilter.toLowerCase().trim()
-              ) && t.Available === true
+              ) ||
+                t.ToolType.toLowerCase().includes(
+                  this.props.toolFilter.toLowerCase().trim()
+                )) &&
+              t.Available === true
           )}
           renderItem={({ item }) => {
             return <Tool tool={item} navigator={this.props.navigator} />;
