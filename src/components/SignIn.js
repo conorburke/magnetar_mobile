@@ -11,12 +11,6 @@ import startMainTabs from '../screens/startMainTabs';
 const rootUrl = 'https://us-central1-seker-auth.cloudfunctions.net';
 
 class SignIn extends Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = {phone: ''};
-  // }
-
   state = { phone: '', code: '' };
 
   handleRequestPIN() {
@@ -31,6 +25,7 @@ class SignIn extends Component {
   }
 
   handleSubmit() {
+    this.props.setPhoneNumber(this.state.phone);
     axios
       .post(`${rootUrl}/verifyOneTimePassword`, {
         phone: this.state.phone,

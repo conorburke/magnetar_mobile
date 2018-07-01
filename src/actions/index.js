@@ -10,9 +10,14 @@ import {
   FETCH_USER_TOOLS,
   FETCH_USERS,
   FILTER_TOOLS,
-  FILTER_USERS
+  FILTER_USERS,
+  SET_PHONE_NUMBER
 } from './types';
 import url from '../utils';
+
+export const setPhoneNumber = phone => {
+  return { type: SET_PHONE_NUMBER, payload: phone };
+};
 
 export const authUser = token => {
   return function(dispatch) {
