@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/conorburke/seker_mobile.svg?style=svg)](https://circleci.com/gh/conorburke/seker_mobile)
 
-#Seker
+# Seker
 
 Named after the Eqyptian god of craftsmen, Seker is a mobile app that enables users to easily find, rent, or loan tools in their area.
 
@@ -25,15 +25,13 @@ Seker employs or communitcates with the following technologies:
 
 1.  React-Native
 
-- React-Native-Navigation
-- React-Native-Vector-Icons
-- React-Native-Elements
--
+    - React-Native-Navigation
+    - React-Native-Vector-Icons
+    - React-Native-Elements
 
 2.  Redux
 
-- Redux-Thunk
--
+    - Redux-Thunk
 
 3.  Twilio (Text Notifications)
 4.  Firebase (Account Creation)
