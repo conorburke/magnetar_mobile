@@ -51,10 +51,11 @@ class ToolsScreen extends Component {
   }
 
   render() {
+    console.log('tools', this.state.tools);
     return (
       <View style={styles.container}>
         <View>
-          <FormLabel style={styles.font}>Find Tool</FormLabel>
+          <FormLabel>Find Tool</FormLabel>
           <FormInput
             containerStyle={styles.font}
             value={this.state.ToolName}
@@ -67,12 +68,12 @@ class ToolsScreen extends Component {
         <FlatList
           data={this.props.tools.filter(
             t =>
-              t.Title.toLowerCase().includes(
-                this.props.toolFilter.toLowerCase().trim()
-              ) ||
-              t.ToolType.toLowerCase().includes(
-                this.props.toolFilter.toLowerCase().trim()
-              )
+              t.title
+                .toLowerCase()
+                .includes(this.props.toolFilter.toLowerCase().trim()) ||
+              t.category
+                .toLowerCase()
+                .includes(this.props.toolFilter.toLowerCase().trim())
           )}
           renderItem={({ item }) => {
             return <Tool tool={item} navigator={this.props.navigator} />;
@@ -81,7 +82,7 @@ class ToolsScreen extends Component {
             let key;
             // console.log(item);
             item.ID
-              ? (key = item.ID.toString())
+              ? (key = item.id.toString())
               : (key = Math.random().toString());
             return key;
           }}
@@ -94,9 +95,13 @@ class ToolsScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#003B59',
+    backgroundColor: '#f5f5f5',
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  fontType: {
+    fontFamily: 'Futura-Medium',
+    fontSize: 22
   }
 });
 

@@ -1,9 +1,9 @@
-import { FETCH_USERS, FILTER_USERS, SET_PHONE_NUMBER } from '../actions/types';
+import { FETCH_USERS, FILTER_USERS, SET_EMAIL } from '../actions/types';
 
 const initialState = {
   usersList: [],
   usersSearch: '',
-  phoneNumber: ''
+  email: ''
 };
 
 export default function(state = initialState, action) {
@@ -12,8 +12,8 @@ export default function(state = initialState, action) {
       return { ...state, ...{ usersList: action.payload } };
     case FILTER_USERS:
       return { ...state, ...{ usersSearch: action.payload } };
-    case SET_PHONE_NUMBER:
-      return { ...state, ...{ phoneNumber: action.payload } };
+    case SET_EMAIL:
+      return { ...state, ...{ email: action.payload } };
     default:
       return state;
   }

@@ -101,7 +101,7 @@ AsyncStorage.getItem('auth_token').then(res => {
     Navigation.startSingleScreenApp({
       screen: {
         screen: 'seker.WelcomeScreen',
-        title: 'Seker'
+        title: 'Magnetar'
       }
     });
   }

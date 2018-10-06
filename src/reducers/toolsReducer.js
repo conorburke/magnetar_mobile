@@ -8,7 +8,8 @@ const initialState = {
 export default function(state = initialState, action) {
   switch (action.type) {
     case FETCH_TOOLS:
-      return { ...state, ...{ toolsList: action.payload } }; //Object.assign(initialState, {}, {toolsList: action.payload});
+      console.log('fetch tools', action.payload.data.tools);
+      return { ...state, ...{ toolsList: action.payload.data.tools } }; //Object.assign(initialState, {}, {toolsList: action.payload});
     case FILTER_TOOLS:
       return { ...state, ...{ toolsSearch: action.payload } };
     default:

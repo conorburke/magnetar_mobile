@@ -1,40 +1,38 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 import { Button, FormInput, FormLabel } from 'react-native-elements';
 import { connect } from 'react-redux';
 import axios from 'axios';
 import firebase from 'firebase';
+import querystring from 'querystring';
 
 import * as actions from '../actions';
 import startMainTabs from '../screens/startMainTabs';
 
-const rootUrl = 'https://us-central1-seker-auth.cloudfunctions.net';
+const rootUrl = 'http://localhost:7777';
 
 class SignIn extends Component {
-  state = { phone: '', code: '' };
+  state = { email: '', password: '' };
 
-  handleRequestPIN() {
+  handleRegister() {
+    this.props.setEmail(this.state.email);
     axios
-      .post(`${rootUrl}/createUser`, { phone: this.state.phone })
-      .then(() => {
-        axios.post(`${rootUrl}/requestOneTimePassword`, {
-          phone: this.state.phone
-        });
-      })
-      .catch(err => console.log(err));
-  }
-
-  handleSubmit() {
-    this.props.setPhoneNumber(this.state.phone);
-    axios
-      .post(`${rootUrl}/verifyOneTimePassword`, {
-        phone: this.state.phone,
-        code: this.state.code
-      })
+      .post(
+        `${rootUrl}/register`,
+        querystring.stringify({
+          email: this.state.email,
+          password: this.state.password
+        }),
+        {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        }
+      )
       .then(({ data }) => {
         console.log(data);
-        firebase.auth().signInWithCustomToken(data.token);
-        this.props.authUser(data.token);
+        // firebase.auth().signInWithCustomToken(data.token);
+        this.props.authUser(data.email);
         // startMainTabs();
         this.props.navigator.push({
           screen: 'seker.CreateProfileScreen',
@@ -45,32 +43,93 @@ class SignIn extends Component {
       .catch(err => console.log(err));
   }
 
+  handleLogin() {
+    this.props.setEmail(this.state.email);
+    axios
+      .post(
+        `${rootUrl}/signin`,
+        querystring.stringify({
+          email: this.state.email,
+          password: this.state.password
+        }),
+        {
+          header: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        }
+      )
+      .then(({ data }) => {
+        console.log(data);
+        // firebase.auth().signInWithCustomToken(data.token);
+        this.props.authUser(data.email);
+        // startMainTabs();
+        this.props.navigator.push({
+          screen: 'seker.ToolsScreen',
+          title: 'Tools',
+          backButtonTitle: 'Back to Home'
+        });
+      })
+      .catch(err => console.log(err));
+  }
+
   render() {
     return (
       <View>
-        <View>
-          <FormLabel>Enter Phone Number</FormLabel>
+        <View style={styles.container}>
+          <FormLabel>Enter Email</FormLabel>
           <FormInput
-            value={this.state.phone}
-            onChangeText={phone => this.setState({ phone })}
+            autoCapitalize="none"
+            value={this.state.email}
+            onChangeText={email => this.setState({ email })}
+          />
+        </View>
+        <View style={styles.container}>
+          <FormLabel>Enter Password</FormLabel>
+          <FormInput
+            secureTextEntry={true}
+            value={this.state.password}
+            onChangeText={password => this.setState({ password })}
           />
         </View>
         <Button
-          title="Request PIN"
-          onPress={this.handleRequestPIN.bind(this)}
+          style={styles.container}
+          title="Register"
+          backgroundColor="#e4000f"
+          rounded={true}
+          raised={true}
+          fontSize={22}
+          onPress={this.handleRegister.bind(this)}
         />
-        <View>
-          <FormLabel>Enter Code</FormLabel>
-          <FormInput
-            value={this.state.code}
-            onChangeText={code => this.setState({ code })}
-          />
-        </View>
-        <Button title="Submit" onPress={this.handleSubmit.bind(this)} />
+        <Button
+          title="Login"
+          backgroundColor="#e4000f"
+          rounded={true}
+          raised={true}
+          fontSize={22}
+          onPress={this.handleLogin.bind(this)}
+        />
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  baseText: {
+    fontFamily: 'Futura-Medium',
+    textAlign: 'center',
+    fontSize: 22
+  },
+  titleText: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#e4000f',
+    fontFamily: 'Futura'
+  },
+  container: {
+    marginBottom: 20
+  }
+});
 
 export default connect(
   null,

@@ -11,21 +11,29 @@ import {
   FETCH_USERS,
   FILTER_TOOLS,
   FILTER_USERS,
-  SET_PHONE_NUMBER
+  SET_PHONE_NUMBER,
+  SET_EMAIL
 } from './types';
 import url from '../utils';
+import { toolsQuery } from './queries';
 
-export const setPhoneNumber = phone => {
-  return { type: SET_PHONE_NUMBER, payload: phone };
+// export const setPhoneNumber = phone => {
+//   return { type: SET_PHONE_NUMBER, payload: phone };
+// };
+
+export const setEmail = email => {
+  return { type: SET_EMAIL, payload: email };
 };
 
 export const authUser = token => {
   return function(dispatch) {
     if (token) {
+      console.log('token', token);
       AsyncStorage.setItem('auth_token', token);
       dispatch({ type: AUTH_USER, payload: token });
     } else {
       AsyncStorage.getItem('auth_token').then(res => {
+        console.log('token get', res);
         if (res) {
           dispatch({ type: AUTH_USER, payload: res });
         } else {
@@ -57,8 +65,9 @@ export const deleteTool = id => {
 };
 
 export const createProfile = profile => {
+  console.log('token 3', profile);
   return function(dispatch) {
-    AsyncStorage.setItem('profile_id', profile.ID.toString());
+    AsyncStorage.setItem('profile_id', profile.email.toString());
     dispatch({ type: CREATE_PROFILE, payload: profile });
   };
 };
@@ -78,7 +87,7 @@ export const fetchTools = () => {
   //and apply middleware
   return function(dispatch) {
     axios
-      .get(`${url.api}/tools`)
+      .post(`${url.api}/oracle`, { query: toolsQuery })
       .then(res => dispatch({ type: FETCH_TOOLS, payload: res.data }));
   };
 };

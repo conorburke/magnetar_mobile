@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		f5qfHlpzpZ/lNZYrcESA2Ye4SXw=
+		mt9BRE/mK1yCce5+2K2rE/ifO4A=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
@@ -51,7 +51,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4aLyeLVrbjDeYnFf/QvtBejdo/A=
+		x7JBr/bKnS1xKkbrwP/hSJ8H/6Y=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -67,19 +67,19 @@
 		</data>
 		<key>PlugIns/sekerTests.xctest.dSYM/Contents/Resources/DWARF/sekerTests</key>
 		<data>
-		djYXtebpt9OTy/1AqE1Xa4GvQJ8=
+		65hRYgKY+XPYdXf/6NsNK7KAHXw=
 		</data>
 		<key>PlugIns/sekerTests.xctest/Info.plist</key>
 		<data>
-		jTAKEWnsTddCNIbJHLnoD8WBZCc=
+		laPnZGQCpnzATjeLpQ86+X4tZdE=
 		</data>
 		<key>PlugIns/sekerTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		pZnJ7SOVm+vqPK5LgYzW9nkFaS0=
+		qPs0n/LeH4EU1LMR2nXFOLikkPU=
 		</data>
 		<key>PlugIns/sekerTests.xctest/sekerTests</key>
 		<data>
-		CO9TSLgPmlX9kR0iU3MAMt8x53Y=
+		C8vf8owHkOavJt9/Y7FzEpBCwDA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -88,11 +88,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f5qfHlpzpZ/lNZYrcESA2Ye4SXw=
+			mt9BRE/mK1yCce5+2K2rE/ifO4A=
 			</data>
 			<key>hash2</key>
 			<data>
-			QvRXptZfnZ09AInIOwpLu+z1/HnQrBjJq9BeZr/66VM=
+			dlC0tE20JZQ5AaZWYJHqE0H+lkyXzXidpGvLZ/syYds=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
@@ -222,44 +222,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			djYXtebpt9OTy/1AqE1Xa4GvQJ8=
+			65hRYgKY+XPYdXf/6NsNK7KAHXw=
 			</data>
 			<key>hash2</key>
 			<data>
-			BHgr3oSJRHqy2Ce/DpgSVjHu5gO7xk0lFxbO/T+eJkY=
+			uGOVat8cmK45WDaLfr2iMQfBf6mgf5Fg/VuL3O6sK8U=
 			</data>
 		</dict>
 		<key>PlugIns/sekerTests.xctest/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jTAKEWnsTddCNIbJHLnoD8WBZCc=
+			laPnZGQCpnzATjeLpQ86+X4tZdE=
 			</data>
 			<key>hash2</key>
 			<data>
-			LPeIMeWpcPMPKnTM9CWoB/jbbgeQZnlw6iRkL2O2ns4=
+			3Svg2oLxzGSy4lmBYHHo+7JyF5XUjpV/Y2u68vQE0Fs=
 			</data>
 		</dict>
 		<key>PlugIns/sekerTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pZnJ7SOVm+vqPK5LgYzW9nkFaS0=
+			qPs0n/LeH4EU1LMR2nXFOLikkPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			sh/KqA6lnohLUCD+B5fguQbcnwM1ixdiaKvJtY7csyo=
+			hDBsA7x85PENlJ/zMs1KE5UIaqEtMG5M8wOJ7xNfNeg=
 			</data>
 		</dict>
 		<key>PlugIns/sekerTests.xctest/sekerTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CO9TSLgPmlX9kR0iU3MAMt8x53Y=
+			C8vf8owHkOavJt9/Y7FzEpBCwDA=
 			</data>
 			<key>hash2</key>
 			<data>
-			8NX4pzJgkWSEjQrY5VGasgfJjl7TJCLqqXUVrAaKmTw=
+			Es2oRWqb/uLlu3mWoA/wSpo17Ema/fnDZHcLcduwsiU=
 			</data>
 		</dict>
 	</dict>
