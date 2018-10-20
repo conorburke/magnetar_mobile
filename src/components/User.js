@@ -17,7 +17,7 @@ class User extends Component {
       <View style={styles.container}>
         <TouchableOpacity onPress={this.openUserDetail.bind(this)}>
           <Text style={styles.titleFont}>
-            {this.props.user.FirstName + ' ' + this.props.user.LastName}
+            {this.props.user.first_name + ' ' + this.props.user.last_name}
           </Text>
         </TouchableOpacity>
       </View>
@@ -27,19 +27,18 @@ class User extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    borderBottomWidth: 1,
+    borderWidth: 2,
+    borderColor: '#e4000f',
     padding: 5,
     margin: 5,
-    backgroundColor: '#666666',
     // justifyContent: 'space-between',
     flexDirection: 'row',
-    borderColor: '#DDD',
     position: 'relative',
     // width: '90%',
     borderRadius: 10
   },
   titleFont: {
-    color: '#F5F5F5',
+    color: '#e4000f',
     fontSize: 25
   }
 });

@@ -54,21 +54,27 @@ class ProfileScreen extends Component {
     return (
       <View style={styles.container}>
         <Card title="Profile">
-          <Text>{this.props.profile.FirstName}</Text>
-          <Text>{this.props.profile.LastName}</Text>
-          <Text>{this.props.profile.Email}</Text>
-          <Text>{this.props.profile.PhoneNumber}</Text>
+          <Text>{this.props.profile.first_name}</Text>
+          <Text>{this.props.profile.last_name}</Text>
+          <Text>{this.props.profile.email}</Text>
+          <Text>{this.props.profile.phone_number}</Text>
           <View style={styles.button}>
             <Button
               title="Add Tools"
-              backgroundColor="#3F3F3F"
+              backgroundColor="#e4000f"
+              rounded={true}
+              raised={true}
+              fontSize={22}
               onPress={this.openAddToolsScreen.bind(this)}
             />
           </View>
           <View style={styles.button}>
             <Button
               title="My Tools"
-              backgroundColor="#3F3F3F"
+              backgroundColor="#e4000f"
+              rounded={true}
+              raised={true}
+              fontSize={22}
               onPress={this.openMyToolsScreen.bind(this)}
             />
           </View>
@@ -80,11 +86,11 @@ class ProfileScreen extends Component {
 
 const styles = StyleSheet.create({
   button: {
-    margin: 5
+    margin: 20
   },
   container: {
     flex: 1,
-    backgroundColor: '#003B59',
+    backgroundColor: '#f5f5f5',
     alignItems: 'center',
     justifyContent: 'flex-start'
   }

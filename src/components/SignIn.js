@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { AsyncStorage, View, StyleSheet } from 'react-native';
 import { Button, FormInput, FormLabel } from 'react-native-elements';
 import { connect } from 'react-redux';
 import axios from 'axios';
@@ -62,12 +62,13 @@ class SignIn extends Component {
         console.log(data);
         // firebase.auth().signInWithCustomToken(data.token);
         this.props.authUser(data.email);
-        // startMainTabs();
-        this.props.navigator.push({
-          screen: 'seker.ToolsScreen',
-          title: 'Tools',
-          backButtonTitle: 'Back to Home'
-        });
+        AsyncStorage.setItem('profile_id', data.email.toString());
+        startMainTabs();
+        // this.props.navigator.push({
+        //   screen: 'seker.ToolsScreen',
+        //   title: 'Tools',
+        //   backButtonTitle: 'Back to Home'
+        // });
       })
       .catch(err => console.log(err));
   }

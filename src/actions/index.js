@@ -15,7 +15,7 @@ import {
   SET_EMAIL
 } from './types';
 import url from '../utils';
-import { toolsQuery } from './queries';
+import { toolsQuery, usersQuery } from './queries';
 
 // export const setPhoneNumber = phone => {
 //   return { type: SET_PHONE_NUMBER, payload: phone };
@@ -93,9 +93,14 @@ export const fetchTools = () => {
 };
 
 export const fetchUsers = () => {
+  // return function(dispatch) {
+  //   axios.get(`${url.api}/users`).then(res => {
+  //     window.console.log('lasjflajsfjsaf', res);
+  //     dispatch({ type: FETCH_USERS, payload: res.data });
+  //   });
+  // };
   return function(dispatch) {
-    axios.get(`${url.api}/users`).then(res => {
-      window.console.log('lasjflajsfjsaf', res);
+    axios.post(`${url.api}/oracle`, { query: usersQuery }).then(res => {
       dispatch({ type: FETCH_USERS, payload: res.data });
     });
   };

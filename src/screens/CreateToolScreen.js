@@ -59,7 +59,16 @@ class CreateToolScreen extends Component {
             onChangeText={Price => this.setState({ Price })}
           />
         </View>
-        <Button title="Submit" onPress={this.handleSubmit.bind(this)} />
+        <View style={styles.button}>
+          <Button
+            title="Submit"
+            backgroundColor="#e4000f"
+            rounded={true}
+            raised={true}
+            fontSize={22}
+            onPress={this.handleSubmit.bind(this)}
+          />
+        </View>
       </View>
     );
   }
@@ -75,7 +84,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#003B59',
+    backgroundColor: '#f5f5f5',
     alignItems: 'center',
     justifyContent: 'flex-start'
   }

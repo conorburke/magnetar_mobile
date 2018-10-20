@@ -26,6 +26,7 @@ class WelcomeScreen extends Component {
     AsyncStorage.getItem('auth_token').then(res => {
       console.log('token 2', res);
       AsyncStorage.getItem('profile_id').then(res => {
+        console.log('profile res', res);
         this.props.fetchProfile(res);
       });
       if (res) {
@@ -41,7 +42,7 @@ class WelcomeScreen extends Component {
   render() {
     return (
       <View>
-        <View style={styles.container}>
+        <View style={styles.topContainer}>
           <Text style={styles.titleText}>Magnetar</Text>
         </View>
         <View style={styles.container}>
@@ -71,7 +72,8 @@ const styles = StyleSheet.create({
     marginBottom: 15
   },
   topContainer: {
-    display: 'flex'
+    marginTop: 15,
+    marginBottom: 15
   }
 });
 

@@ -54,12 +54,12 @@ class UsersScreen extends Component {
         <FlatList
           data={this.props.users.filter(
             u =>
-              u.FirstName.toLowerCase().includes(
-                this.props.userFilter.toLowerCase().trim()
-              ) ||
-              u.LastName.toLowerCase().includes(
-                this.props.userFilter.toLowerCase().trim()
-              )
+              u.first_name
+                .toLowerCase()
+                .includes(this.props.userFilter.toLowerCase().trim()) ||
+              u.last_name
+                .toLowerCase()
+                .includes(this.props.userFilter.toLowerCase().trim())
           )}
           renderItem={({ item }) => {
             return <User user={item} navigator={this.props.navigator} />;
@@ -80,9 +80,13 @@ class UsersScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#003B59',
+    backgroundColor: '#f5f5f5',
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  fontType: {
+    fontFamily: 'Futura-Medium',
+    fontSize: 22
   }
 });
 

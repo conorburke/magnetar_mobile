@@ -46,14 +46,16 @@ class RentToolScreen extends Component {
             onChangeText={EndDate => this.setState({ EndDate })}
           />
         </View>
-        <Button
-          title="Rent"
-          backgroundColor="#e4000f"
-          rounded={true}
-          raised={true}
-          fontSize={22}
-          onPress={this.handleSubmit.bind(this)}
-        />
+        <View style={styles.button}>
+          <Button
+            title="Rent"
+            backgroundColor="#e4000f"
+            rounded={true}
+            raised={true}
+            fontSize={22}
+            onPress={this.handleSubmit.bind(this)}
+          />
+        </View>
       </View>
     );
   }
