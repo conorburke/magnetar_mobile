@@ -59,9 +59,10 @@ class SignIn extends Component {
         }
       )
       .then(({ data }) => {
-        console.log(data);
+        console.log('response data login', data);
         // firebase.auth().signInWithCustomToken(data.token);
         this.props.authUser(data.email);
+        this.props.setProfile(data);
         AsyncStorage.setItem('profile_id', data.email.toString());
         startMainTabs();
         // this.props.navigator.push({

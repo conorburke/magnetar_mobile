@@ -23,7 +23,7 @@ class WelcomeScreen extends Component {
     // }
     this.props.authUser();
 
-    AsyncStorage.getItem('auth_token').then(res => {
+    AsyncStorage.getItem('auth_email').then(res => {
       console.log('token 2', res);
       AsyncStorage.getItem('profile_id').then(res => {
         console.log('profile res', res);

@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
 });
 
 function mapStateToProps(state) {
-  return { email: state.users.email };
+  return { email: state.users.email, profile: state.profile };
 }
 
 export default connect(

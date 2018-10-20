@@ -12,7 +12,8 @@ import {
   FILTER_TOOLS,
   FILTER_USERS,
   SET_PHONE_NUMBER,
-  SET_EMAIL
+  SET_EMAIL,
+  SET_PROFILE
 } from './types';
 import url from '../utils';
 import { toolsQuery, usersQuery } from './queries';
@@ -25,15 +26,17 @@ export const setEmail = email => {
   return { type: SET_EMAIL, payload: email };
 };
 
-export const authUser = token => {
+export const setProfile = profile => {
+  return { type: SET_PROFILE, payload: profile };
+};
+
+export const authUser = email => {
   return function(dispatch) {
-    if (token) {
-      console.log('token', token);
-      AsyncStorage.setItem('auth_token', token);
-      dispatch({ type: AUTH_USER, payload: token });
+    if (email) {
+      AsyncStorage.setItem('auth_email', email);
+      dispatch({ type: AUTH_USER, payload: email });
     } else {
-      AsyncStorage.getItem('auth_token').then(res => {
-        console.log('token get', res);
+      AsyncStorage.getItem('auth_email').then(res => {
         if (res) {
           dispatch({ type: AUTH_USER, payload: res });
         } else {

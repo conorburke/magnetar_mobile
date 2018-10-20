@@ -43,14 +43,6 @@ class UserToolsScreen extends Component {
     }
   }
 
-  handleSubmit() {
-    AsyncStorage.removeItem('auth_token').then(() =>
-      this.props.navigator.handleDeepLink({
-        link: 'WelcomeScreen'
-      })
-    );
-  }
-
   render() {
     return (
       <View style={styles.container}>

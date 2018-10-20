@@ -9,3 +9,4 @@ export const FILTER_TOOLS = 'filter_tools';
 export const FILTER_USERS = 'filter_users';
 export const SET_PHONE_NUMBER = 'set_phone_number';
 export const SET_EMAIL = 'set_email';
+export const SET_PROFILE = 'set_profile';
