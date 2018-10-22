@@ -14,9 +14,6 @@ import startMainTabs from './startMainTabs';
 class SideDrawerScreen extends Component {
   goToHome() {
     AsyncStorage.getItem('auth_email').then(res => {
-      AsyncStorage.getItem('profile_id').then(res => {
-        this.props.fetchProfile(res);
-      });
       if (res) {
         startMainTabs();
       } else {
@@ -54,6 +51,18 @@ class SideDrawerScreen extends Component {
         side: 'left',
         animated: 'true'
       });
+      // Navigation.registerComponent(
+      //   'seker.WelcomeScreen',
+      //   () => WelcomeScreen,
+      //   store,
+      //   Provider
+      // );
+      // Navigation.startSingleScreenApp({
+      //   screen: 'seker.WelcomeScreen',
+      //   title: 'Magnetar',
+      //   navigatorStyle: {}, // override the navigator style for the screen, see "Styling the navigator" below (optional)
+      //   navigatorButtons: {}
+      // })
     });
   }
 

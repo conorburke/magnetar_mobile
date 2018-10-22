@@ -14,13 +14,13 @@ class User extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <TouchableOpacity onPress={this.openUserDetail.bind(this)}>
+      <TouchableOpacity onPress={this.openUserDetail.bind(this)}>
+        <View style={styles.container}>
           <Text style={styles.titleFont}>
             {this.props.user.first_name + ' ' + this.props.user.last_name}
           </Text>
-        </TouchableOpacity>
-      </View>
+        </View>
+      </TouchableOpacity>
     );
   }
 }

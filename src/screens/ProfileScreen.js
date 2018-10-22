@@ -1,12 +1,33 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  AsyncStorage,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from 'react-native';
 import { Button, Card } from 'react-native-elements';
 import { connect } from 'react-redux';
+
+import * as actions from '../actions';
 
 class ProfileScreen extends Component {
   constructor(props) {
     super(props);
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
+  }
+
+  componentDidMount() {
+    console.log('profile', this.props.profile);
+    if (Object.keys(this.props.profile).length === 0) {
+      console.log('no profile');
+      AsyncStorage.getItem('profile_id').then(res => {
+        if (res) {
+          console.log('response profile id', res);
+          this.props.fetchProfile(res);
+        }
+      });
+    }
   }
 
   onNavigatorEvent(event) {
@@ -100,4 +121,7 @@ function mapStateToProps(state) {
   return { profile: state.profile };
 }
 
-export default connect(mapStateToProps)(ProfileScreen);
+export default connect(
+  mapStateToProps,
+  actions
+)(ProfileScreen);

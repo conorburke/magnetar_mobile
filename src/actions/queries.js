@@ -72,3 +72,56 @@ export const usersQuery = `
     }
   }
 `;
+
+export const profileQuery = `
+  query getProfle($id: ID!) {
+    user(id: $id) {
+      id
+      first_name
+      last_name
+      email
+      phone_number
+      birth_date
+      loan_rating
+      borrow_rating
+      depots {
+        address_1
+        address_2
+        zipcode
+        tools {
+          title
+          category
+          description
+          price
+          tool_pictures {
+            image
+          }
+        }
+      }
+      rented_tools {
+        tool {
+          title
+          category
+          description
+          price
+          tool_pictures {
+            image
+          }
+        }
+      }
+      loaned_tools {
+        tool {
+          title
+          category
+          description
+          price
+          tool_pictures {
+            image
+          }
+        }
+        start_date
+        end_date
+      }
+    }
+  }
+`;

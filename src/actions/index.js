@@ -16,11 +16,7 @@ import {
   SET_PROFILE
 } from './types';
 import url from '../utils';
-import { toolsQuery, usersQuery } from './queries';
-
-// export const setPhoneNumber = phone => {
-//   return { type: SET_PHONE_NUMBER, payload: phone };
-// };
+import { profileQuery, toolsQuery, usersQuery } from './queries';
 
 export const setEmail = email => {
   return { type: SET_EMAIL, payload: email };
@@ -28,6 +24,20 @@ export const setEmail = email => {
 
 export const setProfile = profile => {
   return { type: SET_PROFILE, payload: profile };
+};
+
+export const fetchProfile = profileId => {
+  return function(dispatch) {
+    axios
+      .post(`${url.api}/oracle`, {
+        query: profileQuery,
+        variables: { id: profileId }
+      })
+      .then(res => {
+        console.log('dispatch profile', res);
+        dispatch({ type: SET_PROFILE, payload: res.data.data.user });
+      });
+  };
 };
 
 export const authUser = email => {
@@ -70,17 +80,8 @@ export const deleteTool = id => {
 export const createProfile = profile => {
   console.log('token 3', profile);
   return function(dispatch) {
-    AsyncStorage.setItem('profile_id', profile.email.toString());
+    AsyncStorage.setItem('auth_email', profile.email.toString());
     dispatch({ type: CREATE_PROFILE, payload: profile });
-  };
-};
-
-export const fetchProfile = id => {
-  return function(dispatch) {
-    axios.get(`${url.api}/users/${id}`).then(res => {
-      console.log('fetch profile action', res);
-      dispatch({ type: CREATE_PROFILE, payload: res.data });
-    });
   };
 };
 

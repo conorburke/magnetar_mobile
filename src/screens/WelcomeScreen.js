@@ -4,40 +4,19 @@ import { connect } from 'react-redux';
 import firebase from 'firebase';
 
 import * as actions from '../actions';
-import firebaseApi from './keys';
 import SignIn from '../components/SignIn';
 import startMainTabs from './startMainTabs';
 
 class WelcomeScreen extends Component {
   componentDidMount() {
-    // const config = {
-    //   apiKey: firebaseApi,
-    //   authDomain: 'seker-auth.firebaseapp.com',
-    //   databaseURL: 'https://seker-auth.firebaseio.com',
-    //   projectId: 'seker-auth',
-    //   storageBucket: 'seker-auth.appspot.com',
-    //   messagingSenderId: '99352786132'
-    // };
-    // if (!firebase.apps.length) {
-    //   firebase.initializeApp(config);
-    // }
     this.props.authUser();
 
     AsyncStorage.getItem('auth_email').then(res => {
-      console.log('token 2', res);
-      AsyncStorage.getItem('profile_id').then(res => {
-        console.log('profile res', res);
-        this.props.fetchProfile(res);
-      });
       if (res) {
         startMainTabs();
       }
     });
   }
-
-  loginHandler = () => {
-    startMainTabs();
-  };
 
   render() {
     return (
@@ -48,7 +27,6 @@ class WelcomeScreen extends Component {
         <View style={styles.container}>
           <Text style={styles.baseText}>Loan. Rent. Build. Create.</Text>
         </View>
-        {/* <Button title="Find Tools" onPress={this.loginHandler} /> */}
         <SignIn navigator={this.props.navigator} />
       </View>
     );
@@ -78,7 +56,7 @@ const styles = StyleSheet.create({
 });
 
 function mapStateToProps(state) {
-  return { auth: state.auth };
+  return { auth: state.auth, profile: state.profile };
 }
 
 export default connect(

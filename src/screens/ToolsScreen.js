@@ -26,9 +26,6 @@ class ToolsScreen extends Component {
 
   componentDidMount() {
     this.props.fetchTools();
-    AsyncStorage.getItem('profile_id').then(res => {
-      this.props.fetchProfile(res);
-    });
   }
 
   onNavigatorEvent(event) {
@@ -80,7 +77,6 @@ class ToolsScreen extends Component {
           }}
           keyExtractor={item => {
             let key;
-            // console.log(item);
             item.ID
               ? (key = item.id.toString())
               : (key = Math.random().toString());

@@ -63,7 +63,8 @@ class SignIn extends Component {
         // firebase.auth().signInWithCustomToken(data.token);
         this.props.authUser(data.email);
         this.props.setProfile(data);
-        AsyncStorage.setItem('profile_id', data.email.toString());
+        AsyncStorage.setItem('auth_email', data.email.toString());
+        AsyncStorage.setItem('profile_id', data.id.toString());
         startMainTabs();
         // this.props.navigator.push({
         //   screen: 'seker.ToolsScreen',
