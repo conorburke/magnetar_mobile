@@ -7,34 +7,33 @@ import axios from 'axios';
 import * as actions from '../actions';
 import startMainTabs from '../screens/startMainTabs';
 import url from '../utils';
+import { profileMutation } from './mutations';
 
 class CreateProfileScreen extends Component {
   state = {
     FirstName: '',
     LastName: '',
-    Email: '',
-    Address1: '',
-    Address2: '',
-    City: '',
-    Region: '',
-    Zipcode: ''
+    PhoneNumber: ''
   };
 
   handleSubmit() {
     axios
-      .post(`${url.api}/users`, {
-        FirstName: this.state.FirstName,
-        LastName: this.state.LastName,
-        Email: this.state.Email,
-        PhoneNumber: this.props.phoneNumber,
-        Address1: this.state.Address1,
-        Address2: this.state.Address2,
-        City: this.state.city,
-        Region: this.state.Region,
-        Zipcode: this.state.Zipcode
+      .post(`${url.api}/oracle`, {
+        query: profileMutation,
+        variables: {
+          first_name: this.state.FirstName,
+          last_name: this.state.last_name,
+          email: this.props.email,
+          phone_number: this.props.PhoneNumber
+        }
       })
       .then(({ data }) => {
-        this.props.createProfile(data);
+        this.props.createProfile({
+          first_name: this.state.FirstName,
+          last_name: this.state.LastName,
+          email: this.props.email,
+          phone_number: this.state.PhoneNumber
+        });
         startMainTabs();
       })
       .catch(err => {
@@ -50,65 +49,36 @@ class CreateProfileScreen extends Component {
           <View>
             <FormLabel>Enter First Name</FormLabel>
             <FormInput
-              value={this.state.FirstName}
+              value={this.state.first_name}
               onChangeText={FirstName => this.setState({ FirstName })}
             />
           </View>
           <View>
             <FormLabel>Enter Last Name</FormLabel>
             <FormInput
-              value={this.state.LastName}
+              value={this.state.last_name}
               onChangeText={LastName => this.setState({ LastName })}
             />
           </View>
           <View>
             <FormLabel>Enter Email</FormLabel>
-            <FormInput
-              value={this.state.Email}
-              onChangeText={Email => this.setState({ Email })}
-            />
+            <FormInput value={this.props.email} />
           </View>
           <View>
             <FormLabel>Enter Phone Number</FormLabel>
-            <FormInput value={this.props.phoneNumber} />
-          </View>
-          <View>
-            <FormLabel>Enter Address 1</FormLabel>
             <FormInput
-              value={this.state.Address1}
-              onChangeText={Address1 => this.setState({ Address1 })}
+              value={this.state.phone_number}
+              onChangeText={PhoneNumber => this.setState({ PhoneNumber })}
             />
           </View>
-          <View>
-            <FormLabel>Enter Address 2</FormLabel>
-            <FormInput
-              value={this.state.Address2}
-              onChangeText={Address2 => this.setState({ Address2 })}
-            />
-          </View>
-          <View>
-            <FormLabel>Enter City</FormLabel>
-            <FormInput
-              value={this.state.City}
-              onChangeText={City => this.setState({ City })}
-            />
-          </View>
-          <View>
-            <FormLabel>Enter State</FormLabel>
-            <FormInput
-              value={this.state.Region}
-              onChangeText={Region => this.setState({ Region })}
-            />
-          </View>
-          <View>
-            <FormLabel>Enter Zipcode</FormLabel>
-            <FormInput
-              value={this.state.Zipcode}
-              onChangeText={Zipcode => this.setState({ Zipcode })}
-            />
-          </View>
-
-          <Button title="Submit" onPress={this.handleSubmit.bind(this)} />
+          <Button
+            title="Submit"
+            backgroundColor="#e4000f"
+            rounded={true}
+            raised={true}
+            fontSize={22}
+            onPress={this.handleSubmit.bind(this)}
+          />
         </ScrollView>
       </View>
     );
@@ -121,14 +91,14 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#003B59',
+    backgroundColor: '#f5f5f5',
     alignItems: 'center',
     justifyContent: 'flex-start'
   }
 });
 
 function mapStateToProps(state) {
-  return { phoneNumber: state.users.phoneNumber };
+  return { email: state.users.email, profile: state.profile };
 }
 
 export default connect(

@@ -7,9 +7,9 @@ class UserDetailScreen extends Component {
     return (
       <TouchableOpacity>
         <View>
-          <Text>{this.props.FirstName + ' ' + this.props.LastName}</Text>
-          <Text>{this.props.Email}</Text>
-          <Text>{this.props.PhoneNumber}</Text>
+          <Text>{this.props.first_name + ' ' + this.props.last_name}</Text>
+          <Text>{this.props.email}</Text>
+          <Text>{this.props.phone_number}</Text>
           <Icon size={30} name="ios-trash" color="red" />
         </View>
       </TouchableOpacity>

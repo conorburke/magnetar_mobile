@@ -5,21 +5,30 @@ import { connect } from 'react-redux';
 import axios from 'axios';
 
 import * as actions from '../actions';
-
-import startMainTabs from '../screens/startMainTabs';
+import { createTool } from './mutations';
 import url from '../utils';
 
 class CreateToolScreen extends Component {
-  state = { Title: '', ToolType: '', Price: '', PhoneNumber: '' };
+  state = {
+    title: '',
+    category: '',
+    description: '',
+    price: '',
+    depotId: ''
+  };
 
   handleSubmit() {
     window.console.log('this.props.profile', this.props.profile);
     axios
-      .post(`${url.api}/tools`, {
-        Title: this.state.Title,
-        ToolType: this.state.ToolType,
-        Price: Number(this.state.Price),
-        ToolOwner: this.props.profile.ID
+      .post(`${url.api}/oracle`, {
+        query: createTool,
+        variables: {
+          title: this.state.title,
+          category: this.state.category,
+          description: this.state.description,
+          price: Number(this.state.price),
+          depot_id: this.state.depotId
+        }
       })
       .then(() => {
         console.log('created tool');
@@ -39,27 +48,50 @@ class CreateToolScreen extends Component {
     return (
       <View style={styles.container}>
         <View>
-          <FormLabel>Enter Tool Name</FormLabel>
+          <FormLabel>Tool Title</FormLabel>
           <FormInput
-            value={this.state.Title}
-            onChangeText={Title => this.setState({ Title })}
+            value={this.state.title}
+            onChangeText={title => this.setState({ title })}
           />
         </View>
         <View>
-          <FormLabel>Enter Tool Type</FormLabel>
+          <FormLabel>Category</FormLabel>
           <FormInput
-            value={this.state.ToolType}
-            onChangeText={ToolType => this.setState({ ToolType })}
+            value={this.state.category}
+            onChangeText={category => this.setState({ category })}
           />
         </View>
         <View>
-          <FormLabel>Enter Price</FormLabel>
+          <FormLabel>Description</FormLabel>
           <FormInput
-            value={this.state.Price}
-            onChangeText={Price => this.setState({ Price })}
+            value={this.state.description}
+            onChangeText={description => this.setState({ description })}
           />
         </View>
-        <Button title="Submit" onPress={this.handleSubmit.bind(this)} />
+        <View>
+          <FormLabel>Price / Hour</FormLabel>
+          <FormInput
+            value={this.state.price}
+            onChangeText={price => this.setState({ price })}
+          />
+        </View>
+        <View>
+          <FormLabel>Depot ID</FormLabel>
+          <FormInput
+            value={this.state.depotId}
+            onChangeText={depotId => this.setState({ depotId })}
+          />
+        </View>
+        <View style={styles.button}>
+          <Button
+            title="Submit"
+            backgroundColor="#e4000f"
+            rounded={true}
+            raised={true}
+            fontSize={22}
+            onPress={this.handleSubmit.bind(this)}
+          />
+        </View>
       </View>
     );
   }
@@ -75,7 +107,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#003B59',
+    backgroundColor: '#f5f5f5',
     alignItems: 'center',
     justifyContent: 'flex-start'
   }

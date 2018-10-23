@@ -30,7 +30,7 @@ class RentToolScreen extends Component {
     return (
       <View style={styles.container}>
         <View>
-          <Text style={styles.header}>{`Rent ${this.props.Title}`}</Text>
+          <Text style={styles.header}>{`Rent: ${this.props.title}`}</Text>
         </View>
         <View>
           <FormLabel>Enter Start Date</FormLabel>
@@ -46,7 +46,16 @@ class RentToolScreen extends Component {
             onChangeText={EndDate => this.setState({ EndDate })}
           />
         </View>
-        <Button title="Rent!" onPress={this.handleSubmit.bind(this)} />
+        <View style={styles.button}>
+          <Button
+            title="Rent"
+            backgroundColor="#e4000f"
+            rounded={true}
+            raised={true}
+            fontSize={22}
+            onPress={this.handleSubmit.bind(this)}
+          />
+        </View>
       </View>
     );
   }
@@ -58,12 +67,12 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#003B59',
+    backgroundColor: '#f5f5f5',
     alignItems: 'center',
     justifyContent: 'flex-start'
   },
   header: {
-    color: 'silver',
+    color: '#e4000f',
     fontSize: 30
   }
 });

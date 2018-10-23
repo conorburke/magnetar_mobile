@@ -21,7 +21,7 @@ class UserToolsScreen extends Component {
   }
 
   componentDidMount() {
-    this.props.fetchUserTools(this.props.profile.ID);
+    this.props.fetchProfile(this.props.profile.id);
   }
 
   onNavigatorEvent(event) {
@@ -43,26 +43,29 @@ class UserToolsScreen extends Component {
     }
   }
 
-  handleSubmit() {
-    AsyncStorage.removeItem('auth_token').then(() =>
-      this.props.navigator.handleDeepLink({
-        link: 'WelcomeScreen'
-      })
-    );
-  }
+  flattenTools = () => {
+    let flatTools = [];
+    this.props.profile.depots.forEach(depot => {
+      console.log(depot);
+      depot.tools.forEach(tool => {
+        flatTools.push(tool);
+      });
+    });
+    return flatTools;
+  };
 
   render() {
     return (
       <View style={styles.container}>
         <FlatList
-          data={this.props.userTools}
+          data={this.flattenTools()}
           renderItem={({ item }) => {
             return <Tool tool={item} navigator={this.props.navigator} />;
           }}
           keyExtractor={item => {
             let key;
             item.ID
-              ? (key = item.ID.toString())
+              ? (key = item.id.toString())
               : (key = Math.random().toString());
             return key;
           }}
@@ -75,7 +78,7 @@ class UserToolsScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#003B59',
+    backgroundColor: '#f5f5f5',
     alignItems: 'center',
     justifyContent: 'center'
   }

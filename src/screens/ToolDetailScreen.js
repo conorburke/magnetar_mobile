@@ -28,7 +28,10 @@ class ToolDetailScreen extends Component {
         <View style={styles.button}>
           <Button
             title="Rent Tool"
-            backgroundColor="#3F3F3F"
+            backgroundColor="#e4000f"
+            rounded={true}
+            raised={true}
+            fontSize={22}
             onPress={this.openRentToolScreen.bind(this)}
           />
         </View>
@@ -42,7 +45,7 @@ const styles = StyleSheet.create({
     margin: 5
   },
   container: {
-    backgroundColor: '#003B59',
+    backgroundColor: '#f5f5f5',
     flex: 1
   }
 });

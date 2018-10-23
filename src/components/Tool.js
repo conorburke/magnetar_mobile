@@ -25,19 +25,19 @@ class Tool extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity onPress={this.openToolDetail.bind(this)}>
-          <Text style={styles.titleFont}>{this.props.tool.Title}</Text>
+          <Text style={styles.titleFont}>{this.props.tool.title}</Text>
           <View style={styles.detailContainer}>
             <Text style={styles.detailFont}>
-              {`Cost: $ ${this.props.tool.Price}`}
+              {`Cost: $${this.props.tool.price} `}
             </Text>
             <Text style={styles.detailFont}>
-              {`Type: ${this.props.tool.ToolType}`}
+              {` Type: ${this.props.tool.category} `}
             </Text>
-            <Text style={styles.detailFont}>
-              {`Owner: ${this.props.tool.FirstName} ${
-                this.props.tool.LastName
-              }`}
-            </Text>
+            {this.props.tool.depot ? (
+              <Text style={styles.detailFont}>
+                {` Owner: ${this.props.tool.depot.owner.first_name || ''}`}
+              </Text>
+            ) : null}
           </View>
         </TouchableOpacity>
         {/* {this.props.profile.ID == this.props.tool.ToolOwner ?
@@ -53,23 +53,22 @@ class Tool extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    borderBottomWidth: 1,
+    borderWidth: 2,
+    borderColor: '#e4000f',
     padding: 5,
     margin: 5,
-    backgroundColor: '#666666',
     // justifyContent: 'space-between',
     flexDirection: 'row',
-    borderColor: '#DDD',
     position: 'relative',
     // width: '90%',
     borderRadius: 10
   },
   titleFont: {
-    color: '#F5F5F5',
+    color: '#e4000f',
     fontSize: 25
   },
   detailFont: {
-    color: '#F5F5F5',
+    color: '#e4000f',
     fontSize: 15
   },
   detailContainer: {

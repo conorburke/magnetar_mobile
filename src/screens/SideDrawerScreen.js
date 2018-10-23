@@ -13,10 +13,7 @@ import startMainTabs from './startMainTabs';
 
 class SideDrawerScreen extends Component {
   goToHome() {
-    AsyncStorage.getItem('auth_token').then(res => {
-      AsyncStorage.getItem('profile_id').then(res => {
-        this.props.fetchProfile(res);
-      });
+    AsyncStorage.getItem('auth_email').then(res => {
       if (res) {
         startMainTabs();
       } else {
@@ -44,8 +41,8 @@ class SideDrawerScreen extends Component {
     });
   }
 
-  handleSubmit() {
-    AsyncStorage.removeItem('auth_token').then(() => {
+  handleLogout() {
+    AsyncStorage.removeItem('auth_email').then(() => {
       this.props.navigator.handleDeepLink({
         link: 'WelcomeScreen'
       });
@@ -54,6 +51,18 @@ class SideDrawerScreen extends Component {
         side: 'left',
         animated: 'true'
       });
+      // Navigation.registerComponent(
+      //   'seker.WelcomeScreen',
+      //   () => WelcomeScreen,
+      //   store,
+      //   Provider
+      // );
+      // Navigation.startSingleScreenApp({
+      //   screen: 'seker.WelcomeScreen',
+      //   title: 'Magnetar',
+      //   navigatorStyle: {}, // override the navigator style for the screen, see "Styling the navigator" below (optional)
+      //   navigatorButtons: {}
+      // })
     });
   }
 
@@ -78,7 +87,7 @@ class SideDrawerScreen extends Component {
             <Button
               title="Log Out"
               backgroundColor="#3F3F3F"
-              onPress={this.handleSubmit.bind(this)}
+              onPress={this.handleLogout.bind(this)}
             />
           </View>
           {/* <Button title='Profile' onPress={this.goToProfile.bind(this)} /> */}

@@ -11,21 +11,42 @@ import {
   FETCH_USERS,
   FILTER_TOOLS,
   FILTER_USERS,
-  SET_PHONE_NUMBER
+  SET_PHONE_NUMBER,
+  SET_EMAIL,
+  SET_PROFILE
 } from './types';
 import url from '../utils';
+import { profileQuery, toolsQuery, usersQuery } from './queries';
 
-export const setPhoneNumber = phone => {
-  return { type: SET_PHONE_NUMBER, payload: phone };
+export const setEmail = email => {
+  return { type: SET_EMAIL, payload: email };
 };
 
-export const authUser = token => {
+export const setProfile = profile => {
+  return { type: SET_PROFILE, payload: profile };
+};
+
+export const fetchProfile = profileId => {
   return function(dispatch) {
-    if (token) {
-      AsyncStorage.setItem('auth_token', token);
-      dispatch({ type: AUTH_USER, payload: token });
+    axios
+      .post(`${url.api}/oracle`, {
+        query: profileQuery,
+        variables: { id: profileId }
+      })
+      .then(res => {
+        console.log('dispatch profile', res);
+        dispatch({ type: SET_PROFILE, payload: res.data.data.user });
+      });
+  };
+};
+
+export const authUser = email => {
+  return function(dispatch) {
+    if (email) {
+      AsyncStorage.setItem('auth_email', email);
+      dispatch({ type: AUTH_USER, payload: email });
     } else {
-      AsyncStorage.getItem('auth_token').then(res => {
+      AsyncStorage.getItem('auth_email').then(res => {
         if (res) {
           dispatch({ type: AUTH_USER, payload: res });
         } else {
@@ -57,18 +78,10 @@ export const deleteTool = id => {
 };
 
 export const createProfile = profile => {
+  console.log('token 3', profile);
   return function(dispatch) {
-    AsyncStorage.setItem('profile_id', profile.ID.toString());
+    AsyncStorage.setItem('auth_email', profile.email.toString());
     dispatch({ type: CREATE_PROFILE, payload: profile });
-  };
-};
-
-export const fetchProfile = id => {
-  return function(dispatch) {
-    axios.get(`${url.api}/users/${id}`).then(res => {
-      console.log('fetch profile action', res);
-      dispatch({ type: CREATE_PROFILE, payload: res.data });
-    });
   };
 };
 
@@ -78,15 +91,20 @@ export const fetchTools = () => {
   //and apply middleware
   return function(dispatch) {
     axios
-      .get(`${url.api}/tools`)
+      .post(`${url.api}/oracle`, { query: toolsQuery })
       .then(res => dispatch({ type: FETCH_TOOLS, payload: res.data }));
   };
 };
 
 export const fetchUsers = () => {
+  // return function(dispatch) {
+  //   axios.get(`${url.api}/users`).then(res => {
+  //     window.console.log('lasjflajsfjsaf', res);
+  //     dispatch({ type: FETCH_USERS, payload: res.data });
+  //   });
+  // };
   return function(dispatch) {
-    axios.get(`${url.api}/users`).then(res => {
-      window.console.log('lasjflajsfjsaf', res);
+    axios.post(`${url.api}/oracle`, { query: usersQuery }).then(res => {
       dispatch({ type: FETCH_USERS, payload: res.data });
     });
   };
