@@ -62,10 +62,26 @@ class ProfileScreen extends Component {
     });
   }
 
+  openAddDepotScreen() {
+    this.props.navigator.push({
+      screen: 'magnetar.CreateDepotScreen',
+      title: 'Add Depot',
+      backButtonTitle: 'Back to Profile'
+    });
+  }
+
   openMyToolsScreen() {
     this.props.navigator.push({
       screen: 'seker.UserToolsScreen',
       title: 'My Tools',
+      backButtonTitle: 'Back to Profile'
+    });
+  }
+
+  openMyDepotsScreen() {
+    this.props.navigator.push({
+      screen: 'vulcan.UserDepotsScreen',
+      title: 'My Depots',
       backButtonTitle: 'Back to Profile'
     });
   }
@@ -81,12 +97,22 @@ class ProfileScreen extends Component {
           <Text>{this.props.profile.phone_number}</Text>
           <View style={styles.button}>
             <Button
-              title="Add Tools"
+              title="Add Tool"
               backgroundColor="#e4000f"
               rounded={true}
               raised={true}
               fontSize={22}
               onPress={this.openAddToolsScreen.bind(this)}
+            />
+          </View>
+          <View style={styles.button}>
+            <Button
+              title="Add Depot"
+              backgroundColor="#e4000f"
+              rounded={true}
+              raised={true}
+              fontSize={22}
+              onPress={this.openAddDepotScreen.bind(this)}
             />
           </View>
           <View style={styles.button}>
@@ -97,6 +123,16 @@ class ProfileScreen extends Component {
               raised={true}
               fontSize={22}
               onPress={this.openMyToolsScreen.bind(this)}
+            />
+          </View>
+          <View style={styles.button}>
+            <Button
+              title="My Depots"
+              backgroundColor="#e4000f"
+              rounded={true}
+              raised={true}
+              fontSize={22}
+              onPress={this.openMyDepotsScreen.bind(this)}
             />
           </View>
         </Card>

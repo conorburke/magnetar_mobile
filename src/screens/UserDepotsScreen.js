@@ -1,20 +1,11 @@
 import React, { Component } from 'react';
-import {
-  FlatList,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View
-} from 'react-native';
-import { Button } from 'react-native-elements';
-import { Navigation } from 'react-native-navigation';
+import { FlatList, StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 import * as actions from '../actions';
-import Tool from '../components/Tool';
+import Depot from '../components/Depot';
 
-class UserToolsScreen extends Component {
+class UserDepotsScreen extends Component {
   constructor(props) {
     super(props);
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent.bind(this));
@@ -43,24 +34,13 @@ class UserToolsScreen extends Component {
     }
   }
 
-  flattenTools = () => {
-    let flatTools = [];
-    this.props.profile.depots.forEach(depot => {
-      console.log(depot);
-      depot.tools.forEach(tool => {
-        flatTools.push(tool);
-      });
-    });
-    return flatTools;
-  };
-
   render() {
     return (
       <View style={styles.container}>
         <FlatList
-          data={this.flattenTools()}
+          data={this.props.profile.depots}
           renderItem={({ item }) => {
-            return <Tool tool={item} navigator={this.props.navigator} />;
+            return <Depot depot={item} navigator={this.props.navigator} />;
           }}
           keyExtractor={item => {
             let key;
@@ -86,12 +66,11 @@ const styles = StyleSheet.create({
 
 function mapStateToProps(state) {
   return {
-    profile: state.profile,
-    userTools: state.userTools
+    profile: state.profile
   };
 }
 
 export default connect(
   mapStateToProps,
   actions
-)(UserToolsScreen);
+)(UserDepotsScreen);

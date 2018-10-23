@@ -5,34 +5,35 @@ import { connect } from 'react-redux';
 import axios from 'axios';
 
 import * as actions from '../actions';
-import { createTool } from './mutations';
+import { createDepot } from './mutations';
 import url from '../utils';
 
-class CreateToolScreen extends Component {
+class CreateDepotScreen extends Component {
   state = {
-    title: '',
-    category: '',
-    description: '',
-    price: '',
-    depotId: ''
+    address1: '',
+    address2: '',
+    city: '',
+    region: '',
+    zipcode: ''
   };
 
   handleSubmit() {
-    window.console.log('this.props.profile', this.props.profile);
+    window.console.log('depot submit', this.state);
+    window.console.log('ownerid', this.props.profile.id);
     axios
       .post(`${url.api}/oracle`, {
-        query: createTool,
+        query: createDepot,
         variables: {
-          title: this.state.title,
-          category: this.state.category,
-          description: this.state.description,
-          price: Number(this.state.price),
-          depot_id: this.state.depotId
+          address1: this.state.address1,
+          address2: this.state.address2,
+          city: this.state.city,
+          region: this.state.region,
+          zipcode: parseInt(this.state.zipcode),
+          ownerId: this.props.profile.id
         }
       })
-      .then(() => {
-        console.log('created tool');
-        this.props.fetchTools();
+      .then(({ data }) => {
+        console.log('created depot', data);
       })
       .catch(err => {
         console.log('current state', this.state);
@@ -48,38 +49,38 @@ class CreateToolScreen extends Component {
     return (
       <View style={styles.container}>
         <View>
-          <FormLabel>Tool Title</FormLabel>
+          <FormLabel>Address 1</FormLabel>
           <FormInput
-            value={this.state.title}
-            onChangeText={title => this.setState({ title })}
+            value={this.state.address1}
+            onChangeText={address1 => this.setState({ address1 })}
           />
         </View>
         <View>
-          <FormLabel>Category</FormLabel>
+          <FormLabel>Address 2</FormLabel>
           <FormInput
-            value={this.state.category}
-            onChangeText={category => this.setState({ category })}
+            value={this.state.address2}
+            onChangeText={address2 => this.setState({ address2 })}
           />
         </View>
         <View>
-          <FormLabel>Description</FormLabel>
+          <FormLabel>City</FormLabel>
           <FormInput
-            value={this.state.description}
-            onChangeText={description => this.setState({ description })}
+            value={this.state.city}
+            onChangeText={city => this.setState({ city })}
           />
         </View>
         <View>
-          <FormLabel>Price / Hour</FormLabel>
+          <FormLabel>State</FormLabel>
           <FormInput
-            value={this.state.price}
-            onChangeText={price => this.setState({ price })}
+            value={this.state.region}
+            onChangeText={region => this.setState({ region })}
           />
         </View>
         <View>
-          <FormLabel>Depot ID</FormLabel>
+          <FormLabel>Zipcode</FormLabel>
           <FormInput
-            value={this.state.depotId}
-            onChangeText={depotId => this.setState({ depotId })}
+            value={this.state.zipcode}
+            onChangeText={zipcode => this.setState({ zipcode })}
           />
         </View>
         <View style={styles.button}>
@@ -116,4 +117,4 @@ const styles = StyleSheet.create({
 export default connect(
   mapStateToProps,
   actions
-)(CreateToolScreen);
+)(CreateDepotScreen);

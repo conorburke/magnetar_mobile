@@ -1,44 +1,42 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { ListItem } from 'react-native-elements';
 import { connect } from 'react-redux';
-import Icon from 'react-native-vector-icons/Ionicons';
 
 import * as actions from '../actions';
 
-class Tool extends Component {
-  openToolDetail() {
-    this.props.navigator.push({
-      screen: 'seker.ToolDetailScreen',
-      title: 'Tool Detail',
-      backButtonTitle: 'Back to Tools',
-      passProps: this.props.tool
-    });
-  }
+class Depot extends Component {
+  // openToolDetail() {
+  //   this.props.navigator.push({
+  //     screen: 'seker.ToolDetailScreen',
+  //     title: 'Tool Detail',
+  //     backButtonTitle: 'Back to Tools',
+  //     passProps: this.props.tool
+  //   });
+  // }
 
-  handleDelete(id) {
-    alert(`id to delete is ${id}`);
-    this.props.deleteTool(id);
-  }
+  // handleDelete(id) {
+  //   alert(`id to delete is ${id}`);
+  //   this.props.deleteTool(id);
+  // }
 
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity onPress={this.openToolDetail.bind(this)}>
-          <Text style={styles.titleFont}>{this.props.tool.title}</Text>
-          <View style={styles.detailContainer}>
+        <TouchableOpacity>
+          <Text style={styles.titleFont}>{this.props.depot.address_1}</Text>
+          {/* <View style={styles.detailContainer}>
             <Text style={styles.detailFont}>
               {`Cost: $${this.props.tool.price} `}
             </Text>
             <Text style={styles.detailFont}>
               {` Type: ${this.props.tool.category} `}
             </Text>
-            {this.props.tool.depot ? (
-              <Text style={styles.detailFont}>
-                {` Owner: ${this.props.tool.depot.owner.first_name || ''}`}
-              </Text>
-            ) : null}
-          </View>
+            {this.props.tool.depot ?
+            <Text style={styles.detailFont}>
+              {` Owner: ${this.props.tool.depot.owner.first_name || ''}`}
+            </Text>
+            : null }
+          </View> */}
         </TouchableOpacity>
         {/* {this.props.profile.ID == this.props.tool.ToolOwner ?
           <TouchableOpacity>
@@ -85,4 +83,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   actions
-)(Tool);
+)(Depot);

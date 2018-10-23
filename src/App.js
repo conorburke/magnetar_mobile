@@ -17,6 +17,8 @@ import CreateToolScreen from './screens/CreateToolScreen';
 import UserToolsScreen from './screens/UserToolsScreen';
 import RentToolScreen from './screens/RentToolScreen';
 import startMainTabs from './screens/startMainTabs';
+import CreateDepotScreen from './screens/CreateDepotScreen';
+import UserDepotsScreen from './screens/UserDepotsScreen';
 
 const composeEnhancers = compose;
 
@@ -87,8 +89,20 @@ Navigation.registerComponent(
   Provider
 );
 Navigation.registerComponent(
+  'vulcan.UserDepotsScreen',
+  () => UserDepotsScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
   'seker.RentToolScreen',
   () => RentToolScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  'magnetar.CreateDepotScreen',
+  () => CreateDepotScreen,
   store,
   Provider
 );

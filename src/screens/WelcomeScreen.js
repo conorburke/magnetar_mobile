@@ -22,7 +22,7 @@ class WelcomeScreen extends Component {
     return (
       <View>
         <View style={styles.topContainer}>
-          <Text style={styles.titleText}>Magnetar</Text>
+          <Text style={styles.titleText}>Vulcan</Text>
         </View>
         <View style={styles.container}>
           <Text style={styles.baseText}>Loan. Rent. Build. Create.</Text>
