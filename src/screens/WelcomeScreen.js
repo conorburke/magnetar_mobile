@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { AsyncStorage, Button, View, Text, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
-import firebase from 'firebase';
 
 import * as actions from '../actions';
 import SignIn from '../components/SignIn';
@@ -22,7 +21,7 @@ class WelcomeScreen extends Component {
     return (
       <View>
         <View style={styles.topContainer}>
-          <Text style={styles.titleText}>Vulcan</Text>
+          <Text style={styles.titleText}>Magnetar</Text>
         </View>
         <View style={styles.container}>
           <Text style={styles.baseText}>Loan. Rent. Build. Create.</Text>

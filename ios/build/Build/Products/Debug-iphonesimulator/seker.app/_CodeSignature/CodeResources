@@ -51,7 +51,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		x7JBr/bKnS1xKkbrwP/hSJ8H/6Y=
+		6bARKbgavipKLlgZ8DNEqAfsf9M=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -71,15 +71,15 @@
 		</data>
 		<key>PlugIns/sekerTests.xctest/Info.plist</key>
 		<data>
-		laPnZGQCpnzATjeLpQ86+X4tZdE=
+		fk5T713v/rvBF1GUGVhL2UPBMgs=
 		</data>
 		<key>PlugIns/sekerTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		qPs0n/LeH4EU1LMR2nXFOLikkPU=
+		0Ng7OV1N+kdK+Hutku74MN2TrBo=
 		</data>
 		<key>PlugIns/sekerTests.xctest/sekerTests</key>
 		<data>
-		C8vf8owHkOavJt9/Y7FzEpBCwDA=
+		HQ4u8tkYEBkBVRF+/LObMMvDTMY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -233,33 +233,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			laPnZGQCpnzATjeLpQ86+X4tZdE=
+			fk5T713v/rvBF1GUGVhL2UPBMgs=
 			</data>
 			<key>hash2</key>
 			<data>
-			3Svg2oLxzGSy4lmBYHHo+7JyF5XUjpV/Y2u68vQE0Fs=
+			2Cp3FarOEnFL1lnQGVkf1+F9SAGOUKle/0KJVW+sySA=
 			</data>
 		</dict>
 		<key>PlugIns/sekerTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qPs0n/LeH4EU1LMR2nXFOLikkPU=
+			0Ng7OV1N+kdK+Hutku74MN2TrBo=
 			</data>
 			<key>hash2</key>
 			<data>
-			hDBsA7x85PENlJ/zMs1KE5UIaqEtMG5M8wOJ7xNfNeg=
+			BYunUGH8/0k4r/o+WXafKTKUFAs9fIGYyEbCNvhJM2s=
 			</data>
 		</dict>
 		<key>PlugIns/sekerTests.xctest/sekerTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C8vf8owHkOavJt9/Y7FzEpBCwDA=
+			HQ4u8tkYEBkBVRF+/LObMMvDTMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Es2oRWqb/uLlu3mWoA/wSpo17Ema/fnDZHcLcduwsiU=
+			f1YdzdN4qh7VHhAmwSHQHiF+CELrQhsvkV02gUltsik=
 			</data>
 		</dict>
 	</dict>

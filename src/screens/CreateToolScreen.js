@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Image, View } from 'react-native';
 import { Button, FormInput, FormLabel } from 'react-native-elements';
 import { connect } from 'react-redux';
 import axios from 'axios';
+import ImagePicker from 'react-native-image-picker';
 
 import * as actions from '../actions';
-import { createTool } from './mutations';
+import { addToolPicture, createTool } from './mutations';
 import url from '../utils';
+import { userToolsQuery } from './queries';
 
 class CreateToolScreen extends Component {
   state = {
@@ -14,7 +16,30 @@ class CreateToolScreen extends Component {
     category: '',
     description: '',
     price: '',
-    depotId: ''
+    depotId: '',
+    uri: null,
+    imageString: ''
+  };
+
+  openCamera = () => {
+    ImagePicker.showImagePicker({ title: 'Take Picture of Tool' }, res => {
+      console.log('res = ', res);
+
+      if (res.didCancel) {
+        console.log('User cancelled image picker');
+      } else if (res.error) {
+        console.log('ImagePicker Error: ', res.error);
+      } else if (res.customButton) {
+        console.log('User tapped custom button: ', res.customButton);
+      } else {
+        const imageData = { uri: 'data:image/jpeg;base64,' + res.data };
+        const imageString = imageData.uri;
+        this.setState({ imageString });
+        this.setState({ uri: imageData });
+        console.log(this.state);
+        console.log('imageString', typeof imageString);
+      }
+    });
   };
 
   handleSubmit() {
@@ -30,18 +55,46 @@ class CreateToolScreen extends Component {
           depot_id: this.state.depotId
         }
       })
-      .then(() => {
+      .then(res => {
         console.log('created tool');
+        let profileId = this.props.profile.id;
+        axios
+          .post(`${url.api}/oracle`, {
+            query: userToolsQuery,
+            variables: { id: profileId }
+          })
+          .then(res => {
+            let depots = res.data.data.user.depots;
+            let toolList = [];
+            depots.forEach(depot => {
+              depot.tools.forEach(t => {
+                toolList.push(Number(t.id));
+              });
+            });
+            const maxId = Math.max(...toolList);
+            axios
+              .post(`${url.api}/oracle`, {
+                query: addToolPicture,
+                variables: {
+                  image: this.state.imageString,
+                  tool_id: maxId
+                }
+              })
+              .then(res => console.log(res))
+              .catch(err => console.log(err));
+          })
+          .catch(err => console.log(err));
         this.props.fetchTools();
+        this.props.fetchProfile(this.props.profile.id);
       })
       .catch(err => {
-        console.log('current state', this.state);
         console.log(err);
       });
     this.props.navigator.pop({
       animated: true,
       animationType: 'fade'
     });
+    console.log('after popped');
   }
 
   render() {
@@ -82,6 +135,19 @@ class CreateToolScreen extends Component {
             onChangeText={depotId => this.setState({ depotId })}
           />
         </View>
+        <View>
+          <Image source={this.state.uri} style={styles.previewImage} />
+        </View>
+        <View style={styles.button}>
+          <Button
+            title="Take Picture"
+            backgroundColor="#e4000f"
+            rounded={true}
+            raised={true}
+            fontSize={22}
+            onPress={this.openCamera}
+          />
+        </View>
         <View style={styles.button}>
           <Button
             title="Submit"
@@ -110,6 +176,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#f5f5f5',
     alignItems: 'center',
     justifyContent: 'flex-start'
+  },
+  previewImage: {
+    width: 200,
+    height: 80
   }
 });
 
