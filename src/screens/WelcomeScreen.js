@@ -24,7 +24,8 @@ class WelcomeScreen extends Component {
           <Text style={styles.titleText}>Magnetar</Text>
         </View>
         <View style={styles.container}>
-          <Text style={styles.baseText}>Loan. Rent. Build. Create.</Text>
+          <Text style={styles.tagText}>The Modern Blacksmith.</Text>
+          <Text style={styles.baseText}>Buy. Rent. Build. Create.</Text>
         </View>
         <SignIn navigator={this.props.navigator} />
       </View>
@@ -33,10 +34,15 @@ class WelcomeScreen extends Component {
 }
 
 const styles = StyleSheet.create({
-  baseText: {
+  tagText: {
     fontFamily: 'Futura-Medium',
     textAlign: 'center',
     fontSize: 22
+  },
+  baseText: {
+    fontFamily: 'Futura-Medium',
+    textAlign: 'center',
+    fontSize: 18
   },
   titleText: {
     fontSize: 40,

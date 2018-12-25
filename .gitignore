@@ -21,3 +21,7 @@ keys.js
 
 # test coverage
 coverage/*
+
+#environment variables
+.env
+keys.js

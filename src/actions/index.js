@@ -16,7 +16,7 @@ import {
   SET_PROFILE
 } from './types';
 import url from '../utils';
-import { profileQuery, toolsQuery, usersQuery } from './queries';
+import { profileQuery, toolQuery, toolsQuery, usersQuery } from './queries';
 
 export const setEmail = email => {
   return { type: SET_EMAIL, payload: email };
@@ -34,7 +34,6 @@ export const fetchProfile = profileId => {
         variables: { id: profileId }
       })
       .then(res => {
-        console.log('dispatch profile', res);
         dispatch({ type: SET_PROFILE, payload: res.data.data.user });
       });
   };
@@ -113,7 +112,10 @@ export const fetchUsers = () => {
 export const fetchTool = id => {
   return function(dispatch) {
     axios
-      .get(`${url.api}/tools/${id}`)
+      .post(`${url.api}/oracle`, {
+        query: toolQuery,
+        variables: { id }
+      })
       .then(res => dispatch({ type: FETCH_TOOL, payload: res.data }));
   };
 };

@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
-import {
-  AsyncStorage,
-  FlatList,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View
-} from 'react-native';
-import { Button, FormInput, FormLabel } from 'react-native-elements';
-import { Navigation } from 'react-native-navigation';
+import { FlatList, StyleSheet, View } from 'react-native';
+import { FormInput, FormLabel } from 'react-native-elements';
 import { connect } from 'react-redux';
-import { ListItem } from 'react-native-elements';
 // import Icon from 'react-native-vector-icons/Ionicons';
 
 import * as actions from '../actions';
@@ -48,7 +39,6 @@ class ToolsScreen extends Component {
   }
 
   render() {
-    console.log('tools', this.state.tools);
     return (
       <View style={styles.container}>
         <View>

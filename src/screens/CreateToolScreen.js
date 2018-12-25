@@ -4,8 +4,10 @@ import { Button, FormInput, FormLabel } from 'react-native-elements';
 import { connect } from 'react-redux';
 import axios from 'axios';
 import ImagePicker from 'react-native-image-picker';
+import { RNS3 } from 'react-native-aws3';
 
 import * as actions from '../actions';
+import { AMAZON_ACCESS_KEY, AMAZON_SECRET_KEY } from '../../keys';
 import { addToolPicture, createTool } from './mutations';
 import url from '../utils';
 import { userToolsQuery } from './queries';
@@ -18,13 +20,14 @@ class CreateToolScreen extends Component {
     price: '',
     depotId: '',
     uri: null,
-    imageString: ''
+    uriString: '',
+    pictureName: '',
+    pictureFileType: 'png'
   };
 
   openCamera = () => {
+    window.console.log(AMAZON_ACCESS_KEY);
     ImagePicker.showImagePicker({ title: 'Take Picture of Tool' }, res => {
-      console.log('res = ', res);
-
       if (res.didCancel) {
         console.log('User cancelled image picker');
       } else if (res.error) {
@@ -32,12 +35,11 @@ class CreateToolScreen extends Component {
       } else if (res.customButton) {
         console.log('User tapped custom button: ', res.customButton);
       } else {
-        const imageData = { uri: 'data:image/jpeg;base64,' + res.data };
-        const imageString = imageData.uri;
-        this.setState({ imageString });
-        this.setState({ uri: imageData });
-        console.log(this.state);
-        console.log('imageString', typeof imageString);
+        const uri = { uri: 'data:image/jpeg;base64,' + res.data };
+        const uriString = res.uri;
+        const pictureName = res.fileName;
+        const pictureFileType = pictureName.split('.')[1].toLowerCase();
+        this.setState({ uri, uriString, pictureName, pictureFileType });
       }
     });
   };
@@ -55,8 +57,7 @@ class CreateToolScreen extends Component {
           depot_id: this.state.depotId
         }
       })
-      .then(res => {
-        console.log('created tool');
+      .then(() => {
         let profileId = this.props.profile.id;
         axios
           .post(`${url.api}/oracle`, {
@@ -72,16 +73,40 @@ class CreateToolScreen extends Component {
               });
             });
             const maxId = Math.max(...toolList);
-            axios
-              .post(`${url.api}/oracle`, {
-                query: addToolPicture,
-                variables: {
-                  image: this.state.imageString,
-                  tool_id: maxId
-                }
+            let file = {
+              // `uri` can also be a file system path (i.e. file://)
+              uri: this.state.uriString,
+              name: `${Date.now()}_${this.state.pictureName}`,
+              type: 'image/jpg'
+            };
+            let options = {
+              acl: 'public-read-write',
+              keyPrefix: 'uploads/',
+              bucket: 'magnetar-tool-pictures',
+              region: 'us-east-2',
+              accessKey: AMAZON_ACCESS_KEY,
+              secretKey: AMAZON_SECRET_KEY,
+              successActionStatus: 201,
+              awsUrl: 's3.us-east-2.amazonaws.com'
+            };
+            console.log('file', file);
+            console.log('options', options);
+            RNS3.put(file, options)
+              .then(res => {
+                console.log('s3 res', res);
+                const imageS3URL = res.body.postResponse.location;
+                axios
+                  .post(`${url.api}/oracle`, {
+                    query: addToolPicture,
+                    variables: {
+                      image: imageS3URL,
+                      tool_id: maxId
+                    }
+                  })
+                  .then(res => console.log(res))
+                  .catch(err => console.log(err));
               })
-              .then(res => console.log(res))
-              .catch(err => console.log(err));
+              .catch(err => console.log('s3 error', err));
           })
           .catch(err => console.log(err));
         this.props.fetchTools();
@@ -94,7 +119,6 @@ class CreateToolScreen extends Component {
       animated: true,
       animationType: 'fade'
     });
-    console.log('after popped');
   }
 
   render() {

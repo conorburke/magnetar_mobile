@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     position: 'relative',
     // width: '90%',
-    borderRadius: 10
+    borderRadius: 10,
+    backgroundColor: 'white'
   },
   titleFont: {
     color: '#e4000f',
