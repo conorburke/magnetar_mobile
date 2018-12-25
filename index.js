@@ -1,3 +1,4 @@
+// require('dotenv').config();
 import React from 'react';
 import { AppRegistry } from 'react-native';
 import { Provider } from 'react-redux';
@@ -13,8 +14,16 @@ if (__DEV__) {
   composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 }
 
-const store = createStore(reducers, composeEnhancers(), applyMiddleware(reduxThunk));
+const store = createStore(
+  reducers,
+  composeEnhancers(),
+  applyMiddleware(reduxThunk)
+);
 
-const provider = () => <Provider store={store}><App /></Provider>;
+const provider = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
 
 AppRegistry.registerComponent('seker', () => provider);

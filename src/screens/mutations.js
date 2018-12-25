@@ -24,3 +24,13 @@ export const createTool = `
     }
   }
 `;
+
+export const addToolPicture = `
+  mutation AddToolPicture($image:String, $tool_id: ID) {
+    addToolPicture(image: $image, tool_id: $tool_id) {
+      id
+      image
+      tool_id
+    }
+  }
+`;

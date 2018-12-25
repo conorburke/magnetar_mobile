@@ -3,7 +3,6 @@ import { AsyncStorage, View, StyleSheet } from 'react-native';
 import { Button, FormInput, FormLabel } from 'react-native-elements';
 import { connect } from 'react-redux';
 import axios from 'axios';
-import firebase from 'firebase';
 import querystring from 'querystring';
 
 import * as actions from '../actions';

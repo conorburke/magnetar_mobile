@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 class ToolDetail extends Component {
+  comonentDidMount() {
+    console.log('tool detail props', this.props);
+  }
+
   render() {
+    console.log('this.props.toolDetails', this.props.toolDetails);
     return (
       <View style={styles.container}>
         <View>
           <Text style={styles.header}>{this.props.toolDetails.title}</Text>
         </View>
+        <Image
+          source={
+            this.props.toolDetails.tool_pictures &&
+            this.props.toolDetails.tool_pictures.length > 0
+              ? { uri: this.props.toolDetails.tool_pictures[0].image }
+              : null
+          }
+          style={styles.previewImage}
+        />
         <View>
           <Text style={styles.detailFont}>{this.props.toolDetails.title}</Text>
           <Text style={styles.detailFont}>
@@ -16,9 +30,7 @@ class ToolDetail extends Component {
           <Text style={styles.detailFont}>
             {'$' + this.props.toolDetails.price}
           </Text>
-          <Text style={styles.detailFont}>
-            {this.props.toolDetails.first_name}
-          </Text>
+          <Text style={styles.detailFont}>{this.props.first_name}</Text>
         </View>
       </View>
     );
@@ -38,6 +50,10 @@ const styles = StyleSheet.create({
   header: {
     color: '#e4000f',
     fontSize: 30
+  },
+  previewImage: {
+    width: 255,
+    height: 255
   }
 });
 

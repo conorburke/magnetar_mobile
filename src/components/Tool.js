@@ -7,7 +7,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import * as actions from '../actions';
 
 class Tool extends Component {
-  openToolDetail() {
+  openToolDetail(id) {
+    this.props.fetchTool(id);
     this.props.navigator.push({
       screen: 'seker.ToolDetailScreen',
       title: 'Tool Detail',
@@ -24,7 +25,9 @@ class Tool extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity onPress={this.openToolDetail.bind(this)}>
+        <TouchableOpacity
+          onPress={this.openToolDetail.bind(this, this.props.tool.id)}
+        >
           <Text style={styles.titleFont}>{this.props.tool.title}</Text>
           <View style={styles.detailContainer}>
             <Text style={styles.detailFont}>
@@ -61,7 +64,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     position: 'relative',
     // width: '90%',
-    borderRadius: 10
+    borderRadius: 10,
+    backgroundColor: 'white'
   },
   titleFont: {
     color: '#e4000f',

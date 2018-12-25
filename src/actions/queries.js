@@ -19,6 +19,21 @@ export const toolsQuery = `
   }
 `;
 
+export const toolQuery = `
+  query fetchTool($id: ID!) {
+    tool (id: $id) {
+      id
+      title
+      description
+      category
+      price
+      tool_pictures {
+        image
+      }
+    }
+  }
+`;
+
 export const usersQuery = `
   {
     users {

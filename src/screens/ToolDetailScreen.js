@@ -8,10 +8,6 @@ import * as actions from '../actions';
 import ToolDetail from '../components/ToolDetail';
 
 class ToolDetailScreen extends Component {
-  componentDidMount() {
-    this.props.fetchTool(this.props.ID);
-  }
-
   openRentToolScreen() {
     this.props.navigator.push({
       screen: 'seker.RentToolScreen',
@@ -24,7 +20,9 @@ class ToolDetailScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ToolDetail toolDetails={this.props} />
+        <ToolDetail
+          toolDetails={this.props.tool.data ? this.props.tool.data.tool : {}}
+        />
         <View style={styles.button}>
           <Button
             title="Rent Tool"
