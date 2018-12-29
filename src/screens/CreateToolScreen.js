@@ -45,7 +45,6 @@ class CreateToolScreen extends Component {
   };
 
   handleSubmit() {
-    window.console.log('this.props.profile', this.props.profile);
     axios
       .post(`${url.api}/oracle`, {
         query: createTool,
