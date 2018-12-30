@@ -13,7 +13,9 @@ import {
   FILTER_USERS,
   SET_PHONE_NUMBER,
   SET_EMAIL,
-  SET_PROFILE
+  SET_PROFILE,
+  SET_RENT_END_DATE,
+  SET_RENT_START_DATE
 } from './types';
 import url from '../utils';
 import { profileQuery, toolQuery, toolsQuery, usersQuery } from './queries';
@@ -24,6 +26,14 @@ export const setEmail = email => {
 
 export const setProfile = profile => {
   return { type: SET_PROFILE, payload: profile };
+};
+
+export const setRentEndDate = date => {
+  return { type: SET_RENT_END_DATE, payload: date };
+};
+
+export const setRentStartDate = date => {
+  return { type: SET_RENT_START_DATE, payload: date };
 };
 
 export const fetchProfile = profileId => {

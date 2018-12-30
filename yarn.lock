@@ -3927,6 +3927,10 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
+moment@^2.23.0:
+  version "2.23.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.23.0.tgz#759ea491ac97d54bac5ad776996e2a58cc1bc225"
+
 moo@^0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/moo/-/moo-0.4.3.tgz#3f847a26f31cf625a956a87f2b10fbc013bfd10e"
@@ -4625,6 +4629,13 @@ react-native-aws3@^0.0.8:
   dependencies:
     buffer "^4.5.1"
     crypto-js "^3.1.6"
+
+react-native-calendar-picker@^5.22.0:
+  version "5.22.0"
+  resolved "https://registry.yarnpkg.com/react-native-calendar-picker/-/react-native-calendar-picker-5.22.0.tgz#03e2bec556d80a3cd83ba7db704bca8e9e81dc69"
+  dependencies:
+    prop-types "^15.6.0"
+    uuid "3.2.1"
 
 react-native-elements@^0.19.1:
   version "0.19.1"
@@ -5632,6 +5643,10 @@ utils-merge@1.0.1:
 uuid@3.0.1:
   version "3.0.1"
   resolved "http://registry.npmjs.org/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
+
+uuid@3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.2.1.tgz#12c528bb9d58d0b9265d9a2f6f0fe8be17ff1f14"
 
 uuid@^3.3.2:
   version "3.3.2"
