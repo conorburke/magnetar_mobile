@@ -34,3 +34,11 @@ export const addToolPicture = `
     }
   }
 `;
+
+export const addRentedTool = `
+  mutation addRentedTool($toolID: ID!, $startDate: Float, $endDate: Float, $renterID: ID!, $ownerID: ID!) {
+    addRentedTool(tool_id: $toolID, start_date: $startDate, end_date: $endDate, renter_id: $renterID, owner_id: $ownerID ) {
+      id
+    }
+  }
+`;

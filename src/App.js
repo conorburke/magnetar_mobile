@@ -15,7 +15,9 @@ import CreateProfileScreen from './screens/CreateProfileScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import CreateToolScreen from './screens/CreateToolScreen';
 import UserToolsScreen from './screens/UserToolsScreen';
-import RentToolScreen from './screens/RentToolScreen';
+import RentToolConfirmScreen from './screens/RentToolConfirmScreen';
+import RentToolEndDateScreen from './screens/RentToolEndDateScreen';
+import RentToolStartDateScreen from './screens/RentToolStartDateScreen';
 import startMainTabs from './screens/startMainTabs';
 import CreateDepotScreen from './screens/CreateDepotScreen';
 import UserDepotsScreen from './screens/UserDepotsScreen';
@@ -95,8 +97,20 @@ Navigation.registerComponent(
   Provider
 );
 Navigation.registerComponent(
-  'seker.RentToolScreen',
-  () => RentToolScreen,
+  'seker.RentToolConfirmScreen',
+  () => RentToolConfirmScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  'seker.RentToolEndDateScreen',
+  () => RentToolEndDateScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  'seker.RentToolStartDateScreen',
+  () => RentToolStartDateScreen,
   store,
   Provider
 );

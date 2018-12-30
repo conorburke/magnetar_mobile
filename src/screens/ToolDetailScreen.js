@@ -10,7 +10,7 @@ import ToolDetail from '../components/ToolDetail';
 class ToolDetailScreen extends Component {
   openRentToolScreen() {
     this.props.navigator.push({
-      screen: 'seker.RentToolScreen',
+      screen: 'seker.RentToolStartDateScreen',
       title: 'Rent Tool',
       backButtonTitle: 'Back to Tool',
       passProps: this.props

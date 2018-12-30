@@ -23,14 +23,16 @@ class ToolDetail extends Component {
           style={styles.previewImage}
         />
         <View>
-          <Text style={styles.detailFont}>{this.props.toolDetails.title}</Text>
           <Text style={styles.detailFont}>
-            {this.props.toolDetails.category}
+            Price / Day: {'$' + this.props.toolDetails.price}
           </Text>
           <Text style={styles.detailFont}>
-            {'$' + this.props.toolDetails.price}
+            Category: {this.props.toolDetails.category}
           </Text>
-          <Text style={styles.detailFont}>{this.props.first_name}</Text>
+          <Text style={styles.detailFont}>
+            Description: {this.props.toolDetails.description}
+          </Text>
+          {/* <Text style={styles.detailFont}>Owner: {this.props.depot.owner.first_name + ' ' + this.props.depot.owner.first_name}</Text> */}
         </View>
       </View>
     );

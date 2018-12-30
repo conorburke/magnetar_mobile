@@ -30,6 +30,9 @@ export const toolQuery = `
       tool_pictures {
         image
       }
+      depot {
+        owner_id
+      }
     }
   }
 `;

@@ -10,3 +10,5 @@ export const FILTER_USERS = 'filter_users';
 export const SET_PHONE_NUMBER = 'set_phone_number';
 export const SET_EMAIL = 'set_email';
 export const SET_PROFILE = 'set_profile';
+export const SET_RENT_START_DATE = 'set_rent_start_date';
+export const SET_RENT_END_DATE = 'set_rent_end_date';
