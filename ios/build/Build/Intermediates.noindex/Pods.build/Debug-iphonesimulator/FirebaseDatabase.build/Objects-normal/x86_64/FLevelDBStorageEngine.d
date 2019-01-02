@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Persistence/FLevelDBStorageEngine.m \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Persistence/FLevelDBStorageEngine.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Persistence/FStorageEngine.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FNode.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Api/Private/FTypedefs_Private.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FCompoundWrite.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FQuerySpec.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FQueryParams.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/FIndex.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRLogger.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRLoggerLevel.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/third_party/Wrap-leveldb/APLevelDB.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FSnapshotUtilities.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FWriteRecord.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Persistence/FTrackedQuery.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FEmptyNode.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Persistence/FPruneForest.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FUtilities.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FParsedUrl.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Persistence/FPendingPut.h

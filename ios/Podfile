@@ -1,0 +1,20 @@
+# Use iOS 9 and above
+platform :ios, '9.0'
+
+# Specify Workspace
+workspace 'seker'
+
+target 'seker' do
+  # Stripe
+  pod 'Stripe', '~> 13.2.0'
+
+  # Install additional dependencies
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Crash'
+  pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Performance'
+  pod 'Firebase/Storage'
+end

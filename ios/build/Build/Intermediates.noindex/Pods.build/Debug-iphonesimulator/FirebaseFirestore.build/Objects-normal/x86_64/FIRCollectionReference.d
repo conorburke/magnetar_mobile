@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/API/FIRCollectionReference.mm \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Public/FIRCollectionReference.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Public/FIRQuery.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Public/FIRFirestoreSource.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Public/FIRListenerRegistration.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Public/FIRFirestore.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/autoid.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/API/FIRDocumentReference+Internal.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Public/FIRDocumentReference.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/document_key.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocumentKey.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/resource_path.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/base_path.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/hard_assert.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/string_format.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/string_apple.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/string_view.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/config.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/policy_checks.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/internal/throw_delegate.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/macros.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/port.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/attributes.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/optimization.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/type_traits.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/str_cat.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/numbers.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/numeric/int128.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/numeric/int128_have_intrinsic.inc \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/hashing.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/comparison.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/API/FIRQuery+Internal.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/API/FIRQuery_Init.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Core/FSTQuery.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/field_path.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Util/FSTUsageValidation.h

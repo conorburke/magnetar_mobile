@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocumentSet.mm \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocumentSet.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocumentDictionary.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/Immutable/FSTImmutableSortedDictionary.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/document_key.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocumentKey.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/resource_path.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/base_path.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/hard_assert.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/string_format.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/string_apple.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/string_view.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/config.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/policy_checks.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/internal/throw_delegate.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/macros.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/port.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/attributes.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/optimization.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/type_traits.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/str_cat.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/numbers.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/numeric/int128.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/numeric/int128_have_intrinsic.inc \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/hashing.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/util/comparison.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/Source/Model/FSTDocument.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/field_path.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/src/firebase/firestore/model/snapshot_version.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/timestamp.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/Immutable/FSTImmutableSortedSet.h

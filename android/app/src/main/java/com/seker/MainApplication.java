@@ -10,6 +10,7 @@ import com.facebook.soloader.SoLoader;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.reactnativenavigation.NavigationApplication;
 import com.imagepicker.ImagePickerPackage;
+import com.gettipsi.stripe.StripeReactPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,6 +28,7 @@ public class MainApplication extends NavigationApplication implements ReactAppli
       // No need to add RnnPackage and MainReactPackage
       return Arrays.<ReactPackage>asList(
         new VectorIconsPackage(),
+        new StripeReactPackage(),
         new ImagePickerPackage() // <-- add this line
       );
   }
