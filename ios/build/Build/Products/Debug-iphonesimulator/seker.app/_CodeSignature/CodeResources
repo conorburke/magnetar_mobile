@@ -8,6 +8,26 @@
 		<data>
 		mt9BRE/mK1yCce5+2K2rE/ifO4A=
 		</data>
+		<key>Entypo.ttf</key>
+		<data>
+		R4cKZ91Qhxdl95nKqX2ochnuR8U=
+		</data>
+		<key>EvilIcons.ttf</key>
+		<data>
+		QZrcvnS7qREj2zspB3XjYvIS8+U=
+		</data>
+		<key>Feather.ttf</key>
+		<data>
+		AiHzjp4t0CEzVCcxbr7QXuznQyM=
+		</data>
+		<key>FontAwesome.ttf</key>
+		<data>
+		E7HqtlqYPHpzvHmXxHnWaUP3xss=
+		</data>
+		<key>Foundation.ttf</key>
+		<data>
+		SyvObHkkk6SlcWtv7C2+/olJLD8=
+		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
 		ooz0sIAaLKBGoFU5iKq8DR11NmY=
@@ -51,11 +71,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4jS1ztGtRAK4cui/H7mR38MCmtw=
+		9uLS1VfvdtvMMGDNfH61AQ9qVJo=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
 		D3lWcE/mG0nEHqGiIFEkD3AKK0Q=
+		</data>
+		<key>MaterialCommunityIcons.ttf</key>
+		<data>
+		LlRFFQPKQ8n7uDUD5LZhbhx4DRE=
+		</data>
+		<key>MaterialIcons.ttf</key>
+		<data>
+		/AXeMSNOAJD33cKM4bI69AJssdo=
+		</data>
+		<key>Octicons.ttf</key>
+		<data>
+		+YreAPYbFuBieFv6gKSQafXjk7M=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -80,6 +112,10 @@
 		<key>PlugIns/sekerTests.xctest/sekerTests</key>
 		<data>
 		GtUS1deo//a0VogcYwD7IxjDUHM=
+		</data>
+		<key>SimpleLineIcons.ttf</key>
+		<data>
+		n/uBpaEREuKS8swyPphIa61ZdZk=
 		</data>
 		<key>Stripe.bundle/Images/stp_card_amex.png</key>
 		<data>
@@ -921,6 +957,10 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Zocial.ttf</key>
+		<data>
+		C9pZx7zT05J94EfgkYdaRCi/0as=
+		</data>
 		<key>gRPCCertificates-Firestore.bundle/Info.plist</key>
 		<data>
 		qLF18DsN3qKX+qOv3nvtZ69IX1E=
@@ -940,10 +980,6 @@
 		<key>tipsi-stripe/README.md</key>
 		<data>
 		Q3i2VQnXlf0G2sygi53vxsGeijo=
-		</data>
-		<key>tipsi-stripe/android/.project</key>
-		<data>
-		7saXIGUXWZvcfeSqdqG8E4HxAB0=
 		</data>
 		<key>tipsi-stripe/android/build.gradle</key>
 		<data>
@@ -1169,10 +1205,6 @@
 		<data>
 		+t0To54D0nMHynIkgkKZjrs6eU4=
 		</data>
-		<key>tipsi-stripe/ios/TPSStripe.xcodeproj/xcuserdata/conorburke.xcuserdatad/xcschemes/xcschememanagement.plist</key>
-		<data>
-		AFIdt/StuRaI6ZeTjUMSI42a/jg=
-		</data>
 		<key>tipsi-stripe/ios/TPSStripe/TPSCardField.h</key>
 		<data>
 		OC8BBKAEASjYk2p2lVVJIysK8dU=
@@ -1287,6 +1319,61 @@
 			dlC0tE20JZQ5AaZWYJHqE0H+lkyXzXidpGvLZ/syYds=
 			</data>
 		</dict>
+		<key>Entypo.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R4cKZ91Qhxdl95nKqX2ochnuR8U=
+			</data>
+			<key>hash2</key>
+			<data>
+			3QhJoVkfiNp5N7I/kiQYpc7FTgdeCePMyo/rYgFvqoI=
+			</data>
+		</dict>
+		<key>EvilIcons.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QZrcvnS7qREj2zspB3XjYvIS8+U=
+			</data>
+			<key>hash2</key>
+			<data>
+			J9GohnZmGjoiaVdpUtb3ANoFZEvAMFUR3iO3D3HKVDY=
+			</data>
+		</dict>
+		<key>Feather.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AiHzjp4t0CEzVCcxbr7QXuznQyM=
+			</data>
+			<key>hash2</key>
+			<data>
+			sse5lKY8HPl6gBWzGq4njD9mmOqvSOduEWdc+dNdrHY=
+			</data>
+		</dict>
+		<key>FontAwesome.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			E7HqtlqYPHpzvHmXxHnWaUP3xss=
+			</data>
+			<key>hash2</key>
+			<data>
+			qljzPyOaD7AvXHpsRcBD16msmgkzNYBmlOzW1O3A1qg=
+			</data>
+		</dict>
+		<key>Foundation.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SyvObHkkk6SlcWtv7C2+/olJLD8=
+			</data>
+			<key>hash2</key>
+			<data>
+			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
+			</data>
+		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<dict>
 			<key>hash</key>
@@ -1399,6 +1486,39 @@
 			u0dnmwuuuEgbf1HGitM65aUmc2y1CxcXzGD/a2X5CKM=
 			</data>
 		</dict>
+		<key>MaterialCommunityIcons.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LlRFFQPKQ8n7uDUD5LZhbhx4DRE=
+			</data>
+			<key>hash2</key>
+			<data>
+			hvzI5Ll2LOfABnIPjqOG8YBKGtVVv2xJ+8XfCHVI35c=
+			</data>
+		</dict>
+		<key>MaterialIcons.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/AXeMSNOAJD33cKM4bI69AJssdo=
+			</data>
+			<key>hash2</key>
+			<data>
+			t/Sjq1YgSPKN0fppFgG8QzY6YdD4dtFtgxbFLk8y1pY=
+			</data>
+		</dict>
+		<key>Octicons.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+YreAPYbFuBieFv6gKSQafXjk7M=
+			</data>
+			<key>hash2</key>
+			<data>
+			NC9CWcIUkNdDyFv9XLIgM5voHcU7RU+sU2mnqmpBMI4=
+			</data>
+		</dict>
 		<key>PlugIns/sekerTests.xctest.dSYM/Contents/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -1452,6 +1572,17 @@
 			<key>hash2</key>
 			<data>
 			f85iW6LjEIgeny4EcPRaxV6oUcTfPHKEoIEBT6nH4mM=
+			</data>
+		</dict>
+		<key>SimpleLineIcons.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n/uBpaEREuKS8swyPphIa61ZdZk=
+			</data>
+			<key>hash2</key>
+			<data>
+			P1Ad2wXHCCm7tRz+nKn/9X854GBFfCV7PM8l33Z/CHA=
 			</data>
 		</dict>
 		<key>Stripe.bundle/Images/stp_card_amex.png</key>
@@ -3529,6 +3660,17 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Zocial.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C9pZx7zT05J94EfgkYdaRCi/0as=
+			</data>
+			<key>hash2</key>
+			<data>
+			17EKHr4YMOWi8I9JA7moDiwZEsDdL3O5P88r+DIhZgI=
+			</data>
+		</dict>
 		<key>gRPCCertificates-Firestore.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -3582,17 +3724,6 @@
 			<key>hash2</key>
 			<data>
 			LY9cWf9uQpmExHbNdZGRp2iiyiI0W6vgBcTGKbpiflg=
-			</data>
-		</dict>
-		<key>tipsi-stripe/android/.project</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7saXIGUXWZvcfeSqdqG8E4HxAB0=
-			</data>
-			<key>hash2</key>
-			<data>
-			W3wG95gExN1Yk58V4DfWgZVQSz6gwvh8HnTCU6wFlLY=
 			</data>
 		</dict>
 		<key>tipsi-stripe/android/build.gradle</key>
@@ -4209,17 +4340,6 @@
 			<key>hash2</key>
 			<data>
 			+iVVCfWiiZFoWYg93l+qt6exZDHuNGsOsgdrcWdqQQE=
-			</data>
-		</dict>
-		<key>tipsi-stripe/ios/TPSStripe.xcodeproj/xcuserdata/conorburke.xcuserdatad/xcschemes/xcschememanagement.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AFIdt/StuRaI6ZeTjUMSI42a/jg=
-			</data>
-			<key>hash2</key>
-			<data>
-			wCbwSfTOA7BrB6VNzJ7yN/PhA8nAUGwhSOTCkc8Zcn4=
 			</data>
 		</dict>
 		<key>tipsi-stripe/ios/TPSStripe/TPSCardField.h</key>

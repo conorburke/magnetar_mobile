@@ -8,6 +8,7 @@ import {
   View
 } from 'react-native';
 import { Button } from 'react-native-elements';
+import { Navigation } from 'react-native-navigation';
 
 import startMainTabs from './startMainTabs';
 
@@ -43,13 +44,19 @@ class SideDrawerScreen extends Component {
 
   handleLogout() {
     AsyncStorage.removeItem('auth_email').then(() => {
-      this.props.navigator.handleDeepLink({
-        link: 'WelcomeScreen'
-      });
+      // this.props.navigator.handleDeepLink({
+      //   link: 'WelcomeScreen'
+      // });
       this.props.navigator.toggleDrawer({
         to: 'closed',
         side: 'left',
         animated: 'true'
+      });
+      Navigation.startSingleScreenApp({
+        screen: {
+          screen: 'seker.WelcomeScreen',
+          title: 'Magnetar'
+        }
       });
       // Navigation.registerComponent(
       //   'seker.WelcomeScreen',
