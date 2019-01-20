@@ -1,0 +1,18 @@
+dependencies: \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/internal/str_format/parser.cc \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/internal/str_format/parser.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/internal/str_format/checker.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/internal/str_format/arg.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/port.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/attributes.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/config.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/policy_checks.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/optimization.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/meta/type_traits.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/numeric/int128.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/macros.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/numeric/int128_have_intrinsic.inc \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/internal/str_format/extension.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/internal/str_format/output.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/string_view.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/internal/throw_delegate.h

@@ -103,6 +103,7 @@ export const profileQuery = `
       loan_rating
       borrow_rating
       depots {
+        id
         address_1
         address_2
         zipcode

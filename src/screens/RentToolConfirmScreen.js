@@ -12,39 +12,22 @@ import url from '../utils';
 
 class RentToolConfirmScreen extends Component {
   handleSubmit() {
-    const { tool } = this.props.tool.data;
-    const { endDate, startDate } = this.props.rentDates;
-
-    axios
-      .post(`${url.api}/oracle`, {
-        query: addRentedTool,
-        variables: {
-          toolID: tool.id,
-          startDate,
-          endDate,
-          renterID: this.props.profile.id,
-          ownerID: tool.depot.owner_id
-        }
-      })
-      .then(res => {
-        console.log(res);
-        startMainTabs();
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    this.props.navigator.push({
+      screen: 'magnetar.SelectPaymentScreen',
+      title: 'Select Payment',
+      backButtonTitle: 'Back',
+      passProps: this.props
+    });
   }
 
   render() {
-    console.log('confirm date props', this.props);
     let dateStart = this.props.rentDates.startDate;
     let dateEnd = this.props.rentDates.endDate;
     let dateDiff = moment(dateEnd).diff(moment(dateStart), 'days') + 1;
-    console.log('datefiff', dateDiff);
     console.log(typeof dateDiff);
     return (
       <View style={styles.container}>
-        <Text style={styles.header}>Confirm Rental Details</Text>
+        <Text style={styles.header}>Rental Details</Text>
         <View style={styles.divider}>
           <Text style={styles.miniHeader}>Start Date</Text>
           <Text style={styles.textInfo}>
@@ -69,7 +52,7 @@ class RentToolConfirmScreen extends Component {
         </View>
         <View style={styles.button}>
           <Button
-            title="Confirm Rental"
+            title="Select Payment"
             backgroundColor="#e4000f"
             rounded={true}
             raised={true}

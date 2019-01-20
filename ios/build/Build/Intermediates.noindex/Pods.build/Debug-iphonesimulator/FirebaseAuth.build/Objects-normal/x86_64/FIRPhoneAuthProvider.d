@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProviders/Phone/FIRPhoneAuthProvider.m \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRPhoneAuthProvider.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRLogger.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRLoggerLevel.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProviders/Phone/FIRPhoneAuthCredential_Internal.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRPhoneAuthCredential.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthCredential.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRApp.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthAPNSToken.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthAPNSTokenManager.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthAppCredential.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthAppCredentialManager.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthGlobalWorkQueue.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuth_Internal.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseAuthInterop/FIRAuthInterop.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthURLPresenter.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthNotificationManager.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthErrorUtils.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthBackend.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthSettings.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/FIRAuthWebUtils.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuthVersion.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIROptions.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetProjectConfigRequest.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRIdentityToolkitRequest.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRequestConfiguration.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRPCRequest.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRGetProjectConfigResponse.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRAuthRPCResponse.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSendVerificationCodeRequest.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRSendVerificationCodeResponse.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRVerifyClientRequest.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseAuth/Firebase/Auth/Source/RPCs/FIRVerifyClientResponse.h

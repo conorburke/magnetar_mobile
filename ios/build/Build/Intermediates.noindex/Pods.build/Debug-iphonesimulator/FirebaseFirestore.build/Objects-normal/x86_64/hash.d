@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/hash/internal/hash.cc \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/hash/internal/hash.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/internal/endian.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/config.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/policy_checks.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/internal/unaligned_access.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/attributes.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/port.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/optimization.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/container/fixed_array.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/algorithm/algorithm.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/dynamic_annotations.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/internal/throw_delegate.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/macros.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/container/internal/compressed_tuple.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/utility/utility.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/internal/inline_variable.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/internal/identity.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/base/internal/invoke.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/meta/type_traits.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/memory/memory.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/numeric/int128.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/numeric/int128_have_intrinsic.inc \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/strings/string_view.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/types/optional.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/types/bad_optional_access.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/types/variant.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/types/internal/variant.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/types/bad_variant_access.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseFirestore/Firestore/third_party/abseil-cpp/absl/hash/internal/city.h

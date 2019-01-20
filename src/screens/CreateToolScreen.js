@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Image, View } from 'react-native';
+import { StyleSheet, Image, Picker, View, ScrollView } from 'react-native';
 import { Button, FormInput, FormLabel } from 'react-native-elements';
 import { connect } from 'react-redux';
 import axios from 'axios';
@@ -12,18 +12,35 @@ import { addToolPicture, createTool } from './mutations';
 import url from '../utils';
 import { userToolsQuery } from './queries';
 
+import * as categories from './toolCategories.json';
+const cats = categories.categories;
+
 class CreateToolScreen extends Component {
   state = {
     title: '',
     category: '',
     description: '',
     price: '',
-    depotId: '',
+    depot: '',
     uri: null,
     uriString: '',
     pictureName: '',
-    pictureFileType: 'png'
+    pictureFileType: 'png',
+    depotsList: []
   };
+
+  componentDidMount() {
+    console.log('ccc', this.props.profile);
+    this.props.profile.depots.forEach(d => {
+      console.log('ddd', d);
+      // depotsList.push({name: d.address_1, id: d.id})
+      // console.log('eee', depotsList);
+      this.setState(prevState => ({
+        depotsList: [...prevState.depotsList, { name: d.address_1, id: d.id }]
+      }));
+      console.log('dlist', this.state.depotsList);
+    });
+  }
 
   openCamera = () => {
     window.console.log(AMAZON_ACCESS_KEY);
@@ -53,7 +70,7 @@ class CreateToolScreen extends Component {
           category: this.state.category,
           description: this.state.description,
           price: Number(this.state.price),
-          depot_id: this.state.depotId
+          depot_id: this.state.depot
         }
       })
       .then(() => {
@@ -122,66 +139,111 @@ class CreateToolScreen extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <View>
-          <FormLabel>Tool Title</FormLabel>
-          <FormInput
-            value={this.state.title}
-            onChangeText={title => this.setState({ title })}
-          />
-        </View>
-        <View>
-          <FormLabel>Category</FormLabel>
-          <FormInput
+      <ScrollView>
+        <View style={styles.container}>
+          <View>
+            <FormLabel labelStyle={{ textAlign: 'center' }}>
+              Tool Title
+            </FormLabel>
+            <FormInput
+              value={this.state.title}
+              onChangeText={title => this.setState({ title })}
+            />
+          </View>
+          <View>
+            <FormLabel labelStyle={{ textAlign: 'center' }}>Category</FormLabel>
+            <Picker
+              itemStyle={{ height: 54, width: 200 }}
+              selectedValue={this.state.category}
+              onValueChange={category => this.setState({ category })}
+            >
+              {cats.map((c, key) => {
+                return <Picker.Item key={key} label={c} value={c} />;
+              })}
+
+              {/* <Picker.Item label='saw' value='saw' />
+               <Picker.Item label='hammer' value='hammer' />
+               <Picker.Item label='drill' value='drill' />
+               <Picker.Item label='utility' value='utility' />
+               <Picker.Item label='shovel' value='saw' /> */}
+            </Picker>
+            {/* <FormInput
             value={this.state.category}
             onChangeText={category => this.setState({ category })}
-          />
-        </View>
-        <View>
-          <FormLabel>Description</FormLabel>
-          <FormInput
-            value={this.state.description}
-            onChangeText={description => this.setState({ description })}
-          />
-        </View>
-        <View>
-          <FormLabel>Price / Hour</FormLabel>
-          <FormInput
-            value={this.state.price}
-            onChangeText={price => this.setState({ price })}
-          />
-        </View>
-        <View>
-          <FormLabel>Depot ID</FormLabel>
-          <FormInput
+          /> */}
+          </View>
+          <View>
+            <FormLabel labelStyle={{ textAlign: 'center' }}>
+              Description
+            </FormLabel>
+            <FormInput
+              value={this.state.description}
+              onChangeText={description => this.setState({ description })}
+            />
+          </View>
+          <View>
+            <FormLabel labelStyle={{ textAlign: 'center' }}>
+              Price / Hour
+            </FormLabel>
+            <FormInput
+              value={this.state.price}
+              onChangeText={price => this.setState({ price })}
+            />
+          </View>
+          <View>
+            <FormLabel labelStyle={{ textAlign: 'center' }}>Depot</FormLabel>
+            {/* <FormInput
             value={this.state.depotId}
             onChangeText={depotId => this.setState({ depotId })}
-          />
+          /> */}
+            <Picker
+              itemStyle={{ height: 54, width: 200 }}
+              selectedValue={this.state.depot}
+              onValueChange={depot => this.setState({ depot })}
+            >
+              {this.state.depotsList.map((d, key) => {
+                console.log('dddddd', d);
+                return (
+                  <Picker.Item
+                    key={key}
+                    label={d.name || 'no label'}
+                    value={d.id || 'no label'}
+                  />
+                );
+              })}
+
+              {/* <Picker.Item label='saw' value='saw' />
+               <Picker.Item label='hammer' value='hammer' />
+               <Picker.Item label='drill' value='drill' />
+               <Picker.Item label='utility' value='utility' />
+               <Picker.Item label='shovel' value='saw' /> */}
+            </Picker>
+          </View>
+          <View>
+            <Image source={this.state.uri} style={styles.previewImage} />
+          </View>
+          <View style={styles.button}>
+            <Button
+              title="Take Picture"
+              backgroundColor="#e4000f"
+              rounded={true}
+              raised={true}
+              fontSize={22}
+              onPress={this.openCamera}
+            />
+          </View>
+          <View style={styles.button}>
+            <Button
+              title="Submit"
+              backgroundColor="#e4000f"
+              rounded={true}
+              raised={true}
+              fontSize={22}
+              onPress={this.handleSubmit.bind(this)}
+            />
+          </View>
         </View>
-        <View>
-          <Image source={this.state.uri} style={styles.previewImage} />
-        </View>
-        <View style={styles.button}>
-          <Button
-            title="Take Picture"
-            backgroundColor="#e4000f"
-            rounded={true}
-            raised={true}
-            fontSize={22}
-            onPress={this.openCamera}
-          />
-        </View>
-        <View style={styles.button}>
-          <Button
-            title="Submit"
-            backgroundColor="#e4000f"
-            rounded={true}
-            raised={true}
-            fontSize={22}
-            onPress={this.handleSubmit.bind(this)}
-          />
-        </View>
-      </View>
+      </ScrollView>
     );
   }
 }

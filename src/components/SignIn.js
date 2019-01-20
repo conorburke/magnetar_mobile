@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { AsyncStorage, View, StyleSheet } from 'react-native';
+import { AsyncStorage, Image, Text, View, StyleSheet } from 'react-native';
 import { Button, FormInput, FormLabel } from 'react-native-elements';
+import { Switch } from 'react-native-switch';
 import { connect } from 'react-redux';
 import axios from 'axios';
 import querystring from 'querystring';
@@ -11,7 +12,13 @@ import startMainTabs from '../screens/startMainTabs';
 const rootUrl = 'http://localhost:7777';
 
 class SignIn extends Component {
-  state = { email: '', password: '' };
+  state = {
+    email: '',
+    password: '',
+    passwordConfirmation: '',
+    register: false,
+    passwordsDiff: true
+  };
 
   handleRegister() {
     this.props.setEmail(this.state.email);
@@ -74,7 +81,7 @@ class SignIn extends Component {
       .catch(err => console.log(err));
   }
 
-  render() {
+  showSignIn() {
     return (
       <View>
         <View style={styles.container}>
@@ -94,6 +101,78 @@ class SignIn extends Component {
           />
         </View>
         <Button
+          title="Log In"
+          backgroundColor="#e4000f"
+          rounded={true}
+          raised={true}
+          fontSize={22}
+          onPress={this.handleLogin.bind(this)}
+        />
+        <View
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginTop: 20
+          }}
+        >
+          <Image
+            source={require('../images/blacksmith.png')}
+            style={{ width: 100, height: 100 }}
+          />
+        </View>
+      </View>
+    );
+  }
+
+  checkButtonDisabled() {
+    if (
+      this.state.password === this.state.passwordConfirmation &&
+      this.state.password.length > 7 &&
+      this.state.email.includes('@') &&
+      this.state.email.includes('.')
+    ) {
+      this.setState({ passwordsDiff: false });
+    } else {
+      this.setState({ passwordsDiff: true });
+    }
+  }
+
+  showRegister() {
+    return (
+      <View>
+        <View style={styles.container}>
+          <FormLabel>Enter Email</FormLabel>
+          <FormInput
+            autoCapitalize="none"
+            value={this.state.email}
+            onChangeText={email => this.setState({ email })}
+            onSelectionChange={this.checkButtonDisabled.bind(this)}
+          />
+        </View>
+        <View style={styles.container}>
+          <FormLabel>Enter Password</FormLabel>
+          <FormInput
+            secureTextEntry={true}
+            value={this.state.password}
+            onChangeText={password => {
+              this.setState({ password });
+            }}
+            onSelectionChange={this.checkButtonDisabled.bind(this)}
+          />
+        </View>
+        <View style={styles.container}>
+          <FormLabel>Confirm Password</FormLabel>
+          <FormInput
+            secureTextEntry={true}
+            value={this.state.passwordConfirmation}
+            onChangeText={passwordConfirmation => {
+              this.setState({ passwordConfirmation });
+            }}
+            onSelectionChange={this.checkButtonDisabled.bind(this)}
+          />
+        </View>
+        <Button
           style={styles.container}
           title="Register"
           backgroundColor="#e4000f"
@@ -101,15 +180,35 @@ class SignIn extends Component {
           raised={true}
           fontSize={22}
           onPress={this.handleRegister.bind(this)}
+          disabled={this.state.passwordsDiff}
+          // disabledStyle={{borderColor: 'green'}}
         />
-        <Button
-          title="Login"
-          backgroundColor="#e4000f"
-          rounded={true}
-          raised={true}
-          fontSize={22}
-          onPress={this.handleLogin.bind(this)}
-        />
+      </View>
+    );
+  }
+
+  render() {
+    return (
+      <View>
+        <View style={{ display: 'flex', alignItems: 'center' }}>
+          {this.state.register ? <Text>Register</Text> : <Text>Log In</Text>}
+          <Switch
+            value={this.state.register}
+            onValueChange={register => this.setState({ register })}
+            backgroundActive={'#a9a9a9'}
+            backgroundInactive={'#a9a9a9'}
+            circleActiveColor={'#e4000f'}
+            circleInActiveColor={'#e4000f'}
+            circleSize={30}
+            barHeight={30}
+            circleBorderWidth={0}
+          />
+        </View>
+        {this.state.register ? (
+          <View>{this.showRegister()}</View>
+        ) : (
+          <View>{this.showSignIn()}</View>
+        )}
       </View>
     );
   }

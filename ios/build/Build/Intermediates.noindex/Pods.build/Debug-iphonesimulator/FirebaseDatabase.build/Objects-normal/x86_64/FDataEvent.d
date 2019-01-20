@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/View/FDataEvent.m \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/View/FDataEvent.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataSnapshot.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseReference.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseQuery.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataEventType.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabase.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRMutableData.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRTransactionResult.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRServerValue.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/Tuples/FTupleUserCallback.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FTypedefs.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FQueryParams.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/View/FEvent.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/View/FEventRegistration.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/View/FChange.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FNode.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Api/Private/FTypedefs_Private.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FIndexedNode.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/FIndex.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/FNamedNode.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Api/Private/FIRDatabaseQuery_Private.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FRepo.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FPersistentConnection.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Realtime/FConnection.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Realtime/FWebSocketConnection.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/third_party/SocketRocket/FSRWebSocket.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FUtilities.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FParsedUrl.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoManager.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Api/FIRDatabaseConfig.h

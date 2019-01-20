@@ -1,0 +1,21 @@
+dependencies: \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Realtime/FWebSocketConnection.m \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRLogger.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRLoggerLevel.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Realtime/FWebSocketConnection.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/third_party/SocketRocket/FSRWebSocket.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FUtilities.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FParsedUrl.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Constants/FConstants.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseReference.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabaseQuery.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataEventType.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataSnapshot.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDatabase.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRMutableData.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRTransactionResult.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRServerValue.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FStringUtilities.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Api/Private/FIRDatabase_Private.h

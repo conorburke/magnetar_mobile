@@ -21,6 +21,8 @@ import RentToolStartDateScreen from './screens/RentToolStartDateScreen';
 import startMainTabs from './screens/startMainTabs';
 import CreateDepotScreen from './screens/CreateDepotScreen';
 import UserDepotsScreen from './screens/UserDepotsScreen';
+import CreateCreditCardScreen from './screens/CreateCreditCardScreen';
+import SelectPaymentScreen from './screens/SelectPaymentScreen';
 
 const composeEnhancers = compose;
 
@@ -117,6 +119,18 @@ Navigation.registerComponent(
 Navigation.registerComponent(
   'magnetar.CreateDepotScreen',
   () => CreateDepotScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  'magnetar.CreateCreditCardScreen',
+  () => CreateCreditCardScreen,
+  store,
+  Provider
+);
+Navigation.registerComponent(
+  'magnetar.SelectPaymentScreen',
+  () => SelectPaymentScreen,
   store,
   Provider
 );

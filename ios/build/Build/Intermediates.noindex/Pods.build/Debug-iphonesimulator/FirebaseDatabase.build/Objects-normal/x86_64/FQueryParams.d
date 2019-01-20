@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FQueryParams.m \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FQueryParams.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FValidation.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Public/FIRDataEventType.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FParsedUrl.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/FRepoInfo.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FTypedefs.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Constants/FConstants.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/FIndex.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/FPriorityIndex.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Utilities/FUtilities.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/View/Filter/FNodeFilter.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/View/Filter/FIndexedFilter.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Core/View/Filter/FLimitedFilter.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/FRangedFilter.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FNode.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Api/Private/FTypedefs_Private.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseDatabase/Firebase/Database/Snapshot/FSnapshotUtilities.h

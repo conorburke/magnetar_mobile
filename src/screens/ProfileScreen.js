@@ -83,6 +83,14 @@ class ProfileScreen extends Component {
     });
   }
 
+  // openPaymentScreen() {
+  //   this.props.navigator.push({
+  //     screen: 'magnetar.CreateCreditCardScreen',
+  //     title: 'Payment Method',
+  //     backButtonTitle: 'Back to Profile'
+  //   });
+  // }
+
   render() {
     return (
       <View style={styles.container}>
@@ -148,6 +156,16 @@ class ProfileScreen extends Component {
               onPress={this.openMyDepotsScreen.bind(this)}
             />
           </View>
+          {/* <View style={styles.button}>
+            <Button
+              title="Set Payment"
+              backgroundColor="#e4000f"
+              rounded={true}
+              raised={true}
+              fontSize={22}
+              onPress={this.openPaymentScreen.bind(this)}
+            />
+          </View> */}
         </Card>
       </View>
     );
@@ -156,7 +174,7 @@ class ProfileScreen extends Component {
 
 const styles = StyleSheet.create({
   button: {
-    margin: 20
+    margin: 10
   },
   container: {
     flex: 1,

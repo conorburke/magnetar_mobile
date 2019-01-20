@@ -45,12 +45,14 @@ class UserToolsScreen extends Component {
 
   flattenTools = () => {
     let flatTools = [];
-    this.props.profile.depots.forEach(depot => {
-      console.log(depot);
-      depot.tools.forEach(tool => {
-        flatTools.push(tool);
+    if (this.props.profile.depots && this.props.profile.depots.length > 0) {
+      this.props.profile.depots.forEach(depot => {
+        console.log(depot);
+        depot.tools.forEach(tool => {
+          flatTools.push(tool);
+        });
       });
-    });
+    }
     return flatTools;
   };
 

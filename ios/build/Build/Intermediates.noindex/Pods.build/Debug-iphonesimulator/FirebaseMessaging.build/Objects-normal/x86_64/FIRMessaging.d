@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessaging.m \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/Public/FIRMessaging.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessaging_Private.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingAnalytics.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseAnalyticsInterop/FIRAnalyticsInterop.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingClient.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingConstants.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingContextManagerService.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingDataMessageManager.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingDefines.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingLogger.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMMessageCode.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingPubSub.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingReceiver.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingRemoteNotificationsProxy.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingRmqManager.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingSyncMessageManager.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingUtilities.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/FIRMessagingVersionUtilities.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRAppInternal.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRApp.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRErrors.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRErrorCode.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRComponent.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRComponentContainer.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRComponentType.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRComponentRegistrant.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRCoreConfigurable.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/FirebaseCore/FIRDependency.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/Headers/Private/GoogleUtilities/GULReachabilityChecker.h \
+  /Users/conorburke/workspace/native/seker/ios/Pods/FirebaseMessaging/Firebase/Messaging/NSError+FIRMessaging.h

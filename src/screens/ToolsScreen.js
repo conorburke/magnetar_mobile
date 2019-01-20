@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
-import { FormInput, FormLabel } from 'react-native-elements';
+import { FormInput, FormLabel, SearchBar } from 'react-native-elements';
 import { connect } from 'react-redux';
 // import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -41,15 +41,31 @@ class ToolsScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View>
-          <FormLabel>Find Tool</FormLabel>
-          <FormInput
+        <View style={{ display: 'flex' }}>
+          <View style={{ display: 'flex', alignItems: 'center' }}>
+            <FormLabel>Find Tool</FormLabel>f
+          </View>
+
+          {/* <FormInput
             containerStyle={styles.font}
             value={this.state.ToolName}
             onChangeText={text => {
               window.console.log('text', text);
               this.props.filterTools(text);
             }}
+          /> */}
+          <SearchBar
+            round
+            lightTheme
+            containerStyle={{ backgroundColor: '#f5f5f5' }}
+            inputStyle={{ backgroundColor: 'white' }}
+            value={this.state.ToolName}
+            onChangeText={text => {
+              window.console.log('text', text);
+              this.props.filterTools(text);
+            }}
+            placeholder="Enter tool title or type..."
+            // style={{width: 200}}
           />
         </View>
         <FlatList

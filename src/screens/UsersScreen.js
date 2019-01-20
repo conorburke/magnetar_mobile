@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
-import { FormInput, FormLabel } from 'react-native-elements';
+import { FormInput, FormLabel, SearchBar } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import * as actions from '../actions';
@@ -43,12 +43,25 @@ class UsersScreen extends Component {
       <View style={styles.container}>
         <View>
           <FormLabel style={styles.font}>Find User</FormLabel>
-          <FormInput
+          {/* <FormInput
             containerStyle={styles.font}
             value={this.state.UserName}
             onChangeText={text => {
               this.props.filterUsers(text);
             }}
+          /> */}
+          <SearchBar
+            round
+            lightTheme
+            containerStyle={{ backgroundColor: '#f5f5f5' }}
+            inputStyle={{ backgroundColor: 'white' }}
+            value={this.state.UserName}
+            onChangeText={text => {
+              window.console.log('text', text);
+              this.props.filterUsers(text);
+            }}
+            placeholder="Enter User Name..."
+            style={{ width: 200 }}
           />
         </View>
         <FlatList

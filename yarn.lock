@@ -4656,6 +4656,12 @@ react-native-navigation@^1.1.451:
   dependencies:
     lodash "4.x.x"
 
+react-native-switch@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/react-native-switch/-/react-native-switch-1.5.0.tgz#a5c8e72f87def649d1c9de027c5ae27e2037ea40"
+  dependencies:
+    prop-types "^15.6.0"
+
 react-native-vector-icons@^4.6.0:
   version "4.6.0"
   resolved "http://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-4.6.0.tgz#e4014311ffa6de397d914ffc31b7097a874cc8d5"
@@ -5489,6 +5495,10 @@ through@^2.3.6:
 time-stamp@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/time-stamp/-/time-stamp-1.1.0.tgz#764a5a11af50561921b133f3b44e618687e0f5c3"
+
+tipsi-stripe@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/tipsi-stripe/-/tipsi-stripe-6.1.2.tgz#68289d5638a6bea4e9adeeb10e7dafe9f642fc15"
 
 tmp@^0.0.33:
   version "0.0.33"

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
+import { PricingCard } from 'react-native-elements';
 
 class ToolDetail extends Component {
   comonentDidMount() {
@@ -23,6 +24,13 @@ class ToolDetail extends Component {
           style={styles.previewImage}
         />
         <View>
+          {/* <PricingCard
+  color='#4f9deb'
+  title='Free'
+  price='$0'
+  info={['1 User', 'Basic Support', 'All Core Features']}
+  button={{ title: 'GET STARTED', icon: 'flight-takeoff' }}
+/> */}
           <Text style={styles.detailFont}>
             Price / Day: {'$' + this.props.toolDetails.price}
           </Text>
@@ -47,7 +55,7 @@ const styles = StyleSheet.create({
   },
   detailFont: {
     color: '#e4000f',
-    fontSize: 15
+    fontSize: 18
   },
   header: {
     color: '#e4000f',
