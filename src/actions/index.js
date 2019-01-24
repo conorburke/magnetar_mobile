@@ -49,13 +49,13 @@ export const fetchProfile = profileId => {
   };
 };
 
-export const authUser = email => {
+export const authUser = token => {
   return function(dispatch) {
-    if (email) {
-      AsyncStorage.setItem('auth_email', email);
-      dispatch({ type: AUTH_USER, payload: email });
+    if (token) {
+      AsyncStorage.setItem('auth_token', token);
+      dispatch({ type: AUTH_USER, payload: token });
     } else {
-      AsyncStorage.getItem('auth_email').then(res => {
+      AsyncStorage.getItem('auth_token').then(res => {
         if (res) {
           dispatch({ type: AUTH_USER, payload: res });
         } else {
@@ -89,7 +89,7 @@ export const deleteTool = id => {
 export const createProfile = profile => {
   console.log('token 3', profile);
   return function(dispatch) {
-    AsyncStorage.setItem('auth_email', profile.email.toString());
+    AsyncStorage.setItem('auth_token', profile.token.toString());
     dispatch({ type: CREATE_PROFILE, payload: profile });
   };
 };

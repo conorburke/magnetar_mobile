@@ -17,8 +17,22 @@ class SignIn extends Component {
     password: '',
     passwordConfirmation: '',
     register: false,
-    passwordsDiff: true
+    passwordsDiff: true,
+    loginError: '',
+    registerError: ''
   };
+
+  mapErrors(err) {
+    switch (err) {
+      case '"wrong credentials"':
+      case '"incorrect form submission"':
+        err = 'Invalid Username or Password';
+        break;
+      case '"unable to register.  do you already have an account?"':
+        err = 'Email already exists';
+    }
+    return err;
+  }
 
   handleRegister() {
     this.props.setEmail(this.state.email);
@@ -38,7 +52,7 @@ class SignIn extends Component {
       .then(({ data }) => {
         console.log(data);
         // firebase.auth().signInWithCustomToken(data.token);
-        this.props.authUser(data.email);
+        this.props.authUser(data.token);
         // startMainTabs();
         this.props.navigator.push({
           screen: 'seker.CreateProfileScreen',
@@ -46,7 +60,12 @@ class SignIn extends Component {
           backButtonTitle: 'Back to Home'
         });
       })
-      .catch(err => console.log(err));
+      .catch(error => {
+        console.log('error', error.request._response);
+        this.setState({
+          registerError: this.mapErrors(error.request._response)
+        });
+      });
   }
 
   handleLogin() {
@@ -66,10 +85,11 @@ class SignIn extends Component {
       )
       .then(({ data }) => {
         console.log('response data login', data);
+        this.setState({ error: '' });
         // firebase.auth().signInWithCustomToken(data.token);
-        this.props.authUser(data.email);
+        this.props.authUser(data.token);
         this.props.setProfile(data);
-        AsyncStorage.setItem('auth_email', data.email.toString());
+        AsyncStorage.setItem('auth_token', data.token.toString());
         AsyncStorage.setItem('profile_id', data.id.toString());
         startMainTabs();
         // this.props.navigator.push({
@@ -78,7 +98,9 @@ class SignIn extends Component {
         //   backButtonTitle: 'Back to Home'
         // });
       })
-      .catch(err => console.log(err));
+      .catch(error => {
+        this.setState({ loginError: this.mapErrors(error.request._response) });
+      });
   }
 
   showSignIn() {
@@ -100,6 +122,11 @@ class SignIn extends Component {
             onChangeText={password => this.setState({ password })}
           />
         </View>
+        {this.state.loginError ? (
+          <View style={styles.errorStyle}>
+            <Text style={styles.errorText}>{this.state.loginError}</Text>
+          </View>
+        ) : null}
         <Button
           title="Log In"
           backgroundColor="#e4000f"
@@ -172,6 +199,11 @@ class SignIn extends Component {
             onSelectionChange={this.checkButtonDisabled.bind(this)}
           />
         </View>
+        {this.state.registerError ? (
+          <View style={styles.errorStyle}>
+            <Text style={styles.errorText}>{this.state.registerError}</Text>
+          </View>
+        ) : null}
         <Button
           style={styles.container}
           title="Register"
@@ -229,6 +261,17 @@ const styles = StyleSheet.create({
   },
   container: {
     marginBottom: 20
+  },
+  errorStyle: {
+    backgroundColor: 'black',
+    display: 'flex',
+    alignItems: 'center',
+    opacity: 0.8,
+    marginBottom: 10
+  },
+  errorText: {
+    color: 'red',
+    fontSize: 22
   }
 });
 

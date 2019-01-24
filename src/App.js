@@ -135,7 +135,7 @@ Navigation.registerComponent(
   Provider
 );
 
-AsyncStorage.getItem('auth_email').then(res => {
+AsyncStorage.getItem('auth_token').then(res => {
   if (res) {
     startMainTabs();
   } else {

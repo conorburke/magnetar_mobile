@@ -10,7 +10,7 @@ class WelcomeScreen extends Component {
   componentDidMount() {
     this.props.authUser();
 
-    AsyncStorage.getItem('auth_email').then(res => {
+    AsyncStorage.getItem('auth_token').then(res => {
       if (res) {
         startMainTabs();
       }
