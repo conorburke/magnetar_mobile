@@ -111,7 +111,7 @@
 		</data>
 		<key>PlugIns/sekerTests.xctest/sekerTests</key>
 		<data>
-		GtUS1deo//a0VogcYwD7IxjDUHM=
+		3DuN/Y7VVArWHwC9+BuKeOHorOI=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -971,7 +971,7 @@
 		</data>
 		<key>tipsi-stripe/CHANGELOG.md</key>
 		<data>
-		XLHG1VwSm0jm9jtooi1VAcGDSVI=
+		lt+JfAO8teCIHNFPpsf/QAXOdOw=
 		</data>
 		<key>tipsi-stripe/LICENSE</key>
 		<data>
@@ -979,7 +979,7 @@
 		</data>
 		<key>tipsi-stripe/README.md</key>
 		<data>
-		Q3i2VQnXlf0G2sygi53vxsGeijo=
+		TdfSYflxlpmUMSeDMburV/lj3Ao=
 		</data>
 		<key>tipsi-stripe/android/build.gradle</key>
 		<data>
@@ -1251,7 +1251,7 @@
 		</data>
 		<key>tipsi-stripe/scripts/post-link-android.js</key>
 		<data>
-		pTBwEpj05b+bEP27J00B3E7wCl8=
+		YGAtaZPdDuwUduLTvoNUMMZHEkY=
 		</data>
 		<key>tipsi-stripe/scripts/post-link-ios.rb</key>
 		<data>
@@ -1267,39 +1267,39 @@
 		</data>
 		<key>tipsi-stripe/src/Stripe.js</key>
 		<data>
-		cBrlsxZu5iTAj07ausrgP36c6qg=
+		GZnT6X1vo/6L22YyDEIjTPqWE8I=
 		</data>
 		<key>tipsi-stripe/src/components/PaymentCardTextField.js</key>
 		<data>
-		ZHW6XVUub4NWLju9cYprKo/Z6qc=
+		EvNrekVm4nOuO24/fppfvcbVm58=
 		</data>
 		<key>tipsi-stripe/src/errorCodes.js</key>
 		<data>
-		Dnt99/O3yggzRA/zSvz5fqD3btM=
+		6Q6sRb2N6wZ5dLR3m+7Zls8pORk=
 		</data>
 		<key>tipsi-stripe/src/index.js</key>
 		<data>
-		OdFBhmh2a7TRxvDrHnUBXMO25Ms=
+		tVeJr7OyLiNqHGyP0ZUyMYWcGZQ=
 		</data>
 		<key>tipsi-stripe/src/utils/__tests__/types.test.js</key>
 		<data>
-		8gl10VviwMKEQAkYjMQIiZ5N3Uw=
+		NMCL6UsVXtkZ8H2euApdRKpdX1g=
 		</data>
 		<key>tipsi-stripe/src/utils/checkArgs.js</key>
 		<data>
-		7bwKcQP0f/G9Cei2mnZlp/+vFoc=
+		fe6JGYxW27P4UtlOVjFM2UxxJZc=
 		</data>
 		<key>tipsi-stripe/src/utils/checkInit.js</key>
 		<data>
-		Y/JdJ+DKVRXI9ccgWkomA6iCpCE=
+		2HTNLnQUHxyiPDOcVgEfZK+8SvU=
 		</data>
 		<key>tipsi-stripe/src/utils/processTheme.js</key>
 		<data>
-		rSXYBE1/KkHf00Z4dUq17ThW5OQ=
+		7c2gQmC+trXKsNaOjwKRKI/VIlY=
 		</data>
 		<key>tipsi-stripe/src/utils/types.js</key>
 		<data>
-		cdYeViCMElOFBDbNd1ZMOAJy6nI=
+		kgdHi/jzSiONR8MZc8IhAa10A/Q=
 		</data>
 		<key>tipsi-stripe/tipsi-stripe.podspec</key>
 		<data>
@@ -1567,11 +1567,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GtUS1deo//a0VogcYwD7IxjDUHM=
+			3DuN/Y7VVArWHwC9+BuKeOHorOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			f85iW6LjEIgeny4EcPRaxV6oUcTfPHKEoIEBT6nH4mM=
+			Yixtbu8YdtDVR+BvRVbEBMzgGltw20F2QlrueC892K4=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>
@@ -3697,11 +3697,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XLHG1VwSm0jm9jtooi1VAcGDSVI=
+			lt+JfAO8teCIHNFPpsf/QAXOdOw=
 			</data>
 			<key>hash2</key>
 			<data>
-			KEBw6iDWV8lCEhrYzert8SYYRKpLK9ARXG808heruJM=
+			5a/FH9h7QgBmPSeC00dGaw3Y/vp+/Vho6GO3BSwA+gY=
 			</data>
 		</dict>
 		<key>tipsi-stripe/LICENSE</key>
@@ -3719,11 +3719,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3i2VQnXlf0G2sygi53vxsGeijo=
+			TdfSYflxlpmUMSeDMburV/lj3Ao=
 			</data>
 			<key>hash2</key>
 			<data>
-			LY9cWf9uQpmExHbNdZGRp2iiyiI0W6vgBcTGKbpiflg=
+			hLGGiPQud4Unz38wGhU0n/OXQcEIK/oC+t3a7r36Wro=
 			</data>
 		</dict>
 		<key>tipsi-stripe/android/build.gradle</key>
@@ -4472,11 +4472,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pTBwEpj05b+bEP27J00B3E7wCl8=
+			YGAtaZPdDuwUduLTvoNUMMZHEkY=
 			</data>
 			<key>hash2</key>
 			<data>
-			plGJqIAJPVE98vvO8yUuTE2mr+QBXN2pkfIhw1jtHts=
+			e179Xh/bkV0oxXBrOZon8j5MDZ2dLXfIdxhadvnyL9o=
 			</data>
 		</dict>
 		<key>tipsi-stripe/scripts/post-link-ios.rb</key>
@@ -4516,99 +4516,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cBrlsxZu5iTAj07ausrgP36c6qg=
+			GZnT6X1vo/6L22YyDEIjTPqWE8I=
 			</data>
 			<key>hash2</key>
 			<data>
-			UOGy//jlzla2dHYQXkmO78J9ynShNzKfmzf87awpXXk=
+			53ogevIBZl0lkPzxRcm/F63dnVJG24e2wr91UgnfHj8=
 			</data>
 		</dict>
 		<key>tipsi-stripe/src/components/PaymentCardTextField.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZHW6XVUub4NWLju9cYprKo/Z6qc=
+			EvNrekVm4nOuO24/fppfvcbVm58=
 			</data>
 			<key>hash2</key>
 			<data>
-			YY75u0QZxkC91hVwwCtw2fn9bUHn9sw1OupNQQG9EF8=
+			7hyadCgMaH/KpYrKDV3SjpGhMZuPs1iYJNLXRoW4XLY=
 			</data>
 		</dict>
 		<key>tipsi-stripe/src/errorCodes.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Dnt99/O3yggzRA/zSvz5fqD3btM=
+			6Q6sRb2N6wZ5dLR3m+7Zls8pORk=
 			</data>
 			<key>hash2</key>
 			<data>
-			uNlAPGuaYw0v4QDD/MlJTw+nCYfnMO+rHbpUSWqSQSk=
+			emOpbIowlL/Uefsgn2qXDHW+9chKcFOOnQyM6JHosIU=
 			</data>
 		</dict>
 		<key>tipsi-stripe/src/index.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OdFBhmh2a7TRxvDrHnUBXMO25Ms=
+			tVeJr7OyLiNqHGyP0ZUyMYWcGZQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			uUeHsb70Iz3iVmHA1P7JsvuPracKQ/CPJPGHoKcX+ws=
+			////xjY8ZZ2bwHjRZ/PQwVchQlCu1pQDWl/7A+eRzlo=
 			</data>
 		</dict>
 		<key>tipsi-stripe/src/utils/__tests__/types.test.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8gl10VviwMKEQAkYjMQIiZ5N3Uw=
+			NMCL6UsVXtkZ8H2euApdRKpdX1g=
 			</data>
 			<key>hash2</key>
 			<data>
-			YTEsEj6dh42+OtwYA2P6P9ZjRYlT2NoXFEdvx1Dhm48=
+			gZdvpzmvLso0WVmIS8qoojQ6HLevrikm+oYFPPH54Hs=
 			</data>
 		</dict>
 		<key>tipsi-stripe/src/utils/checkArgs.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7bwKcQP0f/G9Cei2mnZlp/+vFoc=
+			fe6JGYxW27P4UtlOVjFM2UxxJZc=
 			</data>
 			<key>hash2</key>
 			<data>
-			E+0Bj4vaq1rHkqleWPvusDx29koQCzsI2IcX5CiRq3o=
+			w3981QJMmfChff4s1rcBuOm7/lG+kvk3tJxYm0pIhhs=
 			</data>
 		</dict>
 		<key>tipsi-stripe/src/utils/checkInit.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y/JdJ+DKVRXI9ccgWkomA6iCpCE=
+			2HTNLnQUHxyiPDOcVgEfZK+8SvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			c9J+hq6wbaT/1zTcxr8fhWs79QaMaooYmNKLWZ3OBMs=
+			+sH2uwGCYE5OYZjfIY8Uy8sn9YhHOPHUyh+NI4Fdetg=
 			</data>
 		</dict>
 		<key>tipsi-stripe/src/utils/processTheme.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rSXYBE1/KkHf00Z4dUq17ThW5OQ=
+			7c2gQmC+trXKsNaOjwKRKI/VIlY=
 			</data>
 			<key>hash2</key>
 			<data>
-			VbDnl2sTMzvyvZ/caJ8iihIsZYoTVTmSTgWBguSQpTg=
+			9674ugMoIvN07f0OCTY6Zrnwqk5dpVqRzjQa6fzeh7A=
 			</data>
 		</dict>
 		<key>tipsi-stripe/src/utils/types.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cdYeViCMElOFBDbNd1ZMOAJy6nI=
+			kgdHi/jzSiONR8MZc8IhAa10A/Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			TrXBiFZATEfWwzOhhaotcVosJYrTqiHe959sDvjkH9M=
+			J4gQy6RPEC9wpWKDSw8uRNOhHA2Mw+PyX1dmtl04qGQ=
 			</data>
 		</dict>
 		<key>tipsi-stripe/tipsi-stripe.podspec</key>

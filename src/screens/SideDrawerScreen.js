@@ -14,7 +14,7 @@ import startMainTabs from './startMainTabs';
 
 class SideDrawerScreen extends Component {
   goToHome() {
-    AsyncStorage.getItem('auth_email').then(res => {
+    AsyncStorage.getItem('auth_token').then(res => {
       if (res) {
         startMainTabs();
       } else {
@@ -43,7 +43,7 @@ class SideDrawerScreen extends Component {
   }
 
   handleLogout() {
-    AsyncStorage.removeItem('auth_email').then(() => {
+    AsyncStorage.removeItem('auth_token').then(() => {
       // this.props.navigator.handleDeepLink({
       //   link: 'WelcomeScreen'
       // });
